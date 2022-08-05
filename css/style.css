@@ -8,7 +8,6 @@ html {
 body {
   top: 0px;
   left: 0px;
-  background: transparent linear-gradient(296deg, var(--green1) 0%, var(--green2) 100%) 0% 0% no-repeat padding-box;
   background: transparent linear-gradient(296deg, #549E87 0%, #66C188 100%) 0% 0% no-repeat padding-box;
   opacity: 1;
 }
@@ -469,6 +468,12 @@ text-decoration: none;
 .p-10{
   padding: 10rem !important;
 }
+.p-5{
+  padding: 5rem !important;
+}
+.m-10{
+  margin: 5rem 10rem !important;
+}
 .meal-type .box {
   background: var(--unnamed-color-f9f0dd) 0% 0% no-repeat padding-box;
   border: 1px solid var(--unnamed-color-f9f0dd);
@@ -568,6 +573,9 @@ color: #F9F0DD;
   color: #F9F0DD;
   padding: 0.5rem;
   opacity: 1;
+}
+.float-right{
+  float: right;
 }
 
 .field-inline-block {
@@ -800,4 +808,47 @@ padding-bottom: 1rem;
   font-family: Roboto;
 letter-spacing: 0.63px;
 color: #3B3A3A;
+}
+
+.bill .details .body{
+  text-align: left;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.45px;
+  color: #3B3A3A;
+}
+
+.bill .details hr{
+border-radius: 10px;
+border-top:1px dotted;
+}
+
+.bill .details .body-bold{
+  padding-left: 0.5rem;
+  font-size: 18px;
+  font-weight: 600;
+  padding-left: 1rem;
+  letter-spacing: 0.54px;
+  color: #3B3A3A;
+}
+
+.right-side .heading h5{
+  text-align: left;
+  font-size: 18px;
+  font-weight: 700;
+letter-spacing: 0.54px;
+color: #3B3A3A;
+}
+
+.right-side .heading span{
+  text-align: right;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.39px;
+  color: #0D2763;
+  opacity: 0.8;
+}
+
+.right-side .heading{
+  padding: 1rem 0;
 }
