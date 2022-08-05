@@ -331,6 +331,9 @@ color: #FFE294;
   top: -10vh !important;
 }
 
+.theme-color1{
+  background-color: #FFFBF2 !important;
+}
 
 .fa-solid{
   float: right;
@@ -347,7 +350,13 @@ color: #FFE294;
   color: #549E87 !important;
 }
 
-
+#subscribe h1{
+  text-align: center;
+font: normal normal 800 62px/49px Barlow Condensed;
+letter-spacing: 1.86px;
+color: #396765;
+text-transform: uppercase;
+}
 .btn-text {
   color: var(--unnamed-color-f9f0dd);
   background: #b9a99b00 0% 0% no-repeat padding-box !important;
@@ -449,6 +458,10 @@ text-decoration: none;
 }
 .orange{
   background: #ECA363 0% 0% no-repeat padding-box !important;
+}
+
+.white{
+  background: #fff 0% 0% no-repeat padding-box !important;
 }
 #subscribe .bottom-bar span {
   font-size: 12px;
