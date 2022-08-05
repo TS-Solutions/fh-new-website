@@ -793,3 +793,11 @@ padding-bottom: 1rem;
   padding-top: 1rem;
   color: #396765;
 }
+
+.payment h4{
+  font-size: 21px;
+  font-weight: 800;
+  font-family: Roboto;
+letter-spacing: 0.63px;
+color: #3B3A3A;
+}
