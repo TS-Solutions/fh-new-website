@@ -238,7 +238,7 @@ input {
   font-size: 14px;
   font-size: 0.8125rem;
   font-weight: 400;
-  padding: 1rem 2.5rem;
+  padding: .75rem 2.5rem !important;
   border-radius: 0;
   transition: all 0.2s ease;
 }
@@ -262,7 +262,7 @@ input {
   box-shadow: none;
 }
 
-.btn-date{
+.start-date .btn-date{
 border: 1px solid #F9F0DD;
 border-radius: 9px;
 opacity: 1;
@@ -309,7 +309,8 @@ color: #FFE294;
 
 .delivery .btn-dropdown{
   color: #396765;
-  font: 15px/18px Roboto;
+  font-size: 15px;
+  font-weight: 500;
   background-color: #F9F0DD;
   border-color: #F9F0DD;
   text-align: left;
@@ -317,6 +318,19 @@ color: #FFE294;
   height: 3rem;
   box-shadow: none;
 }
+
+.height-1{
+  top: 10vh !important;
+}
+
+.height-2{
+  top: 15vh !important;
+}
+
+.height-3{
+  top: -10vh !important;
+}
+
 
 .fa-solid{
   float: right;
@@ -407,14 +421,15 @@ color: #FFE294;
   opacity: 1;
 }
 
-#delivery .bottom-bar {
+#subscribe .bottom-bar {
   background: var(--unnamed-color-f9f0dd) 0% 0% no-repeat padding-box;
   background: #F9F0DD 0% 0% no-repeat padding-box;
   border-radius: 19px;
   opacity: 1;
+  position: relative;
 }
 
-#delivery .bottom-bar p {
+.bottom-bar p {
   color: var(--unnamed-color-396765);
   text-align: center;
   font-weight: 500;
@@ -425,7 +440,17 @@ color: #FFE294;
   margin: 0;
 }
 
-#delivery .bottom-bar span {
+.bottom-bar .orange {
+  border-radius: 0 19px 19px 0;
+}
+.continue-btn{
+color: white;
+text-decoration: none;
+}
+.orange{
+  background: #ECA363 0% 0% no-repeat padding-box !important;
+}
+#subscribe .bottom-bar span {
   font-size: 12px;
 }
 
@@ -444,10 +469,16 @@ color: #FFE294;
   z-index: 10 !important;
   margin: 0 auto;
 }
-
+.meal-type .heading{
+  text-align: center;
+  font-weight: 600;
+font-size: 25px;
+letter-spacing: 0.75px;
+color: #F9F0DD;
+}
 .bowl-box {
   position: relative;
-  top: -8rem;
+  top: -12rem;
   z-index: -1 !important;
   left: 0;
   width: 262px;
@@ -457,6 +488,7 @@ color: #FFE294;
   border-radius: 27px;
   opacity: 1;
 }
+
 
 #bowla {
   background: #396765 0% 0% no-repeat padding-box;

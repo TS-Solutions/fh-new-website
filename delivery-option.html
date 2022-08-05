@@ -15,6 +15,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" rel="stylesheet">
+
+
 </head>
 
 <body>
@@ -66,7 +69,7 @@
                 </div>
             </nav>
 
-            <section id="doctor" class="">
+            <section id="subscribe" class="">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-md-4 heading-section meal">
@@ -91,51 +94,74 @@
                             </div>
                         </div>
                         <div class="col-md-8 text-center heading-section stranger mb-4">
-                            <div class="row justify-content-center">
-                                <h4 class="mb-4">When Do You Wish To Start?</h4>
+                            <div class="row justify-content-center delivery">
+                                <h4 class="mb-4">How You’d Like To Get Your Meals?</h4>
                                 <div class="row justify-content-center">
-                                    <p class="text-green-p justify-content-start ml-2 text-left">Starting Date</p>
-                                    <div class="btn-toolbar justify-content-start">
-                                        <button type="button" class="btn btn-date m-2">Tommorrow</button>
-                                        <button type="button" class="btn btn-date m-2">May 2nd</button>
-                                        <button type="button" class="btn btn-date m-2">May 3rd</button>
-                                        <button type="button" class="btn btn-date m-2">Choose Date</button>
-                                      </div>
+                                    <div class="btn-toolbar justify-content-center">
+                                        <button type="button" class="btn btn-date m-2">Delivery</button>
+                                        <button type="button" class="btn btn-date m-2">Pick up</button>
+                                    </div>
                                 </div>
-                                <div class="row justify-content-center pt-4">
-                                    <p class="text-green-p justify-content-start ml-2 text-left">Duration of the Course</p>
-                                    <div class="btn-toolbar justify-content-start">
-                                        <button type="button" class="btn btn-date m-2">1 Week</button>
-                                        <button type="button" class="btn btn-date m-2">2 Weeks</button>
-                                        <button type="button" class="btn btn-date m-2">4 Weeks</button>
-                                      </div>
-                                </div>
-                                <div class="row justify-content-center pt-4">
-                                    <p class="text-green-p justify-content-start ml-2 text-left">Choose your days</p>
-                                    <div class="btn-toolbar justify-content-start">
-                                        <button type="button" class="btn btn-date m-2">Sa</button>
-                                        <button type="button" class="btn btn-date m-2">Su</button>
-                                        <button type="button" class="btn btn-date m-2">Mo</button>
-                                        <button type="button" class="btn btn-date m-2">Tu</button>
-                                        <button type="button" class="btn btn-date m-2">We</button>
-                                        <button type="button" class="btn btn-date m-2">Th</button>
-                                        <button type="button" class="btn btn-date m-2">Fr</button>
-                                      </div>
+                                <div class="row justify-content-center">
+                                    <div class="dropdown m-2">
+                                        <button class="btn btn-dropdown" type="button" id="dropdownMenuButton1"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Eastern Region
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown m-2">
+                                        <button class="btn btn-dropdown" type="button" id="dropdownMenuButton2"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Select city
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                            <li>
+                                                <h6 class="dropdown-header">Select city</h6>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Dammam</a></li>
+                                            <li><a class="dropdown-item" href="#">Commissary</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown m-2">
+                                        <button class="btn btn-dropdown" type="button" id="dropdownMenuButton3"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Select your preferred pickup branch
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                                            <li>
+                                                <h6 class="dropdown-header">Select your preferred pickup branch</h6>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Jamaiyin Branch - Dammam</a></li>
+                                            <li><a class="dropdown-item" href="#">Alshati Branch - Dammam</a></li>
+                                            <li><a class="dropdown-item" href="#">Aramco Branch - Commissary</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="row bottom-bar justify-content-center">
-                                <div class="col-4">
-
-                                    <p>Meal Type: Keto</p>
-                                </div>
-                                <div class="col-4">
-                                    <p>Starting From: 550 SAR</p>
-                                </div>
-                                <div class="col-4">
-                                    <p>Starting From: 550 SAR</p>
-                                </div>
-
-                            </div>
+                        </div>
+                    </div>
+                    <div class="row bottom-bar height-2 justify-content-between">
+                        <div class="col-3">
+                            <p>Meal Type: Keto</p>
+                        </div>
+                        <div class="col-3">
+                            <p>Total Calories: 1,200 cal</p>
+                        </div>
+                        <div class="col-3">
+                            <p>Starting From: 1,700.00 SAR</p>
+                        </div>
+                        <div class="col-3 orange">
+                            <p>
+                                <a class="continue-btn" href="./payment.html">Continue</a>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -182,6 +208,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.rawgit.com/download/glyphicons/0.1.0/glyphicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 
