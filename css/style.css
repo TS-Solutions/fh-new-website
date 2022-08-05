@@ -466,7 +466,9 @@ text-decoration: none;
 #subscribe .bottom-bar span {
   font-size: 12px;
 }
-
+.p-10{
+  padding: 10rem !important;
+}
 .meal-type .box {
   background: var(--unnamed-color-f9f0dd) 0% 0% no-repeat padding-box;
   border: 1px solid var(--unnamed-color-f9f0dd);
