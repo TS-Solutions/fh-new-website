@@ -787,3 +787,95 @@ color: #3B3A3A;
 .right-side .heading{
   padding: 1rem 0;
 }
+
+.selection .bowl-box{
+  position: relative;
+  top: -8rem;
+  z-index: -1 !important;
+  left: 4rem;
+  width: 8.5rem;
+height: 160px;
+background: #396765 0% 0% no-repeat padding-box;
+border-radius: 0px 0px 27px 27px;
+}
+
+.selection img{
+  width: 16rem;
+  height: auto;
+}
+
+.selection .heading{
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+letter-spacing: 0.48px;
+color: #F9F0DD;
+}
+
+.selection span{
+  text-align: center;
+  font-size: 23px;
+  font-weight: 900;
+letter-spacing: 0.69px;
+color: #F79A6B;
+}
+
+.selection .meal-type p{
+  text-align: center;
+  font-size: 10px;
+  font-weight: 700;
+letter-spacing: 0.3px;
+color: #F9F0DD;
+}
+
+.selection .toggle{
+  position: relative;
+  top: -9rem;
+  left: 4rem;
+}
+
+.selection .toggle hr{
+  border-color: white;
+  color: white;
+}
+.selection .toggle .wrapper {
+background-color: #ECA363;
+width: 8.5rem;
+height: fit-content;
+display: flex;
+border-radius: 45px;
+}
+
+.selection .toggle .plusminus {
+  height: 100%;
+  width: 50%;
+  background: transparent;
+  border: none;
+  font-weight: 600;
+  font-size: 35px;
+  color: #fff;
+}
+
+.selection .toggle .num {
+height: 100%;
+width: 39%;
+border: none;
+font-size: 30px;
+}
+
+.selection .bottom-text span{
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+font: normal normal bold 13px/23px Roboto;
+letter-spacing: 0.39px;
+color: #396765;
+}
+
+.selection .bottom-text p{
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+letter-spacing: 0.54px;
+color: #396765;
+}
