@@ -111,7 +111,7 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.form-control,
+.staff .form-control,
 .form-select {
   display: inline-block !important;
   border: none !important;
@@ -170,11 +170,11 @@ input {
   transition: all 0.2s ease;
 }
 
-.btn-next {
+.staff .btn-next {
   background: #ECA363 0% 0% no-repeat padding-box !important;
   border-radius: 27px !important;
   opacity: 1;
-  text-align: left;
+  text-align: center;
   font-size: 17px;
   font-weight: 600;
   letter-spacing: 0.51px;
@@ -290,7 +290,7 @@ input {
   text-transform: uppercase;
 }
 
-.btn-text {
+#subscribe .staff .btn-text {
   color: var(--unnamed-color-f9f0dd);
   background: #b9a99b00 0% 0% no-repeat padding-box !important;
   text-align: left;
@@ -303,12 +303,7 @@ input {
   border-bottom: 5px solid transparent !important;
 }
 
-.btn-text:hover {
-  color: #F3D59F;
-  border-bottom: 5px solid #F3D59F !important;
-}
-
-.btn-text:active {
+#subscribe .staff .btn-text:hover, .staff .btn-text:active{
   color: #F3D59F;
   border-bottom: 5px solid #F3D59F !important;
 }
@@ -319,8 +314,7 @@ input {
 
 .meal-type img {
   width: 15rem;
-  height: 15rem;
-  z-index: 1000 !important;
+  height: fit-content;
 }
 
 .green-box {
@@ -352,24 +346,31 @@ input {
 }
 
 .meal h3 {
-  color: var(--unnamed-color-f9f0dd);
   text-align: left;
-  font: normal normal 800 46px/43px Barlow Condensed;
+  font-size: 46px;
+  line-height: 43px;
+  font-weight: 800;
+  font-family: 'Barlow Condensed';
   letter-spacing: 1.38px;
   color: #F9F0DD;
   text-transform: uppercase;
   opacity: 1;
 }
 
-.meal-type a {
-  color: var(--unnamed-color-396765);
-  text-align: center !important;
-  font: normal normal 500 14px/10px 'Roboto' !important;
+.meal-type .box a {
+  font-size: 14px;
+  line-height: 10px;
+  font-weight: 500;
+  font-family: 'Roboto';
   letter-spacing: 0.42px;
-  color: #396765 !important;
-  text-decoration: none !important;
-  opacity: 1;
+  color: #396765;
+  text-decoration: none;
 }
+
+#subscribe .meal-type .box a:hover {
+  color: #25837e !important;
+}
+
 
 #subscribe .bottom-bar {
   background: var(--unnamed-color-f9f0dd) 0% 0% no-repeat padding-box;
@@ -534,10 +535,12 @@ input {
   display: inline-block;
 }
 
-.stranger h1 {
-  color: var(--unnamed-color-f9f0dd);
+#subscribe .stranger h1 {
   text-align: center;
-  font: normal normal 800 83px/66px Barlow Condensed;
+  font-size: 5.2rem;
+  line-height: 66px;
+  font-weight: 800;
+  font-family: 'Barlow Condensed';
   letter-spacing: 2.49px;
   color: #F9F0DD;
   opacity: 1;
@@ -613,12 +616,12 @@ section {
 }
 
 .date-field {
-  width: 4vw;
+  width: 5rem;
   text-align: center;
 }
 
 .weight-field {
-  width: 5vw;
+  width: 5.5rem;
   text-align: center;
 }
 
@@ -642,6 +645,7 @@ footer {
 
 footer p {
   font-size: 11px;
+  padding-top: 1rem;
   line-height: 45px;
   font-weight: 500;
   font-family: 'Open Sans';
