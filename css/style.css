@@ -799,7 +799,7 @@ background: #396765 0% 0% no-repeat padding-box;
 border-radius: 0px 0px 27px 27px;
 }
 
-.selection img{
+.selection .meal-type img{
   width: 16rem;
   height: auto;
 }
@@ -878,4 +878,48 @@ color: #396765;
   font-weight: 700;
 letter-spacing: 0.54px;
 color: #396765;
+}
+
+
+.menu .toggle2 hr{
+  border-color: white;
+  color: white;
+}
+.toggle2 .wrapper2 {
+background-color: #ECA363;
+width: 6rem;
+height: fit-content;
+display: flex;
+border-radius: 45px;
+}
+
+.menu .toggle2 .plusminus {
+  height: 100%;
+  width: 50%;
+  background: transparent;
+  border: none;
+  font-weight: 600;
+  font-size: 25px;
+  color: #fff;
+}
+
+.menu .toggle2 .num {
+height: 100%;
+width: 39%;
+border: none;
+font-size: 25px;
+}
+
+.selection .menu .img1{
+width: 8.875rem;
+height: fit-content;
+}
+
+.selection .menu .img2{
+  width: 2.438rem;
+  height: fit-content;
+}
+
+.selection .bottom-menu{
+  padding: 0 10rem;
 }
