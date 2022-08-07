@@ -130,8 +130,8 @@ body {
   opacity: 0.43;
 }
 
-.note-form .form-control,
-.form-select {
+.stranger .note-form .form-control,
+.note-form .form-select {
   border: 1px solid #F9F0DD !important;
   border-radius: 9px;
   background-color: transparent;
@@ -330,7 +330,6 @@ input {
 }
 
 .meal li {
-  color: var(--unnamed-color-f9f0dd);
   text-align: left;
   font: normal normal 800 46px/43px Barlow Condensed;
   letter-spacing: 1.38px;
@@ -338,6 +337,31 @@ input {
   color: #F3D59F;
   text-transform: uppercase;
   opacity: 1;
+}
+
+.meal .completed li {
+  list-style-type: none;
+}
+
+.meal .completed li:before {
+  content: "\f00c";
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: -1.3em;
+  width: 1.3em;
+}
+
+.meal .completed li a{
+  display: inline-block;
+}
+
+.meal .disabled li{
+  opacity: 0.5;
+}
+
+.meal .disabled a{
+  pointer-events: none;
+  cursor: default;
 }
 
 .meal i {
@@ -373,15 +397,19 @@ input {
 
 
 #subscribe .bottom-bar {
-  background: var(--unnamed-color-f9f0dd) 0% 0% no-repeat padding-box;
   background: #F9F0DD 0% 0% no-repeat padding-box;
   border-radius: 19px;
+  margin-bottom: 2rem;
   opacity: 1;
   position: relative;
 }
 
+.meal-selection{
+  margin-bottom: -7rem;
+  padding-top: 1.5rem;
+}
+
 .bottom-bar p {
-  color: var(--unnamed-color-396765);
   text-align: center;
   font-weight: 500;
   color: #396765;
@@ -395,13 +423,23 @@ input {
   border-radius: 0 19px 19px 0;
 }
 
+
+
 .continue-btn {
   color: white;
   text-decoration: none;
 }
 
+.continue-btn:hover {
+  color: white;
+}
+
 .orange {
   background: #ECA363 0% 0% no-repeat padding-box !important;
+}
+
+.orange:hover{
+  background-color: #a56934 !important;
 }
 
 .white {
@@ -436,7 +474,7 @@ input {
   position: relative;
   padding-top: 2rem;
   top: -13rem;
-  z-index: -2;
+  z-index: 1;
   margin: 0 auto;
 }
 
@@ -448,10 +486,14 @@ input {
   color: #F9F0DD;
 }
 
+.bowl-img{
+  z-index: 3;
+  position: relative;
+}
 .bowl-box {
   position: relative;
   top: -12rem;
-  z-index: -1 !important;
+  z-index: 2;
   left: 0;
   width: 262px;
   height: 235px;
@@ -476,9 +518,25 @@ input {
   justify-content: space-evenly;
 }
 
-.meal-box {
+#mealbox{
   background: #F9F0DD 0% 0% no-repeat padding-box;
-  border: 1px solid #F9F0DD;
+  cursor: pointer !important;
+}
+
+#mealbox:hover,
+#mealbox:focus {
+  background: #EC6F76 0% 0% no-repeat padding-box !important;
+}
+#mealbox:hover p,
+#mealbox:focus p{
+  color: #F9F0DD;
+}
+
+#mealbox:hover .svg,
+#mealbox:focus .svg{
+  fill: #F9F0DD !important;
+}
+.meal-box {
   border-radius: 9px;
   opacity: 1;
   height: 7.5rem;
@@ -947,5 +1005,5 @@ footer p {
 }
 
 .selection .bottom-menu {
-  padding: 0 10rem;
+  padding: 2rem 10rem;
 }
