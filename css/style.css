@@ -219,23 +219,20 @@ input {
   font-weight: 600;
 }
 
-.delivery .btn-date {
+.stranger .delivery .btn-date {
   background: transparent 0% 0% no-repeat padding-box;
-  font: normal normal bold 19px/61px 'Roboto';
+  font-size: 19px;
+  font-weight: 600;
   border: none;
   letter-spacing: 0.57px;
   color: #F9F0DD;
+  box-shadow: none;
   opacity: 1;
 }
 
-.delivery .btn-date:hover {
-  background: #396765 0% 0% no-repeat padding-box;
-  color: #FFE294;
-}
-
-.delivery .btn-date:active {
-  background: #396765 0% 0% no-repeat padding-box;
-  color: #FFE294;
+.stranger .delivery .btn-date:hover, .stranger .delivery .btn-date:focus {
+  background: #396765 0% 0% no-repeat padding-box !important; 
+  color: #FFE294 !important;
 }
 
 .delivery .btn-dropdown {
@@ -272,15 +269,11 @@ input {
   color: #ECA363;
 }
 
-.btn-date:hover {
+.stranger .btn-date:hover, .stranger .btn-date:focus {
   background: #F9F0DD 0% 0% no-repeat padding-box !important;
   color: #549E87 !important;
 }
 
-.btn-date:active {
-  background: #F9F0DD 0% 0% no-repeat padding-box !important;
-  color: #549E87 !important;
-}
 
 #subscribe h1 {
   text-align: center;
@@ -546,7 +539,7 @@ input {
 
 .meal-box img {
   width: 2rem;
-  height: auto;
+  height: fit-content;
   position: relative;
   top: 2rem;
   left: 0;

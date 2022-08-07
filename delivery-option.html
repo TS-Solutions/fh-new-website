@@ -13,6 +13,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -70,28 +73,38 @@
                         <div class="col-md-4 heading-section meal">
                             <div class="row justify-content-start">
                                 <ol>
-                                    <li><a href="meal-type.html">
-                                            <h3>MEAL TYPE</h3>
-                                        </a></li>
-                                    <li><a href="select-meal.html">
-                                            <h3>SELECT MEALS</h3>
-                                        </a></li>
-                                    <li><a href="start-date.html">
-                                            <h3>STARTING DATE</h3>
-                                        </a></li>
-                                    <li><a href="delivery-option.html">
-                                            <h3>DELIVERY OPTIONS</h3>
-                                        </a></li>
-                                    <li><a href="payment.html">
-                                            <h3>PAYMENT</h3>
-                                        </a></li>
+                                    <div class="completed">
+                                        <li><a href="meal-type.html">
+                                                <h3>MEAL TYPE</h3>
+                                            </a></li>
+                                    </div>
+                                    <div class="completed">
+                                        <li><a href="select-meal.html">
+                                                <h3>SELECT MEALS</h3>
+                                            </a></li>
+                                    </div>
+                                    <div class="completed">
+                                        <li><a href="start-date.html">
+                                                <h3>STARTING DATE</h3>
+                                            </a></li>
+                                    </div>
+                                    <div class="">
+                                        <li><a href="delivery-option.html">
+                                                <h3>DELIVERY OPTIONS</h3>
+                                            </a></li>
+                                    </div>
+                                    <div class="disabled">
+                                        <li><a href="payment.html">
+                                                <h3>PAYMENT</h3>
+                                            </a></li>
+                                    </div>
                                 </ol>
                             </div>
                         </div>
                         <div class="col-md-8 text-center heading-section stranger mb-4">
                             <div class="row justify-content-center delivery">
                                 <h4 class="mb-4">How You’d Like To Get Your Meals?</h4>
-                                <div class="row justify-content-center">
+                                <div class="row justify-content-center mb-3">
                                     <div class="btn-toolbar justify-content-center">
                                         <button type="button" class="btn btn-date m-2">Delivery</button>
                                         <button type="button" class="btn btn-date m-2">Pick up</button>
