@@ -1,6 +1,6 @@
 html {
   font-family: 'Barlow Condensed', sans-serif;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif !important;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
@@ -184,6 +184,10 @@ input {
   box-shadow: none !important;
 }
 
+.staff .btn-next:hover {
+  background: #ff7700 0% 0% no-repeat padding-box !important;
+}
+
 .btn-next:hover {
   background: #c57b3a 0% 0% no-repeat padding-box;
   color: #FFFFFF;
@@ -230,8 +234,9 @@ input {
   opacity: 1;
 }
 
-.stranger .delivery .btn-date:hover, .stranger .delivery .btn-date:focus {
-  background: #396765 0% 0% no-repeat padding-box !important; 
+.stranger .delivery .btn-date:hover,
+.stranger .delivery .btn-date:focus {
+  background: #396765 0% 0% no-repeat padding-box !important;
   color: #FFE294 !important;
 }
 
@@ -269,7 +274,8 @@ input {
   color: #ECA363;
 }
 
-.stranger .btn-date:hover, .stranger .btn-date:focus {
+.stranger .btn-date:hover,
+.stranger .btn-date:focus {
   background: #F9F0DD 0% 0% no-repeat padding-box !important;
   color: #549E87 !important;
 }
@@ -277,7 +283,7 @@ input {
 
 #subscribe h1 {
   text-align: center;
-  font: normal normal 800 62px/49px Barlow Condensed;
+  font: normal normal 800 62px/49px 'Barlow Condensed';
   letter-spacing: 1.86px;
   color: #396765;
   text-transform: uppercase;
@@ -287,7 +293,7 @@ input {
   color: var(--unnamed-color-f9f0dd);
   background: #b9a99b00 0% 0% no-repeat padding-box !important;
   text-align: left;
-  font: normal normal 800 60px/48px Barlow Condensed !important;
+  font: normal normal 800 60px/48px 'Barlow Condensed' !important;
   border: #ffffff00;
   letter-spacing: 1.8px;
   color: #F9F0DD;
@@ -296,7 +302,8 @@ input {
   border-bottom: 5px solid transparent !important;
 }
 
-#subscribe .staff .btn-text:hover, .staff .btn-text:active{
+#subscribe .staff .btn-text:hover,
+.staff .btn-text:active {
   color: #F3D59F;
   border-bottom: 5px solid #F3D59F !important;
 }
@@ -324,7 +331,7 @@ input {
 
 .meal li {
   text-align: left;
-  font: normal normal 800 46px/43px Barlow Condensed;
+  font: normal normal 800 46px/43px 'Barlow Condensed';
   letter-spacing: 1.38px;
   padding: 0.6rem 0.5rem;
   color: #F3D59F;
@@ -344,15 +351,15 @@ input {
   width: 1.3em;
 }
 
-.meal .completed li a{
+.meal .completed li a {
   display: inline-block;
 }
 
-.meal .disabled li{
+.meal .disabled li {
   opacity: 0.5;
 }
 
-.meal .disabled a{
+.meal .disabled a {
   pointer-events: none;
   cursor: default;
 }
@@ -397,7 +404,7 @@ input {
   position: relative;
 }
 
-.meal-selection{
+.meal-selection {
   margin-bottom: -7rem;
   padding-top: 1.5rem;
 }
@@ -431,8 +438,8 @@ input {
   background: #ECA363 0% 0% no-repeat padding-box !important;
 }
 
-.orange:hover{
-  background-color: #a56934 !important;
+.orange:hover {
+  background-color: #ff7700 !important;
 }
 
 .white {
@@ -479,10 +486,11 @@ input {
   color: #F9F0DD;
 }
 
-.bowl-img{
+.bowl-img {
   z-index: 3;
   position: relative;
 }
+
 .bowl-box {
   position: relative;
   top: -12rem;
@@ -511,7 +519,7 @@ input {
   justify-content: space-evenly;
 }
 
-#mealbox{
+#mealbox {
   background: #F9F0DD 0% 0% no-repeat padding-box;
   cursor: pointer !important;
 }
@@ -520,15 +528,17 @@ input {
 #mealbox:focus {
   background: #EC6F76 0% 0% no-repeat padding-box !important;
 }
+
 #mealbox:hover p,
-#mealbox:focus p{
+#mealbox:focus p {
   color: #F9F0DD;
 }
 
 #mealbox:hover .svg,
-#mealbox:focus .svg{
+#mealbox:focus .svg {
   fill: #F9F0DD !important;
 }
+
 .meal-box {
   border-radius: 9px;
   opacity: 1;
@@ -559,7 +569,7 @@ input {
 }
 
 .text-green-p {
-  font: normal normal bold 16px/22px Open Sans;
+  font: normal normal bold 16px/22px 'Open Sans';
   letter-spacing: 0px;
   color: #255250;
   opacity: 1;
@@ -571,7 +581,7 @@ input {
 
 .text-subtitle {
   color: var(--unnamed-color-f9f0dd);
-  font: italic normal normal 11px/15px Open Sans;
+  font: italic normal normal 11px/15px 'Open Sans';
   letter-spacing: 0px;
   color: #F9F0DD;
   padding: 0.5rem;
@@ -603,7 +613,6 @@ input {
   font-size: 22px;
   font-family: 'Roboto';
   font-weight: 600;
-  font: normal normal bold 22px/25px 'Roboto';
   letter-spacing: 0.66px;
   color: #F3D59F;
   text-transform: capitalize;
@@ -613,7 +622,7 @@ input {
 .body-content input {
   background-color: transparent !important;
   border: none;
-  font: normal normal 800 60px/48px Barlow Condensed;
+  font: normal normal 800 60px/48px 'Barlow Condensed';
   text-align: center;
   border-bottom: 5px solid #F3D59F !important;
 }
@@ -626,7 +635,7 @@ input {
 .body-content h2 {
   color: var(--unnamed-color-f9f0dd);
   text-align: left;
-  font: normal normal 800 60px/48px Barlow Condensed !important;
+  font: normal normal 800 60px/48px 'Barlow Condensed' !important;
   letter-spacing: 1.8px;
   color: #F9F0DD;
   opacity: 1;
@@ -731,7 +740,7 @@ footer p {
 
 .payment .main .body {
   font-size: 47px;
-  font-family: Barlow Condensed;
+  font-family: 'Barlow Condensed';
   font-weight: 800;
   letter-spacing: 1.41px;
   color: #3B3A3A;
@@ -739,7 +748,7 @@ footer p {
 
 .payment .main .body span {
   font-size: 27px;
-  font-family: Barlow Condensed;
+  font-family: 'Barlow Condensed';
   font-weight: 800;
   letter-spacing: 1.41px;
   color: #3B3A3A;
@@ -997,6 +1006,57 @@ footer p {
   height: fit-content;
 }
 
+.selection .menu .circle{
+    background: #396765;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+
+}
+.selection .menu .text{
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+font-family: 'Roboto';
+letter-spacing: 0.42px;
+color: #F79A6B;
+}
 .selection .bottom-menu {
   padding: 2rem 10rem;
+}
+
+.img-pos{
+  position: absolute;
+}
+
+.circle-pos{
+  position: relative;
+  top: 0;
+  left: 6.3rem;
+}
+
+.circle-pos2{
+  position: relative;
+  top: 0;
+  left: 1.65rem;
+}
+
+.text-pos{
+  position: relative;
+  top: -24px;
+  left: 2.9rem;
+}
+
+.text-pos2{
+  position: relative;
+  top: -24px;
+  left: 0.75rem;
+}
+
+.menu .img1-box{
+  width: 25%;
+}
+
+.menu .img2-box{
+  width: 10%;
 }
