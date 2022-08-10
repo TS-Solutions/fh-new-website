@@ -105,7 +105,7 @@ body {
 }
 
 .img-background {
-  background-image: url('/img/img-back.png');
+  background-image: url('https://www.freshhouse.com.sa/public/fh-new/fh-new-website/img/img-back.png');
   background-repeat: no-repeat;
   background-position: center;
   height: 100vh;
