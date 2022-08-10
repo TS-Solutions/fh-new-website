@@ -47,12 +47,7 @@ body {
   border-bottom: 5px solid #549E87 !important;
 }
 
-.navbar .nav-link:active {
-  color: #F9F0DD !important;
-  border-bottom: 5px solid #549E87 !important;
-}
-
-.navbar .active {
+.navbar .nav-link:focus {
   color: #F9F0DD !important;
   border-bottom: 5px solid #549E87 !important;
 }
@@ -60,10 +55,6 @@ body {
 .navbar-nav {
   align-items: center;
 }
-
-/* .nav-link:active {
-    color: #F9F0DD !important;
-} */
 
 .overlap-group {
   align-items: flex-end;
@@ -206,6 +197,26 @@ input {
   opacity: 1;
   color: #F9F0DD;
 }
+
+.start-date .btn-date-days {
+  background: #F9F0DD 0% 0% no-repeat padding-box !important;
+  color: #549E87 !important;
+  font: 600 15px/20px 'Roboto' !important;
+  border: 1px solid #F9F0DD;
+  border-radius: 9px;
+  opacity: 1;
+  box-shadow: none !important;
+}
+
+.start-date .btn-date-days .disabled{
+  opacity: 0.5;
+} 
+
+.start-date .btn-date-days:disabled{
+  opacity: 0.5;
+} 
+
+
 
 .dropdown-header {
   font-style: italic;
@@ -573,6 +584,13 @@ input {
   letter-spacing: 0px;
   color: #255250;
   opacity: 1;
+}
+
+.text-green-p span{
+  text-align: left;
+font: italic normal normal 11px/15px 'Open Sans';
+letter-spacing: 0px;
+color: #F9F0DD;
 }
 
 .text-left {
