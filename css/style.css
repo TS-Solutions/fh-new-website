@@ -185,6 +185,13 @@ input {
   box-shadow: none;
 }
 
+.h-70{
+  max-height: 70%;
+}
+
+.start-date .bottom-bar{
+  margin-top: 5rem;
+}
 .start-date .btn-date {
   border: 1px solid #F9F0DD;
   border-radius: 9px;
@@ -412,12 +419,11 @@ input {
   border-radius: 19px;
   margin-bottom: 2rem;
   opacity: 1;
-  position: relative;
 }
 
 .meal-selection {
   margin-bottom: -7rem;
-  padding-top: 1.5rem;
+  align-items: flex-end;
 }
 
 .bottom-bar p {
@@ -495,6 +501,11 @@ input {
   font-size: 25px;
   letter-spacing: 0.75px;
   color: #F9F0DD;
+}
+
+.meal-type .double-box{
+  top: 3rem;
+  position: relative;
 }
 
 .bowl-img {
@@ -1077,4 +1088,13 @@ color: #F79A6B;
 
 .menu .img2-box{
   width: 10%;
+}
+
+
+.tab-pane .note-form .form-control{
+  max-width: 100% !important;
+}
+
+.tab-pane .note-form{
+  margin-top: 2rem !important;
 }
