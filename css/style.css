@@ -185,13 +185,14 @@ input {
   box-shadow: none;
 }
 
-.h-70{
+.h-70 {
   max-height: 70%;
 }
 
-.start-date .bottom-bar{
+.start-date .bottom-bar {
   margin-top: 5rem;
 }
+
 .start-date .btn-date {
   border: 1px solid #F9F0DD;
   border-radius: 9px;
@@ -215,13 +216,13 @@ input {
   box-shadow: none !important;
 }
 
-.start-date .btn-date-days .disabled{
+.start-date .btn-date-days .disabled {
   opacity: 0.5;
-} 
+}
 
-.start-date .btn-date-days:disabled{
+.start-date .btn-date-days:disabled {
   opacity: 0.5;
-} 
+}
 
 
 
@@ -229,6 +230,13 @@ input {
   font-style: italic;
   color: #396765 !important;
   font-weight: 400;
+}
+
+.deliver .bottom-bar {
+
+  position: absolute;
+  top: 40rem !important;
+  width: 75%;
 }
 
 .delivery .dropdown-menu {
@@ -297,7 +305,6 @@ input {
   background: #F9F0DD 0% 0% no-repeat padding-box !important;
   color: #549E87 !important;
 }
-
 
 #subscribe h1 {
   text-align: center;
@@ -428,7 +435,8 @@ input {
 
 .bottom-bar p {
   text-align: center;
-  font-weight: 500;
+  font-weight: 600;
+  font-family: 'Roboto';
   color: #396765;
   padding: 1rem 2rem;
   opacity: 1;
@@ -467,6 +475,18 @@ input {
   font-size: 12px;
 }
 
+.bottom-bar .vat-text {
+  position: absolute;
+  bottom: 10.4rem;
+  left: 63.5%;
+  text-align: left;
+  font-size: 9px !important;
+  font-weight: 600;
+  font-family: 'Roboto';
+  letter-spacing: 0.27px;
+  color: #396765;
+}
+
 .p-10 {
   padding: 10rem !important;
 }
@@ -503,7 +523,7 @@ input {
   color: #F9F0DD;
 }
 
-.meal-type .double-box{
+.meal-type .double-box {
   top: 3rem;
   position: relative;
 }
@@ -597,11 +617,11 @@ input {
   opacity: 1;
 }
 
-.text-green-p span{
+.text-green-p span {
   text-align: left;
-font: italic normal normal 11px/15px 'Open Sans';
-letter-spacing: 0px;
-color: #F9F0DD;
+  font: italic normal normal 11px/15px 'Open Sans';
+  letter-spacing: 0px;
+  color: #F9F0DD;
 }
 
 .text-left {
@@ -1035,66 +1055,68 @@ footer p {
   height: fit-content;
 }
 
-.selection .menu .circle{
-    background: #396765;
-    width: 26px;
-    height: 26px;
-    border-radius: 50%;
+.selection .menu .circle {
+  background: #396765;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
 
 }
-.selection .menu .text{
+
+.selection .menu .text {
   text-align: center;
   font-size: 14px;
   font-weight: 700;
-font-family: 'Roboto';
-letter-spacing: 0.42px;
-color: #F79A6B;
+  font-family: 'Roboto';
+  letter-spacing: 0.42px;
+  color: #F79A6B;
 }
+
 .selection .bottom-menu {
   padding: 2rem 10rem;
 }
 
-.img-pos{
+.img-pos {
   position: absolute;
 }
 
-.circle-pos{
+.circle-pos {
   position: relative;
   top: 0;
   left: 6.3rem;
 }
 
-.circle-pos2{
+.circle-pos2 {
   position: relative;
   top: 0;
   left: 1.65rem;
 }
 
-.text-pos{
+.text-pos {
   position: relative;
   top: -24px;
   left: 2.9rem;
 }
 
-.text-pos2{
+.text-pos2 {
   position: relative;
   top: -24px;
   left: 0.75rem;
 }
 
-.menu .img1-box{
+.menu .img1-box {
   width: 25%;
 }
 
-.menu .img2-box{
+.menu .img2-box {
   width: 10%;
 }
 
 
-.tab-pane .note-form .form-control{
+.tab-pane .note-form .form-control {
   max-width: 100% !important;
 }
 
-.tab-pane .note-form{
+.tab-pane .note-form {
   margin-top: 2rem !important;
 }
