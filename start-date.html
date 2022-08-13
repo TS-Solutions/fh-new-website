@@ -32,19 +32,19 @@
                             <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
                                 style="--bs-scroll-height: 100px;">
                                 <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="#">Home</a>
+                                    <a class="nav-link" href="#">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Subscription</a>
+                                    <a class="nav-link active" href="#">Subscription</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="#">Prices</a>
+                                    <a class="nav-link" href="#">Prices</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="#">Menu</a>
+                                    <a class="nav-link" href="#">Menu</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="#">Blog</a>
+                                    <a class="nav-link" href="#">Blog</a>
                                 </li>
                                 <li class="nav-item">
                                     <div class="overlap-group">
@@ -106,33 +106,77 @@
                                 <h4 class="mb-4">When Do You Wish To Start?</h4>
                                 <div class="row justify-content-center">
                                     <p class="text-green-p justify-content-start ml-2 text-left">Starting Date</p>
-                                    <div class="btn-toolbar justify-content-start">
-                                        <button type="button" class="btn btn-date m-2">Tommorrow</button>
-                                        <button type="button" class="btn btn-date m-2">May 2nd</button>
-                                        <button type="button" class="btn btn-date m-2">May 3rd</button>
-                                        <button type="button" class="btn btn-date m-2">Choose Date</button>
+                                    <div class="btn-toolbar justify-content-start" role="group" aria-label="Basic radio toggle button group>
+
+                                        <input type=" radio" class="btn-check" name="Tommorrow" id="butnradio1"
+                                        autocomplete="off" checked>
+                                        <label class="btn btn-date m-2" for="butnradio1">Tommorrow</label>
+
+                                        <input type="radio" class="btn-check" name="May 2nd" id="butnradio2"
+                                            autocomplete="off">
+                                        <label class="btn btn-date m-2" for="butnradio2">May 2nd</label>
+
+                                        <input type="radio" class="btn-check" name="May 3rd" id="butnradio3"
+                                            autocomplete="off">
+                                        <label class="btn btn-date m-2" for="butnradio3">May 3rd</label>
+
+                                        <input type="radio" class="btn-check" name="Choose Date" id="butnradio4"
+                                            autocomplete="off">
+                                        <label class="btn btn-date m-2" for="butnradio4">Choose Date</label>
+
                                     </div>
                                 </div>
                                 <div class="row justify-content-center pt-4">
                                     <p class="text-green-p justify-content-start ml-2 text-left">Duration of the Course
                                     </p>
-                                    <div class="btn-toolbar justify-content-start">
-                                        <button type="button" class="btn btn-date m-2">1 Week</button>
-                                        <button type="button" class="btn btn-date m-2">2 Weeks</button>
-                                        <button type="button" class="btn btn-date m-2">4 Weeks</button>
+
+                                    <div class="btn-toolbar justify-content-start" role="group"
+                                        aria-label="Basic radio toggle button group">
+                                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1"
+                                            autocomplete="off" checked>
+                                        <label class="btn btn-date m-2" for="btnradio1">1 Week</label>
+
+                                        <input type="radio" class="btn-check" name="btnradio" id="btnradio2"
+                                            autocomplete="off">
+                                        <label class="btn btn-date m-2" for="btnradio2">2 Weeks</label>
+
+                                        <input type="radio" class="btn-check" name="btnradio" id="btnradio3"
+                                            autocomplete="off">
+                                        <label class="btn btn-date m-2" for="btnradio3">4 Week</label>
                                     </div>
                                 </div>
-                                <div class="row justify-content-center pt-4">
-                                    <p class="text-green-p justify-content-start ml-2 text-left">Choose your days &nbsp; <span> You can skip up to 1 day only!</span></p>
-                                    <div class="btn-toolbar justify-content-start">
-                                        <button type="button" class="btn btn-date-days m-2">Sa</button>
-                                        <button type="button" class="btn btn-date-days m-2">Su</button>
-                                        <button type="button" class="btn btn-date-days m-2">Mo</button>
-                                        <button type="button" class="btn btn-date-days m-2">Tu</button>
-                                        <button type="button" class="btn btn-date-days m-2">We</button>
-                                        <button type="button" class="btn btn-date-days m-2">Th</button>
-                                        <button type="button" class="btn btn-date-days disabled m-2">Fr</button>
+                                <div class="row justify-content-center pt-4 days">
+                                    <p class="text-green-p justify-content-start ml-2 text-left">Choose your days &nbsp;
+                                        <span> You can skip up to 1 day only!</span>
+                                    </p>
+
+                                    <div class="btn-group justify-content-start" role="group"
+                                        aria-label="Basic checkbox toggle button group">
+
+                                        <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                                        <label class="btn btn-date-days m-2" for="btncheck1">Sa</label>
+
+                                        <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                                        <label class="btn btn-date-days m-2" for="btncheck2">Su</label>
+
+                                        <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                                        <label class="btn btn-date-days m-2" for="btncheck3">Mo</label>
+
+                                        <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
+                                        <label class="btn btn-date-days m-2" for="btncheck4">Tu</label>
+
+                                        <input type="checkbox" class="btn-check" id="btncheck5" autocomplete="off">
+                                        <label class="btn btn-date-days m-2" for="btncheck5">We</label>
+
+                                        <input type="checkbox" class="btn-check" id="btncheck6" autocomplete="off">
+                                        <label class="btn btn-date-days m-2" for="btncheck6">Th</label>
+
+                                        <input type="checkbox" class="btn-check" id="btncheck7" autocomplete="off"
+                                            disabled>
+                                        <label class="btn btn-date-days m-2" for="btncheck7">Fr</label>
+
                                     </div>
+
                                 </div>
                             </div>
                             <div class="row bottom-bar height-1 justify-content-between">
@@ -141,7 +185,7 @@
                                 </div>
                                 <div class="col-4">
                                     <p>Total Price: 2500.00 SAR <span class="vat-text">Including VAT</span></p>
-                                    
+
                                 </div>
                                 <div class="col-4 orange">
                                     <p>
@@ -153,7 +197,6 @@
                     </div>
                 </div>
             </section>
-
         </div>
     </div>
 
@@ -195,6 +238,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 
