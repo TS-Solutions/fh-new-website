@@ -615,16 +615,13 @@ input {
 }
 
 .meal-box {
-  border-radius: 9px;
-  opacity: 1;
-  height: 7.5rem;
   margin: 1.2rem 1rem;
   width: 9rem !important;
 }
 
 .meal-box img {
-  width: 2rem;
-  height: fit-content;
+  max-width: 3rem;
+  max-height: 3rem;
   position: relative;
   top: 2rem;
   left: 0;
@@ -1231,7 +1228,6 @@ footer p {
   border-radius: 9px;
   opacity: 1;
   height: 7.5rem;
-  margin: 1.2rem 1rem;
   width: 9rem !important;
 }
 
