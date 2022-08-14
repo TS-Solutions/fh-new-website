@@ -467,11 +467,14 @@ input {
   margin: 0;
 }
 
+
 .bottom-bar .orange {
   border-radius: 0 19px 19px 0;
 }
 
-
+.bottom-bar .special p{
+  padding: 1rem 2rem 0 !important;  
+}
 
 .continue-btn {
   color: white;
@@ -499,9 +502,9 @@ input {
 }
 
 .bottom-bar .vat-text {
-  position: absolute;
-  bottom: 10.4rem;
-  left: 63.5%;
+  position: relative;
+  bottom: 0.2rem;
+  left: 25%;
   text-align: left;
   font-size: 9px !important;
   font-weight: 600;
