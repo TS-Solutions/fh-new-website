@@ -204,28 +204,28 @@ input {
   color: #F9F0DD;
 }
 
-.btn-check:checked+.btn-date{
+.btn-check:checked+.btn-date {
   background-color: #F9F0DD !important;
   color: #549E87 !important;
   opacity: 1;
 }
 
-#subscribe .start-date .btn-date-days{
+#subscribe .start-date .btn-date-days {
   border: 1px solid #F9F0DD !important;
-  color: #F9F0DD ; 
+  color: #F9F0DD;
   border-radius: 9px;
   font: 600 15px/20px 'Roboto' !important;
   opacity: 1;
   box-shadow: none;
 }
 
-#subscribe .start-date .btn-date-days:hover{
+#subscribe .start-date .btn-date-days:hover {
   background-color: #F9F0DD !important;
   color: #549E87 !important;
   opacity: 1;
 }
 
-.btn-check:checked+.btn-date-days{
+.btn-check:checked+.btn-date-days {
   background-color: #F9F0DD !important;
   color: #549E87 !important;
   opacity: 1;
@@ -350,9 +350,14 @@ input {
   color: #F3D59F !important;
 }
 
-.meal-type img {
+.meal2 .meal-type img {
   width: 15rem;
+  position: relative;
   height: fit-content;
+}
+
+.meal-type .select-img {
+  position: inherit;
 }
 
 .green-box {
@@ -441,6 +446,11 @@ input {
   opacity: 1;
 }
 
+#subscribe .meal2 .bottom-bar {
+  position: relative;
+  top: 25% !important;
+}
+
 .meal-selection {
   margin-bottom: -7rem;
   align-items: flex-end;
@@ -513,8 +523,6 @@ input {
 }
 
 .meal-type .box {
-  background: var(--unnamed-color-f9f0dd) 0% 0% no-repeat padding-box;
-  border: 1px solid var(--unnamed-color-f9f0dd);
   background: #F9F0DD 0% 0% no-repeat padding-box;
   border: 1px solid #F9F0DD;
   border-radius: 11px;
@@ -523,7 +531,7 @@ input {
   height: 59px !important;
   position: relative;
   padding-top: 2rem;
-  top: -13rem;
+  top: 4rem;
   z-index: 1;
   margin: 0 auto;
 }
@@ -534,6 +542,8 @@ input {
   font-size: 25px;
   letter-spacing: 0.75px;
   color: #F9F0DD;
+  position: relative;
+  top: 0rem;
 }
 
 .meal-type .double-box {
@@ -544,6 +554,7 @@ input {
 .bowl-img {
   z-index: 3;
   position: relative;
+  top: -7rem;
 }
 
 .bowl-box {
@@ -553,14 +564,25 @@ input {
   left: 0;
   width: 262px;
   height: 235px;
-   border-radius: 27px;
+  border-radius: 27px;
   opacity: 1;
 }
 
+#bowlb {
+  background: #396765 0% 0% no-repeat padding-box;
+  cursor: pointer !important;
+}
 
 #bowla {
   background: #396765 0% 0% no-repeat padding-box;
   cursor: pointer !important;
+  height: 235px;
+  top: 5rem;
+  position: relative;
+  width: 263px;
+  border-radius: 35px;
+  margin-top: 0rem;
+  z-index: 2;
 }
 
 #bowla:hover,
@@ -994,18 +1016,44 @@ footer p {
 .selection .toggle .plusminus {
   height: 100%;
   width: 50%;
-  background: transparent;
   border: none;
+  background: transparent;
   font-weight: 600;
   font-size: 35px;
   color: #fff;
 }
 
-.selection .toggle .plusminus:hover {
-  
+.selection .toggle .plusminus:hover,
+.selection .toggle .plusminus:focus {
   background: #ff7700;
   color: #fff;
+  border-radius: inherit !important;
 }
+
+.selection .toggle .wrapper .btn-check:checked+.plusminus {
+  background: #ff7700;
+  color: #fff;
+  border-radius: inherit !important
+}
+
+.selection .toggle .wrapper .btn-check:checked+.minus {
+  border-radius: 45px 0 0 45px !important;
+}
+
+.selection .toggle .wrapper .btn-check:checked+.plus {
+  border-radius: 0 45px 45px 0 !important;
+}
+
+.selection .toggle .wrapper .minus:hover,
+.selection .toggle .wrapper .minus:focus {
+  border-radius: 45px 0 0 45px !important;
+}
+
+.selection .toggle .wrapper .plus:hover,
+.selection .toggle .wrapper .plus:focus {
+  border-radius: 0 45px 45px 0 !important;
+}
+
 
 .selection .toggle .num {
   height: 100%;
@@ -1030,7 +1078,6 @@ footer p {
   letter-spacing: 0.54px;
   color: #396765;
 }
-
 
 .menu .toggle2 hr {
   border-color: white;
@@ -1061,6 +1108,37 @@ footer p {
   border: none;
   font-size: 25px;
 }
+.menu .toggle2 .plusminus:hover,
+.menu .toggle2 .plusminus:focus {
+  background: #ff7700;
+  color: #fff;
+  border-radius: inherit !important;
+}
+
+.menu .toggle2 .wrapper2 .btn-check:checked+.plusminus {
+  background: #ff7700;
+  color: #fff;
+  border-radius: inherit !important
+}
+
+.menu .toggle2 .wrapper2 .btn-check:checked+.minus {
+  border-radius: 45px 0 0 45px !important;
+}
+
+.menu .toggle2 .wrapper2 .btn-check:checked+.plus {
+  border-radius: 0 45px 45px 0 !important;
+}
+
+.menu .toggle2 .wrapper2 .minus:hover,
+.menu .toggle2 .wrapper2 .minus:focus {
+  border-radius: 45px 0 0 45px !important;
+}
+
+.menu .toggle2 .wrapper2 .plus:hover,
+.menu .toggle2 .wrapper2 .plus:focus {
+  border-radius: 0 45px 45px 0 !important;
+}
+
 
 .selection .menu .img1 {
   width: 8.875rem;
@@ -1077,9 +1155,17 @@ footer p {
   width: 26px;
   height: 26px;
   border-radius: 50%;
-
 }
-
+.minus:active {
+  background-color: #ff7700;
+  box-shadow: 0 5px rgba(128, 128, 128, 0.452);
+  transform: translateY(2px);
+}
+.plus:active {
+  background-color: #ff7700;
+  box-shadow: 0 5px rgba(128, 128, 128, 0.452);
+  transform: translateY(2px);
+}
 .selection .menu .text {
   text-align: center;
   font-size: 14px;
@@ -1136,4 +1222,36 @@ footer p {
 
 .tab-pane .note-form {
   margin-top: 2rem !important;
+}
+
+
+.whatever {
+  background: #F9F0DD 0% 0% no-repeat padding-box;
+  cursor: pointer !important;
+  border-radius: 9px;
+  opacity: 1;
+  height: 7.5rem;
+  margin: 1.2rem 1rem;
+  width: 9rem !important;
+}
+
+#mealbox2 input[type=checkbox] {
+  display: none;
+}
+
+#mealbox2 input[type=checkbox]:checked+.whatever {
+  background: #EC6F76 0% 0% no-repeat padding-box !important;
+}
+
+#mealbox2 input[type=checkbox]:checked+.whatever .box-text {
+  color: #F9F0DD !important;
+}
+
+#mealbox2 input[type=checkbox]:checked+.whatever .img-box {
+  fill: #F9F0DD !important;
+}
+
+#mealbox:hover svg,
+#mealbox:focus svg {
+  fill: #F9F0DD !important;
 }
