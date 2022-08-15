@@ -148,7 +148,7 @@ body {
 }
 
 input {
-  color: #FFE294 !important;
+  color: #FFE294;
 }
 
 .btn {
@@ -328,16 +328,19 @@ input {
 }
 
 #subscribe .staff .btn-text {
-  color: var(--unnamed-color-f9f0dd);
   background: #b9a99b00 0% 0% no-repeat padding-box !important;
   text-align: left;
   font: normal normal 800 60px/48px 'Barlow Condensed' !important;
   border: #ffffff00;
   letter-spacing: 1.8px;
   color: #F9F0DD;
-  padding: .5rem .5rem !important;
+  padding: 0 0 .5rem 0.5rem !important;
   opacity: 1;
   border-bottom: 5px solid transparent !important;
+}
+#subscribe .staff .btn-check:checked+ .btn-text{
+  color: #F3D59F;
+  box-shadow: none;
 }
 
 #subscribe .staff .btn-text:hover,
@@ -346,7 +349,7 @@ input {
   border-bottom: 5px solid #F3D59F !important;
 }
 
-.body-content span {
+.highlight-selection{
   color: #F3D59F !important;
 }
 
@@ -978,12 +981,16 @@ footer p {
   color: #F9F0DD;
 }
 
-.selection span {
+.selection .meal-type .input-type {
   text-align: center;
   font-size: 23px;
+  background: transparent;
   font-weight: 900;
+  box-shadow: none;
+  border: none;
   letter-spacing: 0.69px;
   color: #F79A6B;
+  padding: 0;
 }
 
 .selection .meal-type p {
@@ -1173,6 +1180,10 @@ footer p {
   font-family: 'Roboto';
   letter-spacing: 0.42px;
   color: #F79A6B;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  padding: 0;
 }
 
 .selection .bottom-menu {
