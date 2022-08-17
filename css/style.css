@@ -56,6 +56,9 @@ body {
   align-items: center;
 }
 
+.text-left{
+  text-align: left !important;
+}
 .overlap-group {
   align-items: flex-end;
   background-image: url(../img/christian-buehner-ditylc26zvi-unsplash@1x.png);
@@ -204,7 +207,7 @@ input {
   color: #F9F0DD;
 }
 
-.btn-check:checked+.btn-date {
+#subscribe .btn-check:checked + .btn-date {
   background-color: #F9F0DD !important;
   color: #549E87 !important;
   opacity: 1;
@@ -225,7 +228,7 @@ input {
   opacity: 1;
 }
 
-.btn-check:checked+.btn-date-days {
+#subscribe .start-date .btn-check:checked + .btn-date-days {
   background-color: #F9F0DD !important;
   color: #549E87 !important;
   opacity: 1;
@@ -451,7 +454,7 @@ input {
 
 #subscribe .meal2 .bottom-bar {
   position: relative;
-  top: 25% !important;
+  top: 8rem !important;
 }
 
 .meal-selection {
@@ -537,7 +540,7 @@ input {
   height: 59px !important;
   position: relative;
   padding-top: 2rem;
-  top: 4rem;
+  top: 5rem;
   z-index: 1;
   margin: 0 auto;
 }
@@ -583,7 +586,7 @@ input {
   background: #396765 0% 0% no-repeat padding-box;
   cursor: pointer !important;
   height: 235px;
-  top: 5rem;
+  top: 6rem;
   position: relative;
   width: 263px;
   border-radius: 35px;
