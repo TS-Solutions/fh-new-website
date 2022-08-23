@@ -19,56 +19,75 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row">
 
-            <nav class="navbar navbar-expand-lg p-4">
-                <div class="container-fluid">
-                    <div class="collapse nav-fh navbar-collapse" id="navbarScroll">
-                        <a class="navbar-brand" href="#">
-                            <img src="./img/logo-fh.png" alt="" class="logo-img">
-                        </a>
-                        <div class="d-flex">
-                            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
-                                style="--bs-scroll-height: 100px;">
-                                <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="#">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="#">Subscription</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="#">Prices</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="#">Menu</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="#">Blog</a>
-                                </li>
-                                <li class="nav-item">
-                                    <div class="overlap-group">
-                                        <div class="fh-avatar roboto-medium-gunsmoke-18px">FH</div>
-                                    </div>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-icon" aria-current="page" href="#">
-                                        <img src="./icons/menu.svg" alt="" class="menu-icon">
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-icon" aria-current="page" href="#">
-                                        <img src="./icons/ain.svg" alt="" class="ain-icon">
-                                    </a>
-                                </li>
-                            </ul>
+
+    <!-- -------------------------    Main index page start   ------------------------- -->
+
+    <section id="subscribe" class="ftco-section">
+        <div class="container-fluid">
+            <div class="row">
+
+                <nav class="navbar navbar-expand-lg p-4">
+                    <div class="container-fluid">
+                        <div class="collapse nav-fh navbar-collapse" id="navbarScroll">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="./img/logo-fh.png" alt="" class="logo-img">
+                            </a>
+                            <div class="d-flex">
+                                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+                                    style="--bs-scroll-height: 100px;">
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="#">Subscription</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="#">Prices</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="#">Menu</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="#">Blog</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="login.html">Login</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="register.html">Register</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <div class="overlap-group">
+                                            <div class="fh-avatar roboto-medium-gunsmoke-18px">FH</div>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-icon" aria-current="page" href="#">
+                                            <img src="./icons/menu.svg" alt="" class="menu-icon">
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-icon" aria-current="page" href="#">
+                                            <div class="green-box2">
+                                                <p class="ain-icon pb-1">ع</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-icon" aria-current="page" href="#">
+                                            <div class="green-box2 active">
+                                                <p class="ain-icon">EN</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </nav>
+                </nav>
 
-            <section id="subscribe" class="ftco-section">
-                <div class="container">
+                <div id="Div1" class="container section">
                     <div class="row justify-content-center">
                         <div class="col-md-7 text-center heading-section stranger mb-4">
                             <h1>DON'T BE<br> A STRANGER</h1>
@@ -84,17 +103,1109 @@
                                                 placeholder="Tell us your name" required>
                                         </div>
                                     </form>
-                                    <a href="index2.html" type="button" class="btn btn-next btn-lg">Continue</a>
+                                    <input id="Button1" type="button" class="btn btn-next btn-lg" value="Continue"
+                                        onclick="switchVisible();" />
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
 
+                <section>
+                    <div id="Div2" class="container section">
+                        <div class="row justify-content-center">
+                            <div class="col-md-7 text-center heading-section stranger">
+                                <h1>HELLO ALI,</h1>
+                            </div>
+                            <div class="col-md-7 text-left heading-section stranger mb-4">
+                                <h4>Little Bit More Information To Serve You Better</h4>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-10 col-lg-3 d-flex mb-sm-4 justify-content-center ftco-animate">
+                                    <div class="body-content">
+                                        <div class="body-main staff text-left" role="group"
+                                            aria-label="Basic radio toggle button group">
+                                            <form action="" method="post">
+                                                <h2>I'M A
+                                                    <input type="radio" class="btn-check" name="btnradio1"
+                                                        id="btnradio1" autocomplete="off" checked>
+                                                    <label class="btn btn-text m-2" for="btnradio1">HANDSOME MAN</label>
+                                                    /
+                                                    <input type="radio" class="btn-check" name="btnradio1"
+                                                        id="btnradio2" autocomplete="off">
+                                                    <label class="btn btn-text m-2" for="btnradio2">PRETTY LADY</label>,
+
+                                                    BORN IN <fieldset class="field-inline-block">
+                                                        <div class="field-inline-block">
+                                                            <input placeholder="DD"
+                                                                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                                                                type="number" pattern="[0-9]*" maxlength="2" size="2"
+                                                                class="date-field" />
+                                                        </div>
+                                                        <div class="field-inline-block">
+                                                            <input placeholder="MM"
+                                                                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                                                                type="number" pattern="[0-9]*" maxlength="2" size="2"
+                                                                class="date-field" />
+                                                        </div>
+                                                        <div class="field-inline-block">
+                                                            <input placeholder="YYYY"
+                                                                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                                                                type="number" pattern="[0-9]*" maxlength="4" size="4"
+                                                                class="date-field-year" />
+                                                        </div>
+                                                    </fieldset>
+                                                </h2>
+
+                                                <div class="row">
+                                                    <div class="col-lg-12 text-left heading-section stranger">
+                                                        <h2 class="field-inline-block">MY WEIGHT IS <fieldset
+                                                                class="field-inline-block">
+                                                                <div class="field-inline-block">
+                                                                    <input placeholder="00"
+                                                                        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                                                                        type="number" pattern="[0-9]*" maxlength="2"
+                                                                        size="2" class="date-field" />
+                                                                </div> KG, AND HEIGHT IS
+                                                                <div class="field-inline-block">
+                                                                    <input placeholder="000"
+                                                                        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                                                                        type="number" pattern="[0-9]*" maxlength="3"
+                                                                        size="3" class="weight-field" />
+                                                                </div> CM
+                                                            </fieldset>
+                                                        </h2>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-12 text-center heading-section stranger">
+                                                        <h2>I LOVE TO
+                                                            <input type="radio" class="btn-check" name="btngrp1"
+                                                                id="btnradio4" autocomplete="off" checked>
+                                                            <label class="btn btn-text m-2" for="btnradio4">MAINTAIN MY
+                                                                WEIGHT</label>,
+                                                            <input type="radio" class="btn-check" name="btngrp1"
+                                                                id="btnradio5" autocomplete="off">
+                                                            <label class="btn btn-text m-2" for="btnradio5">LOSE
+                                                                WEIGHT</label>,
+                                                            <input type="radio" class="btn-check" name="btngrp1"
+                                                                id="btnradio6" autocomplete="off">
+                                                            <label class="btn btn-text m-2" for="btnradio6">GAIN
+                                                                MUSCLES</label>
+                                                        </h2>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-12 text-center heading-section stranger">
+                                                        <h2>I EXERCISE
+                                                            <input type="radio" class="btn-check" name="btngrp2"
+                                                                id="btnradio7" autocomplete="off" checked>
+                                                            <label class="btn btn-text m-2" for="btnradio7">0-1</label>,
+                                                            <input type="radio" class="btn-check" name="btngrp2"
+                                                                id="btnradio8" autocomplete="off">
+                                                            <label class="btn btn-text m-2" for="btnradio8">1-2</label>,
+                                                            <input type="radio" class="btn-check" name="btngrp2"
+                                                                id="btnradio9" autocomplete="off">
+                                                            <label class="btn btn-text m-2" for="btnradio9">2+ </label>A
+                                                            WEEK.
+                                                        </h2>
+                                                    </div>
+                                                </div>
+                                                <div class="row justify-content-center btn-or pt-4 pb-4">
+                                                    <input id="Button1" type="button" class="btn btn-next btn-lg"
+                                                        value="Continue" onclick="switchVisible1();" />
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="subscribe" class="">
+                    <div id="Div3" class="container section">
+                        <div class="row justify-content-center">
+                            <div class="col-md-4 heading-section meal">
+                                <div class="row justify-content-start">
+                                    <ol>
+                                        <div>
+                                            <li><a href="#">
+                                                    <h3>MEAL TYPE</h3>
+                                                </a></li>
+                                        </div>
+                                        <div class="disabled">
+                                            <li><a href="#">
+                                                    <h3>SELECT MEALS</h3>
+                                                </a></li>
+                                        </div>
+                                        <div class="disabled">
+                                            <li><a href="#">
+                                                    <h3>STARTING DATE</h3>
+                                                </a></li>
+                                        </div>
+                                        <div class="disabled">
+                                            <li><a href="#">
+                                                    <h3>DELIVERY OPTIONS</h3>
+                                                </a></li>
+                                        </div>
+                                        <div class="disabled">
+                                            <li><a href="#">
+                                                    <h3>PAYMENT</h3>
+                                                </a></li>
+                                        </div>
+                                    </ol>
+                                </div>
+                                <div class="row green-box">
+                                    <div class="text-box">
+                                        <h5>Your Daily Need:</h5>
+                                        <p>Calories:<span> 1800 Cal</span></p>
+                                        <p>Protein:<span> 95 g</span></p>
+                                        <p>Carb:<span> 95 g</span></p>
+                                        <p class="m-0">Fat:<span> 27 g</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8 text-center meal2 heading-section stranger mb-4">
+                                <form action="" method="post">
+                                    <div class="btn-toolbar row justify-content-center h-70" role="group" aria-label="Basic radio toggle button group">
+                                        <h4 class="pb-4">Choose Your Meal Type</h4>
+
+                                        <div class="col-md-4 text-center meal-type">
+                                            <input class="div-box" type="radio" name="divboxradio" id="divradio1" checked>
+                                            <label class="label-box" id="bowla" for="divradio1">
+                                                <div class="bowl-img">
+                                                    <img src="./img/bowl-a.png" alt="">
+                                                    <h4 class="heading pt-4">Keto</h4>
+                                                </div>
+                                            </label>
+                                            <div class="box">
+                                                <a href="#">View Menu</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4 text-center meal-type">
+                                            <input class="div-box" type="radio" name="divboxradio" id="divradio2">
+                                            <label class="label-box" id="bowla" for="divradio2">
+                                                <div class="bowl-img">
+                                                    <img src="./img/bowl-b.png" alt="">
+                                                    <h4 class="heading pt-4">Non-Veg</h4>
+                                                </div>
+                                            </label>
+                                            <div class="box">
+                                                <a href="#">View Menu</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4 text-center meal-type">
+                                            <input class="div-box" type="radio" name="divboxradio" id="divradio3">
+                                            <label class="label-box" id="bowla" for="divradio3">
+                                                <div class="bowl-img">
+                                                    <img src="./img/bowl-c.png" alt="">
+                                                    <h4 class="heading pt-4">Veg</h4>
+                                                </div>
+                                            </label>
+                                            <div class="box">
+                                                <a type="button" href="#">View Menu</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="row bottom-bar height-3 justify-content-between">
+                                        <div class="col-4">
+                                            <p>Meal Type: Keto</p>
+                                        </div>
+                                        <div class="col-4">
+                                            <p>Starting From: 550 SAR</p>
+                                        </div>
+                                        <div id="orange-button" class="col-4 orange">
+                                            <p>
+                                                <input id="Button1" type="button" class="continue-btn" value="Continue"
+                                                    onclick="switchVisible2();" />
+                                            </p>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section id="subscribe" class="">
+                    <div id="Div4" class="container section">
+                        <div class="row justify-content-center">
+                            <div class="col-md-4 heading-section meal">
+                                <div class="row justify-content-start">
+                                    <ol>
+                                        <div class="completed">
+                                            <li><a href="#">
+                                                    <h3>MEAL TYPE</h3>
+                                                </a></li>
+                                        </div>
+                                        <div class="">
+                                            <li><a href="#">
+                                                    <h3>SELECT MEALS</h3>
+                                                </a></li>
+                                        </div>
+                                        <div class="disabled">
+                                            <li><a href="#">
+                                                    <h3>STARTING DATE</h3>
+                                                </a></li>
+                                        </div>
+                                        <div class="disabled">
+                                            <li><a href="#">
+                                                    <h3>DELIVERY OPTIONS</h3>
+                                                </a></li>
+                                        </div>
+                                        <div class="disabled">
+                                            <li><a href="#">
+                                                    <h3>PAYMENT</h3>
+                                                </a></li>
+                                        </div>
+                                    </ol>
+                                </div>
+                                <div class="row green-box">
+                                    <div class="text-box">
+                                        <h5>Your Daily Intake:</h5>
+                                        <p>Calories:<span> 1650 / 1800 Cal</span></p>
+                                        <p>Protein:<span> 65 / 95 g</span></p>
+                                        <p>Carb:<span> 96 /95 g</span></p>
+                                        <p class="m-0">Fat:<span> 32 27 g</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8 text-center heading-section selection stranger mb-4">
+                                <form action="">
+                                    <div class="row justify-content-center">
+                                        <h4>Select Your Meals</h4>
+                                        <div class="row justify-content-center meal-selection">
+                                            <div class="col-md-4 text-center meal-type">
+                                                <img src="./img/breakfastbox.png" alt="">
+                                                <h4 class="heading">Breakfast</h4>
+                                                <input type="text" name="quant[1]"
+                                                    class="form-control input-type input-number" value="1" min="1"
+                                                    max="10">
+                                                <p>Meal</p>
+                                                <div tabindex="1" id="bowlb" class="bowl-box">
+                                                </div>
+
+                                                <div class="toggle justify-content-start" role="group"
+                                                    aria-label="Basic radio toggle button group">
+                                                    <div class="wrapper">
+
+                                                        <input type="button" class="btn-check btn-working" name="dbtnradio1"
+                                                            id="dbtnradio1" autocomplete="off" data-type="minus"
+                                                            data-field="quant[1]" checked>
+                                                        <label class="plusminus minus" for="dbtnradio1">-</label>
+                                                        <hr>
+                                                        <input type="button" class="btn-check btn-working" name="dbtnradio1"
+                                                            id="dbtnradio2" autocomplete="off" data-type="plus"
+                                                            data-field="quant[1]">
+                                                        <label class="plusminus plus" for="dbtnradio2">+</label>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-md-4 text-center meal-type">
+                                                <div>
+                                                    <div class="select-img">
+                                                        <img class="double-box" src="./img/lunchbox.png" alt="">
+                                                    </div>
+                                                    <img src="./img/lunchbox.png" alt="">
+                                                </div>
+                                                <h4 class="heading">Lunch</h4>
+                                                <input type="text" name="quant[2]"
+                                                    class="form-control input-type input-number" value="1" min="1"
+                                                    max="10">
+                                                <p>Meals</p>
+                                                <div tabindex="1" id="bowlb" class="bowl-box">
+                                                </div>
+
+                                                <div class="toggle justify-content-start" role="group"
+                                                    aria-label="Basic radio toggle button group">
+                                                    <div class="wrapper">
+
+                                                        <input type="button" class="btn-check btn-working" name="dbtnradio2"
+                                                            id="dbtnradio3" autocomplete="off" data-type="minus"
+                                                            data-field="quant[2]" checked>
+                                                        <label class="plusminus minus" for="dbtnradio3">-</label>
+                                                        <hr>
+                                                        <input type="button" class="btn-check btn-working" name="dbtnradio2"
+                                                            id="dbtnradio4" autocomplete="off" data-type="plus"
+                                                            data-field="quant[2]">
+                                                        <label class="plusminus plus" for="dbtnradio4">+</label>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 text-center meal-type">
+                                                <img src="./img/dinnerbox.png" alt="">
+                                                <h4 class="heading">Dinner</h4>
+                                                <input type="text" name="quant[3]"
+                                                    class="form-control input-type input-number" value="1" min="1"
+                                                    max="10">
+                                                <p>Meals</p>
+                                                <div tabindex="1" id="bowlb" class="bowl-box">
+                                                </div>
+
+                                                <div class="toggle justify-content-start" role="group"
+                                                    aria-label="Basic radio toggle button group">
+                                                    <div class="wrapper">
+
+                                                        <input type="button" class="btn-check btn-working" name="dbtnradio3"
+                                                            id="dbtnradio5" autocomplete="off" data-type="minus"
+                                                            data-field="quant[3]" checked>
+                                                        <label class="plusminus minus" for="dbtnradio5">-</label>
+                                                        <hr>
+                                                        <input type="button" class="btn-check btn-working" name="dbtnradio3"
+                                                            id="dbtnradio6" autocomplete="off" data-type="plus"
+                                                            data-field="quant[3]">
+                                                        <label class="plusminus plus" for="dbtnradio6">+</label>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center menu">
+                                        <div class="d-flex align-items-center bottom-menu justify-content-between">
+                                            <div class="toggle2">
+                                                <div class="wrapper2">
+                                                    <input type="button" class="btn-check btn-working" name="dbtnradiob3"
+                                                        id="dbtnradio12" autocomplete="off" data-type="minus"
+                                                        data-field="quant[4]" checked>
+                                                    <label class="plusminus minus" for="dbtnradio12">-</label>
+                                                    <hr>
+                                                    <input type="button" class="btn-check btn-working" name="dbtnradiob3"
+                                                        id="dbtnradio13" autocomplete="off" data-type="plus"
+                                                        data-field="quant[4]">
+                                                    <label class="plusminus plus" for="dbtnradio13">+</label>
+                                                </div>
+                                            </div>
+                                            <div class="img1-box">
+                                                <div class="img-pos">
+                                                    <img class="img1" src="./img/salad.png" alt="">
+                                                </div>
+                                                <div class="circle-pos">
+                                                    <div class="circle"></div>
+                                                </div>
+                                                <div class="text-pos">
+                                                    <input type="text" name="quant[4]"
+                                                        class="form-control text input-number" value="1" min="1"
+                                                        max="10">
+                                                </div>
+                                            </div>
+                                            <div class="img2-box">
+                                                <div class="img-pos">
+                                                    <img class="img2" src="./img/snack.png" alt="">
+                                                </div>
+                                                <div class="circle-pos2">
+                                                    <div class="circle"></div>
+                                                </div>
+                                                <div class="text-pos2">
+                                                    <input type="text" name="quant[5]"
+                                                        class="form-control text input-number" value="1" min="1"
+                                                        max="10">
+                                                </div>
+                                            </div>
+                                            <div class="toggle2">
+                                                <div class="wrapper2">
+                                                    <input type="button" class="btn-check btn-working" name="cbtnradioa3"
+                                                        id="cbtnradio15" autocomplete="off" data-type="minus"
+                                                        data-field="quant[5]" checked>
+                                                    <label class="plusminus minus" for="cbtnradio15">-</label>
+                                                    <hr>
+                                                    <input type="button" class="btn-check btn-working" name="cbtnradioa3"
+                                                        id="cbtnradio16" autocomplete="off" data-type="plus"
+                                                        data-field="quant[5]">
+                                                    <label class="plusminus plus" for="cbtnradio16">+</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bottom-text">
+                                            <span>Including</span>
+                                            <p>Salad + Snack</p>
+                                        </div>
+                                    </div>
+                                    <div class="row bottom-bar justify-content-between">
+                                        <div class="col-4">
+                                            <p>Meal Type: Keto</p>
+                                        </div>
+                                        <div class="col-4">
+                                            <p>Starting From: 550 SAR</p>
+                                        </div>
+                                        <div id="orange-button" class="col-4 orange">
+                                            <p>
+                                                <input id="Button1" type="button" class="continue-btn" value="Continue"
+                                                    onclick="switchVisible3();" />
+                                            </p>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+                <section id="subscribe" class="">
+                    <div id="Div5" class="container section">
+                        <div class="row justify-content-center">
+                            <div class="col-md-4 heading-section meal">
+                                <div class="row justify-content-start">
+                                    <ol>
+                                        <div class="completed">
+                                            <li><a href="#">
+                                                    <h3>MEAL TYPE</h3>
+                                                </a></li>
+                                        </div>
+                                        <div class="">
+                                            <li><a href="#">
+                                                    <h3>SELECT MEALS</h3>
+                                                </a></li>
+                                        </div>
+                                        <div class="disabled">
+                                            <li><a href="#">
+                                                    <h3>STARTING DATE</h3>
+                                                </a></li>
+                                        </div>
+                                        <div class="disabled">
+                                            <li><a href="#">
+                                                    <h3>DELIVERY OPTIONS</h3>
+                                                </a></li>
+                                        </div>
+                                        <div class="disabled">
+                                            <li><a href="#">
+                                                    <h3>PAYMENT</h3>
+                                                </a></li>
+                                        </div>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="col-md-8 text-center heading-section stranger mb-4">
+                                <form action="" method="post">
+                                    <div class="row justify-content-center">
+                                        <h4 class="mb-4">We Want To Serve You Better</h4>
+                                        <p class="text-green-p pb-4">Remove the food you dislike?</p>
+                                        <div class="row justify-content-center">
+
+
+                                            <div tabindex="1" id="mealbox2" class="col-md-4 text-center meal-box">
+                                                <input type="checkbox" name="rGroup" value="2" id="r1" />
+                                                <label class="whatever" for="r1">
+                                                    <div class="img-box">
+                                                        <img src="./icons/eggs.svg" alt="">
+                                                    </div>
+                                                    <div class="box-text">
+                                                        <p>Eggs</p>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                            <div tabindex="1" id="mealbox2" class="col-md-4 text-center meal-box">
+                                                <input type="checkbox" name="rGroup" value="2" id="r2" />
+                                                <label class="whatever" for="r2">
+                                                    <div class="img-box">
+                                                        <img src="./icons/fish.svg" alt="">
+                                                    </div>
+                                                    <div class="box-text">
+                                                        <p>Fish</p>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                            <div tabindex="1" id="mealbox2" class="col-md-4 text-center meal-box">
+                                                <input type="checkbox" name="rGroup" value="2" id="r3" />
+                                                <label class="whatever" for="r3">
+                                                    <div class="img-box">
+                                                        <img src="./icons/shrimp.svg" alt="">
+                                                    </div>
+                                                    <div class="box-text">
+                                                        <p>Shrimps</p>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="row justify-content-center">
+                                            <div tabindex="1" id="mealbox2" class="col-md-4 text-center meal-box">
+                                                <input type="checkbox" name="rGroup" value="2" id="r4" />
+                                                <label class="whatever" for="r4">
+                                                    <div class="img-box">
+                                                        <img src="./icons/meat.svg" alt="">
+                                                    </div>
+                                                    <div class="box-text">
+                                                        <p>Red Meat</p>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                            <div tabindex="1" id="mealbox2" class="col-md-4 text-center meal-box">
+                                                <input type="checkbox" name="rGroup" value="2" id="r5" />
+                                                <label class="whatever" for="r5">
+                                                    <div class="img-box">
+                                                        <img src="./icons/chicken.svg" alt="">
+                                                    </div>
+                                                    <div class="box-text">
+                                                        <p>Chicken</p>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                            <div tabindex="1" id="mealbox2" class="col-md-4 text-center meal-box">
+                                                <input type="checkbox" name="rGroup" value="2" id="r6" />
+                                                <label class="whatever" for="r6">
+                                                    <div class="img-box">
+                                                        <img src="./icons/nuts.svg" alt="">
+                                                    </div>
+                                                    <div class="box-text">
+                                                        <p>Nuts</p>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="note-form">
+                                            <p class="col-4 text-green-p pb-2">Add additional notes</p>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" id="input-text"
+                                                    placeholder="Note if any allergies">
+                                            </div>
+                                            <p class="text-subtitle">We will do our level best to fulfill these
+                                                requirements!
+                                                However, it is not compulsory.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row bottom-bar justify-content-between">
+                                        <div class="col-4">
+                                            <p>Meal Type: Non-Veg</p>
+                                        </div>
+                                        <div class="col-4">
+                                            <p>Starting From: 550 SAR</p>
+                                        </div>
+
+                                        <div id="orange-button" class="col-4 orange">
+                                            <p>
+                                                <input id="Button1" type="button" class="continue-btn" value="Continue"
+                                                    onclick="switchVisible4();" />
+                                            </p>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section id="subscribe" class="">
+                    <div id="Div6" class="container section">
+                        <div class="row justify-content-center">
+                            <div class="col-md-4 heading-section meal">
+                                <div class="row justify-content-start">
+                                    <ol>
+                                        <div class="completed">
+                                            <li><a href="#">
+                                                    <h3>MEAL TYPE</h3>
+                                                </a></li>
+                                        </div>
+                                        <div class="completed">
+                                            <li><a href="#">
+                                                    <h3>SELECT MEALS</h3>
+                                                </a></li>
+                                        </div>
+                                        <div class="">
+                                            <li><a href="#">
+                                                    <h3>STARTING DATE</h3>
+                                                </a></li>
+                                        </div>
+                                        <div class="disabled">
+                                            <li><a href="#">
+                                                    <h3>DELIVERY OPTIONS</h3>
+                                                </a></li>
+                                        </div>
+                                        <div class="disabled">
+                                            <li><a href="#">
+                                                    <h3>PAYMENT</h3>
+                                                </a></li>
+                                        </div>
+                                    </ol>
+                                </div>
+                            </div>
+
+                            <div class="col-md-8 text-center heading-section start-date stranger mb-4">
+                                <form action="" method="post">
+                                    <div class="row justify-content-center">
+                                        <h4 class="mb-4">When Do You Wish To Start?</h4>
+
+                                        <div class="row justify-content-center">
+                                            <p class="text-green-p justify-content-start ml-2 text-left">Starting Date
+                                            </p>
+                                            <div class="btn-toolbar justify-content-start" role="3group"
+                                                aria-label="Basic radio 2toggle button group">
+
+                                                <input type="radio" class="btn-check" name="btnradio" id="butnradio1"
+                                                    autocomplete="off" checked>
+                                                <label class="btn btn-date m-2" for="butnradio1">Tommorrow</label>
+
+                                                <input type="radio" class="btn-check" name="btnradio" id="butnradio2"
+                                                    autocomplete="off">
+                                                <label class="btn btn-date m-2" for="butnradio2">May 2nd</label>
+
+                                                <input type="radio" class="btn-check" name="btnradio" id="butnradio3"
+                                                    autocomplete="off">
+                                                <label class="btn btn-date m-2" for="butnradio3">May 3rd</label>
+
+                                                <input type="date" class="btn-check" name="btnradio" id="butnradio4"
+                                                    autocomplete="off">
+                                                <label class="btn btn-date m-2"  for="butnradio4">Choose Date</label>
+
+                                                <div class="input-group date" id="datepicker1">
+                                                    <input type="text" class="btn btn-date" id="date"/>
+                                                    <span class="input-group-append">
+                                                      <span class="input-group-text bg-light d-block">
+                                                        <i class="fa fa-calendar"></i>
+                                                      </span>
+                                                    </span>
+                                                  </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row justify-content-center pt-4">
+                                            <p class="text-green-p justify-content-start ml-2 text-left">Duration of the
+                                                Course
+                                            </p>
+
+                                            <div class="btn-toolbar justify-content-start" role="group"
+                                                aria-label="Basic radio toggle button group">
+                                                <input type="radio" class="btn-check" name="abtnradio1" id="abtnradio1"
+                                                    autocomplete="off">
+                                                <label class="btn btn-date m-2" for="abtnradio1">1 Week</label>
+
+                                                <input type="radio" class="btn-check" name="abtnradio1" id="abtnradio2"
+                                                    autocomplete="off">
+                                                <label class="btn btn-date m-2" for="abtnradio2">2 Weeks</label>
+
+                                                <input type="radio" class="btn-check" name="abtnradio1" id="abtnradio3"
+                                                    autocomplete="off" checked>
+                                                <label class="btn btn-date m-2" for="abtnradio3">4 Week</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="row justify-content-center pt-4 days">
+                                            <p class="text-green-p justify-content-start ml-2 text-left">Choose your
+                                                days
+                                                &nbsp;
+                                                <span> You can skip up to 1 day only!</span>
+                                            </p>
+
+                                            <div class="btn-group justify-content-start" role="group"
+                                                aria-label="Basic checkbox toggle button group">
+
+                                                <input type="checkbox" class="btn-check" id="btncheck1"
+                                                    autocomplete="off">
+                                                <label class="btn btn-date-days m-2" for="btncheck1">Sa</label>
+
+                                                <input type="checkbox" class="btn-check" id="btncheck2"
+                                                    autocomplete="off">
+                                                <label class="btn btn-date-days m-2" for="btncheck2">Su</label>
+
+                                                <input type="checkbox" class="btn-check" id="btncheck3"
+                                                    autocomplete="off">
+                                                <label class="btn btn-date-days m-2" for="btncheck3">Mo</label>
+
+                                                <input type="checkbox" class="btn-check" id="btncheck4"
+                                                    autocomplete="off">
+                                                <label class="btn btn-date-days m-2" for="btncheck4">Tu</label>
+
+                                                <input type="checkbox" class="btn-check" id="btncheck5"
+                                                    autocomplete="off">
+                                                <label class="btn btn-date-days m-2" for="btncheck5">We</label>
+
+                                                <input type="checkbox" class="btn-check" id="btncheck6"
+                                                    autocomplete="off">
+                                                <label class="btn btn-date-days m-2" for="btncheck6">Th</label>
+
+                                                <input type="checkbox" class="btn-check" id="btncheck7"
+                                                    autocomplete="off" disabled>
+                                                <label class="btn btn-date-days m-2" for="btncheck7">Fr</label>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row bottom-bar height-1 justify-content-between">
+                                        <div class="col-4">
+                                            <p>Meal Type: Keto</p>
+                                        </div>
+                                        <div class="col-4 special">
+                                            <p>Total Price: 2500.00 SAR <span class="vat-text">Including VAT</span></p>
+                                        </div>
+                                        <div id="orange-button" class="col-4 orange">
+                                            <p>
+                                                <input id="Button1" type="button" class="continue-btn" value="Continue"
+                                                    onclick="switchVisible5();" />
+                                            </p>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+                <section id="subscribe" class="deliver">
+                    <div id="Div7" class="container section">
+                        <div class="row justify-content-center">
+                            <div class="col-md-4 heading-section meal">
+                                <div class="row justify-content-start">
+                                    <ol>
+                                        <div class="completed">
+                                            <li><a href="#">
+                                                    <h3>MEAL TYPE</h3>
+                                                </a></li>
+                                        </div>
+                                        <div class="completed">
+                                            <li><a href="#">
+                                                    <h3>SELECT MEALS</h3>
+                                                </a></li>
+                                        </div>
+                                        <div class="completed">
+                                            <li><a href="#">
+                                                    <h3>STARTING DATE</h3>
+                                                </a></li>
+                                        </div>
+                                        <div class="">
+                                            <li><a href="#">
+                                                    <h3>DELIVERY OPTIONS</h3>
+                                                </a></li>
+                                        </div>
+                                        <div class="disabled">
+                                            <li><a href="#">
+                                                    <h3>PAYMENT</h3>
+                                                </a></li>
+                                        </div>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="col-md-8 text-center heading-section stranger mb-4">
+                                <div class="row justify-content-center delivery">
+                                    <h4 class="mb-4">How You’d Like To Get Your Meals?</h4>
+                                    <div class="row justify-content-center mb-3">
+                                        <div class="btn-toolbar justify-content-center">
+                                            <div class="nav" id="myTab">
+                                                <a href="#deliver" type="button" class="btn btn-date m-2"
+                                                    data-bs-toggle="tab">Delivery</a>
+                                                <a href="#pickup" type="button" class="btn btn-date m-2"
+                                                    data-bs-toggle="tab">Pick
+                                                    up</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="tab-content">
+                                            <div class="tab-pane fade show active" id="pickup">
+
+                                                <div class="dropdown m-2">
+                                                    <button class="btn btn-dropdown" type="button"
+                                                        id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                        aria-expanded="false">
+                                                        Eastern Region
+                                                        <i class="fa-solid fa-angle-down"></i>
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                        <li><a class="dropdown-item" href="#">Something else here</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="dropdown m-2">
+                                                    <button class="btn btn-dropdown" type="button"
+                                                        id="dropdownMenuButton2" data-bs-toggle="dropdown"
+                                                        aria-expanded="false">
+                                                        Select city
+                                                        <i class="fa-solid fa-angle-down"></i>
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                                        <li>
+                                                            <h6 class="dropdown-header">Select city</h6>
+                                                        </li>
+                                                        <li><a class="dropdown-item" href="#">Dammam</a></li>
+                                                        <li><a class="dropdown-item" href="#">Commissary</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="dropdown m-2">
+                                                    <button class="btn btn-dropdown" type="button"
+                                                        id="dropdownMenuButton3" data-bs-toggle="dropdown"
+                                                        aria-expanded="false">
+                                                        Select your preferred pickup branch
+                                                        <i class="fa-solid fa-angle-down"></i>
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                                                        <li>
+                                                            <h6 class="dropdown-header">Select your preferred pickup
+                                                                branch
+                                                            </h6>
+                                                        </li>
+                                                        <li><a class="dropdown-item" href="#">Jamaiyin Branch -
+                                                                Dammam</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item" href="#">Alshati Branch -
+                                                                Dammam</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item" href="#">Aramco Branch -
+                                                                Commissary</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="deliver">
+                                                <iframe
+                                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3573.6169453744956!2d50.05479387640742!3d26.40356040080754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49fd1e8dc9b8a9%3A0xab408c7c017d0461!2sDanube!5e0!3m2!1sen!2s!4v1660164221784!5m2!1sen!2s"
+                                                    width="100%" height="270" style="border:0; border-radius: 25px;"
+                                                    allowfullscreen="" loading="lazy"
+                                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                                                <div class="note-form mt-3">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" id="input-text"
+                                                            placeholder="Enter your address">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row bottom-bar height-2 justify-content-between">
+                            <div class="col-3">
+                                <p>Meal Type: Keto</p>
+                            </div>
+                            <div class="col-3">
+                                <p>Total Calories: 1,200 cal</p>
+                            </div>
+                            <div class="col-3">
+                                <p>Starting From: 1,700.00 SAR</p>
+                            </div>
+                            <div id="orange-button" class="col-3 orange">
+                                <p>
+                                    <input id="Button1" type="button" class="continue-btn" value="Continue"
+                                        onclick="switchVisible6();" />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+                <section id="subscribe" class="theme-color1">
+                    <div id="Div8" class="container section">
+                        <div class="row justify-content-center m-10">
+                            <h1 class="mb-4">Payment</h1>
+                            <div class="container white payment">
+                                <div class="row justify-content-center p-5">
+
+                                    <div class="col-md-4 staff left-side">
+                                        <div class="row">
+                                            <h4>Keto Plan</h4>
+                                            <img src="./img/meal-box.png" alt="">
+                                        </div>
+                                        <div class="row">
+                                            <div class="main">
+                                                <h4 class="heading">Total Price</h4>
+                                                <p class="body">1,248.10 <span>SAR</span></p>
+                                            </div>
+                                            <div class="details">
+                                                <h4 class="heading">VAT</h4>
+                                                <p class="body">162.8 <span>SAR</span></p>
+                                                <h4 class="heading">Delivery</h4>
+                                                <p class="body">200 <span>SAR</span></p>
+                                            </div>
+                                            <hr>
+                                            <div class="intake">
+                                                <p class="heading">Average Daily Intake</p>
+                                                <p class="body">1,200&nbsp;<span>Calories</span></p>
+                                                <p class="body">98g&nbsp;<span>Protein</span></p>
+                                                <p class="body">58g&nbsp;<span>Carb</span></p>
+                                                <p class="body">101g&nbsp;<span>Fat</span></p>
+                                            </div>
+                                            <hr>
+                                            <div class="intake">
+                                                <p class="heading">Delivery Address</p>
+                                                <p class="body"><span>7386, Gharb Al Dhahran, Dhahran<br> 34461 3630,
+                                                        Saudi
+                                                        Arabia</span></p>
+                                            </div>
+                                            <p class="switch">Switch to free pickup</p>
+                                            <div class="row justify-content-center">
+                                                <a href="index.html" type="button"
+                                                    class="btn btn-next btn-lg">Subscribe</a>
+                                                <p class="promo">Do you have promo code?</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-8 right-side">
+                                        <div class="row">
+                                            <h4 class="mb-3">Subscription Details</h4>
+                                            <div class="row heading">
+                                                <div class="col-md-2">
+                                                    <h5>Meals</h5>
+                                                </div>
+                                                <div class="col-md-6">
+
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <h5>Qty</h5>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <span class="float-right">Edit</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row bill">
+                                            <div class="row details">
+                                                <div class="col-md-2 body">
+                                                    <p>Breakfast</p>
+                                                </div>
+                                                <div class="col-md-6 line">
+                                                    <hr>
+                                                </div>
+                                                <div class="col-md-2 body-bold">
+                                                    <p>1</p>
+                                                </div>
+                                                <div class="col-md-2">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row bill">
+                                            <div class="row details">
+                                                <div class="col-md-2 body">
+                                                    <p>Lunch</p>
+                                                </div>
+                                                <div class="col-md-6 line">
+                                                    <hr>
+                                                </div>
+                                                <div class="col-md-2 body-bold">
+                                                    <p>2</p>
+                                                </div>
+                                                <div class="col-md-2">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row bill">
+                                            <div class="row details">
+                                                <div class="col-md-2 body">
+                                                    <p>Dinner</p>
+                                                </div>
+                                                <div class="col-md-6 line">
+                                                    <hr>
+                                                </div>
+                                                <div class="col-md-2 body-bold">
+                                                    <p>1</p>
+                                                </div>
+                                                <div class="col-md-2">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row bill">
+                                            <div class="row details">
+                                                <div class="col-md-2 body">
+                                                    <p>Salad</p>
+                                                </div>
+                                                <div class="col-md-6 line">
+                                                    <hr>
+                                                </div>
+                                                <div class="col-md-2 body-bold">
+                                                    <p>1</p>
+                                                </div>
+                                                <div class="col-md-2">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row bill">
+                                            <div class="row details">
+                                                <div class="col-md-2 body">
+                                                    <p>Snack</p>
+                                                </div>
+                                                <div class="col-md-6 line">
+                                                    <hr>
+                                                </div>
+                                                <div class="col-md-2 body-bold">
+                                                    <p>1</p>
+                                                </div>
+                                                <div class="col-md-2">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row heading">
+                                            <h5>NO OF DAYS</h5>
+                                            <div class="row">
+                                                <div class="d-flex justify-content-between">
+                                                    <p class="field-inline-block">Saturday to Thursday (6 Days)</p>
+                                                    <span class="field-inline-block">Edit</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row heading">
+                                            <h5>NO OF WEEKS</h5>
+                                            <div class="row">
+                                                <div class="d-flex justify-content-between">
+                                                    <p class="field-inline-block">4 weeks</p>
+                                                    <span class="field-inline-block">Edit</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row heading">
+                                            <h5>START DATE</h5>
+                                            <div class="row">
+                                                <div class="d-flex justify-content-between">
+                                                    <p class="field-inline-block">18-05-2022</p>
+                                                    <span class="field-inline-block">Edit</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row heading">
+                                            <h5>Notes:</h5>
+                                            <div class="row">
+                                                <div class="d-flex justify-content-between">
+                                                    <p class="field-inline-block">No Chicken<br>No Shrimp<br><br>I’m
+                                                        allergic to Tomatoes.</p>
+                                                    <span class="field-inline-block">Edit</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
         </div>
-    </div>
 
+    </section>
+
+    <!-- -------------------------    Main index page end   ------------------------- -->
 
     <footer class="d-flex justify-content-between align-items-center ftco-footer p-4 py-3">
         <a class="col-md-4 mb-0 navbar-brand" href="#">
@@ -133,6 +1244,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+        <script src="js/script.js"></script>
 </body>
 
 </html>
