@@ -1,6 +1,50 @@
 //plugin bootstrap minus and plus
 //http://jsfiddle.net/laelitenetwork/puJ6G/
 
+
+
+// $('.input-number').focusin(function () {
+//     $(this).data('oldValue', $(this).val());
+// });
+
+// $('.input-number').change(function () {
+
+//     minValue = parseInt($(this).attr('min'));
+//     maxValue = parseInt($(this).attr('max'));
+//     valueCurrent = parseInt($(this).val());
+
+//     name = $(this).attr('name');
+//     if (valueCurrent >= minValue) {
+//         $(".btn-check[data-type='minus'][data-field='" + name + "']").removeAttr('disabled')
+//     } else {
+//         alert('Sorry, the minimum value was reached');
+//         $(this).val($(this).data('oldValue'));
+//     }
+//     if (valueCurrent <= maxValue) {
+//         $(".btn-check[data-type='plus'][data-field='" + name + "']").removeAttr('disabled')
+//     } else {
+//         alert('Sorry, the maximum value was reached');
+//         $(this).val($(this).data('oldValue'));
+//     }
+
+// });
+
+// $(".input-number").keydown(function (e) {
+//     // Allow: backspace, delete, tab, escape, enter and .
+//     if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 190]) !== -1 ||
+//         // Allow: Ctrl+A
+//         (e.keyCode == 65 && e.ctrlKey === true) ||
+//         // Allow: home, end, left, right
+//         (e.keyCode >= 35 && e.keyCode <= 39)) {
+//         // let it happen, don't do anything
+//         return;
+//     }
+//     // Ensure that it is a number and stop the keypress
+//     if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+//         e.preventDefault();
+//     }
+// });
+
 $('.btn-working').click(function (e) {
     e.preventDefault();
 
@@ -33,54 +77,12 @@ $('.btn-working').click(function (e) {
     }
 });
 
-$('.input-number').focusin(function () {
-    $(this).data('oldValue', $(this).val());
-});
-
-$('.input-number').change(function () {
-
-    minValue = parseInt($(this).attr('min'));
-    maxValue = parseInt($(this).attr('max'));
-    valueCurrent = parseInt($(this).val());
-
-    name = $(this).attr('name');
-    if (valueCurrent >= minValue) {
-        $(".btn-check[data-type='minus'][data-field='" + name + "']").removeAttr('disabled')
-    } else {
-        alert('Sorry, the minimum value was reached');
-        $(this).val($(this).data('oldValue'));
-    }
-    if (valueCurrent <= maxValue) {
-        $(".btn-check[data-type='plus'][data-field='" + name + "']").removeAttr('disabled')
-    } else {
-        alert('Sorry, the maximum value was reached');
-        $(this).val($(this).data('oldValue'));
-    }
-
-});
-
-$(".input-number").keydown(function (e) {
-    // Allow: backspace, delete, tab, escape, enter and .
-    if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 190]) !== -1 ||
-        // Allow: Ctrl+A
-        (e.keyCode == 65 && e.ctrlKey === true) ||
-        // Allow: home, end, left, right
-        (e.keyCode >= 35 && e.keyCode <= 39)) {
-        // let it happen, don't do anything
-        return;
-    }
-    // Ensure that it is a number and stop the keypress
-    if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
-        e.preventDefault();
-    }
-});
-
-
 function switchVisible() {
     if (document.getElementById('Div1')) {
 
         if (document.getElementById('Div1').style.display == 'none') {
             document.getElementById('Div1').style.display = 'block';
+            document.getElementById('Div1').style.addClass = 'active-function';
             document.getElementById('Div2').style.display = 'none';
         } else {
             document.getElementById('Div1').style.display = 'none';
@@ -206,7 +208,49 @@ function switchVisible9() {
     }
 }
 
-$(function(){
-    $('#datepicker1').datepicker();
-  });
 
+
+$(document).ready(function () {
+
+    $("#datepicker1").datepicker({
+        onSelect: function () {
+            $('label[for="startradio4"]').text($(this).val());
+            console.log("It's not working");
+        }
+    });
+
+    $("#startradio4").click(function () {
+        console.log("It's working");
+        $("#datepicker1").datepicker("show");
+    });
+
+});
+
+$(document).scroll(function() {
+    var cutoff = $(window).scrollTop();
+    
+    $('section').each(function(){
+        if($(this).offset().top + $(this).height() > cutoff){
+            $('section').removeClass('active-function');
+            $(this).addClass('active-function');
+            console.log('chalgaya');
+            return false; // stops the iteration after the first one on screen
+        }
+    });
+});
+
+$("document").ready(function(){
+    $('#Buttonpwr').click(function(){
+        var files = new Array();
+    
+        //xzyId is table id.
+        $('section').each(function() {
+          if ($(this).is('active-function')) {
+          alert(this.value);
+          console.log('chalgaya');
+          window.open(this.value);
+          }
+        });
+     });
+    
+    })

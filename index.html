@@ -13,6 +13,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
+        integrity="sha512-mSYUmp1HYZDFaVKK//63EcZq4iFWFjxSL+Z3T/aCt4IO9Cejm03q3NKKYN6pFQzY0SBOr8h+eCIAZHPXcpZaNw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -271,11 +275,13 @@
                             </div>
                             <div class="col-md-8 text-center meal2 heading-section stranger mb-4">
                                 <form action="" method="post">
-                                    <div class="btn-toolbar row justify-content-center h-70" role="group" aria-label="Basic radio toggle button group">
+                                    <div class="btn-toolbar row justify-content-center h-70" role="group"
+                                        aria-label="Basic radio toggle button group">
                                         <h4 class="pb-4">Choose Your Meal Type</h4>
 
                                         <div class="col-md-4 text-center meal-type">
-                                            <input class="div-box" type="radio" name="divboxradio" id="divradio1" checked>
+                                            <input class="div-box" type="radio" name="divboxradio" id="divradio1"
+                                                checked>
                                             <label class="label-box" id="bowla" for="divradio1">
                                                 <div class="bowl-img">
                                                     <img src="./img/bowl-a.png" alt="">
@@ -397,14 +403,14 @@
                                                     aria-label="Basic radio toggle button group">
                                                     <div class="wrapper">
 
-                                                        <input type="button" class="btn-check btn-working" name="dbtnradio1"
-                                                            id="dbtnradio1" autocomplete="off" data-type="minus"
-                                                            data-field="quant[1]" checked>
+                                                        <input type="button" class="btn-check btn-working"
+                                                            name="dbtnradio1" id="dbtnradio1" autocomplete="off"
+                                                            data-type="minus" data-field="quant[1]" checked>
                                                         <label class="plusminus minus" for="dbtnradio1">-</label>
                                                         <hr>
-                                                        <input type="button" class="btn-check btn-working" name="dbtnradio1"
-                                                            id="dbtnradio2" autocomplete="off" data-type="plus"
-                                                            data-field="quant[1]">
+                                                        <input type="button" class="btn-check btn-working"
+                                                            name="dbtnradio1" id="dbtnradio2" autocomplete="off"
+                                                            data-type="plus" data-field="quant[1]">
                                                         <label class="plusminus plus" for="dbtnradio2">+</label>
 
                                                     </div>
@@ -430,14 +436,14 @@
                                                     aria-label="Basic radio toggle button group">
                                                     <div class="wrapper">
 
-                                                        <input type="button" class="btn-check btn-working" name="dbtnradio2"
-                                                            id="dbtnradio3" autocomplete="off" data-type="minus"
-                                                            data-field="quant[2]" checked>
+                                                        <input type="button" class="btn-check btn-working"
+                                                            name="dbtnradio2" id="dbtnradio3" autocomplete="off"
+                                                            data-type="minus" data-field="quant[2]" checked>
                                                         <label class="plusminus minus" for="dbtnradio3">-</label>
                                                         <hr>
-                                                        <input type="button" class="btn-check btn-working" name="dbtnradio2"
-                                                            id="dbtnradio4" autocomplete="off" data-type="plus"
-                                                            data-field="quant[2]">
+                                                        <input type="button" class="btn-check btn-working"
+                                                            name="dbtnradio2" id="dbtnradio4" autocomplete="off"
+                                                            data-type="plus" data-field="quant[2]">
                                                         <label class="plusminus plus" for="dbtnradio4">+</label>
 
                                                     </div>
@@ -457,14 +463,14 @@
                                                     aria-label="Basic radio toggle button group">
                                                     <div class="wrapper">
 
-                                                        <input type="button" class="btn-check btn-working" name="dbtnradio3"
-                                                            id="dbtnradio5" autocomplete="off" data-type="minus"
-                                                            data-field="quant[3]" checked>
+                                                        <input type="button" class="btn-check btn-working"
+                                                            name="dbtnradio3" id="dbtnradio5" autocomplete="off"
+                                                            data-type="minus" data-field="quant[3]" checked>
                                                         <label class="plusminus minus" for="dbtnradio5">-</label>
                                                         <hr>
-                                                        <input type="button" class="btn-check btn-working" name="dbtnradio3"
-                                                            id="dbtnradio6" autocomplete="off" data-type="plus"
-                                                            data-field="quant[3]">
+                                                        <input type="button" class="btn-check btn-working"
+                                                            name="dbtnradio3" id="dbtnradio6" autocomplete="off"
+                                                            data-type="plus" data-field="quant[3]">
                                                         <label class="plusminus plus" for="dbtnradio6">+</label>
 
                                                     </div>
@@ -476,14 +482,14 @@
                                         <div class="d-flex align-items-center bottom-menu justify-content-between">
                                             <div class="toggle2">
                                                 <div class="wrapper2">
-                                                    <input type="button" class="btn-check btn-working" name="dbtnradiob3"
-                                                        id="dbtnradio12" autocomplete="off" data-type="minus"
-                                                        data-field="quant[4]" checked>
+                                                    <input type="button" class="btn-check btn-working"
+                                                        name="dbtnradiob3" id="dbtnradio12" autocomplete="off"
+                                                        data-type="minus" data-field="quant[4]" checked>
                                                     <label class="plusminus minus" for="dbtnradio12">-</label>
                                                     <hr>
-                                                    <input type="button" class="btn-check btn-working" name="dbtnradiob3"
-                                                        id="dbtnradio13" autocomplete="off" data-type="plus"
-                                                        data-field="quant[4]">
+                                                    <input type="button" class="btn-check btn-working"
+                                                        name="dbtnradiob3" id="dbtnradio13" autocomplete="off"
+                                                        data-type="plus" data-field="quant[4]">
                                                     <label class="plusminus plus" for="dbtnradio13">+</label>
                                                 </div>
                                             </div>
@@ -515,14 +521,14 @@
                                             </div>
                                             <div class="toggle2">
                                                 <div class="wrapper2">
-                                                    <input type="button" class="btn-check btn-working" name="cbtnradioa3"
-                                                        id="cbtnradio15" autocomplete="off" data-type="minus"
-                                                        data-field="quant[5]" checked>
+                                                    <input type="button" class="btn-check btn-working"
+                                                        name="cbtnradioa3" id="cbtnradio15" autocomplete="off"
+                                                        data-type="minus" data-field="quant[5]" checked>
                                                     <label class="plusminus minus" for="cbtnradio15">-</label>
                                                     <hr>
-                                                    <input type="button" class="btn-check btn-working" name="cbtnradioa3"
-                                                        id="cbtnradio16" autocomplete="off" data-type="plus"
-                                                        data-field="quant[5]">
+                                                    <input type="button" class="btn-check btn-working"
+                                                        name="cbtnradioa3" id="cbtnradio16" autocomplete="off"
+                                                        data-type="plus" data-field="quant[5]">
                                                     <label class="plusminus plus" for="cbtnradio16">+</label>
                                                 </div>
                                             </div>
@@ -669,7 +675,7 @@
                                                     </div>
                                                 </label>
                                             </div>
-                                            
+
                                         </div>
                                         <div class="note-form">
                                             <p class="col-4 text-green-p pb-2">Add additional notes</p>
@@ -707,6 +713,7 @@
                 <section id="subscribe" class="">
                     <div id="Div6" class="container section">
                         <div class="row justify-content-center">
+
                             <div class="col-md-4 heading-section meal">
                                 <div class="row justify-content-start">
                                     <ol>
@@ -740,123 +747,122 @@
                             </div>
 
                             <div class="col-md-8 text-center heading-section start-date stranger mb-4">
-                                <form action="" method="post">
+                                <div class="row justify-content-center">
+                                    <h4 class="mb-4">When Do You Wish To Start?</h4>
+
                                     <div class="row justify-content-center">
-                                        <h4 class="mb-4">When Do You Wish To Start?</h4>
+                                        <p class="text-green-p justify-content-start ml-2 text-left">Starting Date
+                                        </p>
+                                        <div class="btn-toolbar justify-content-start" role="radio-group" aria-label="">
 
-                                        <div class="row justify-content-center">
-                                            <p class="text-green-p justify-content-start ml-2 text-left">Starting Date
-                                            </p>
-                                            <div class="btn-toolbar justify-content-start" role="3group"
-                                                aria-label="Basic radio 2toggle button group">
+                                            <input type="radio" class="btn-check" name="startdate" id="startradio1"
+                                                autocomplete="off" checked>
+                                            <label class="btn btn-date m-2" for="startradio1">Tommorrow</label>
 
-                                                <input type="radio" class="btn-check" name="btnradio" id="butnradio1"
-                                                    autocomplete="off" checked>
-                                                <label class="btn btn-date m-2" for="butnradio1">Tommorrow</label>
+                                            <input type="radio" class="btn-check" name="startdate" id="startradio2"
+                                                autocomplete="off">
+                                            <label class="btn btn-date m-2" for="startradio2">May 2nd</label>
 
-                                                <input type="radio" class="btn-check" name="btnradio" id="butnradio2"
-                                                    autocomplete="off">
-                                                <label class="btn btn-date m-2" for="butnradio2">May 2nd</label>
+                                            <input type="radio" class="btn-check" name="startdate" id="startradio3"
+                                                autocomplete="off">
+                                            <label class="btn btn-date m-2" for="startradio3">May 3rd</label>
 
-                                                <input type="radio" class="btn-check" name="btnradio" id="butnradio3"
-                                                    autocomplete="off">
-                                                <label class="btn btn-date m-2" for="butnradio3">May 3rd</label>
 
-                                                <input type="date" class="btn-check" name="btnradio" id="butnradio4"
-                                                    autocomplete="off">
-                                                <label class="btn btn-date m-2"  for="butnradio4">Choose Date</label>
+                                            <input type="text" id="datepicker1" data-date-format="dd/mm/yyyy" />
+                                            <input type="radio" class="btn-check" name="startdate" id="startradio4"
+                                                autocomplete="off" value="">
+                                            <label class="btn btn-date m-2" for="startradio4">Choose Date</label>
 
-                                                <div class="input-group date" id="datepicker1">
+
+                                            <!-- <input type="text" id="calendarradio" />
+                                                    <input type="radio" id="btnradio4" name="radios" value="">
+                                                     <label for="btnradio4">Other</label> -->
+
+                                            <!-- <div class="date" id="datepicker1">
                                                     <input type="text" class="btn btn-date" id="date"/>
                                                     <span class="input-group-append">
                                                       <span class="input-group-text bg-light d-block">
                                                         <i class="fa fa-calendar"></i>
                                                       </span>
                                                     </span>
-                                                  </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="row justify-content-center pt-4">
-                                            <p class="text-green-p justify-content-start ml-2 text-left">Duration of the
-                                                Course
-                                            </p>
-
-                                            <div class="btn-toolbar justify-content-start" role="group"
-                                                aria-label="Basic radio toggle button group">
-                                                <input type="radio" class="btn-check" name="abtnradio1" id="abtnradio1"
-                                                    autocomplete="off">
-                                                <label class="btn btn-date m-2" for="abtnradio1">1 Week</label>
-
-                                                <input type="radio" class="btn-check" name="abtnradio1" id="abtnradio2"
-                                                    autocomplete="off">
-                                                <label class="btn btn-date m-2" for="abtnradio2">2 Weeks</label>
-
-                                                <input type="radio" class="btn-check" name="abtnradio1" id="abtnradio3"
-                                                    autocomplete="off" checked>
-                                                <label class="btn btn-date m-2" for="abtnradio3">4 Week</label>
-                                            </div>
-                                        </div>
-
-                                        <div class="row justify-content-center pt-4 days">
-                                            <p class="text-green-p justify-content-start ml-2 text-left">Choose your
-                                                days
-                                                &nbsp;
-                                                <span> You can skip up to 1 day only!</span>
-                                            </p>
-
-                                            <div class="btn-group justify-content-start" role="group"
-                                                aria-label="Basic checkbox toggle button group">
-
-                                                <input type="checkbox" class="btn-check" id="btncheck1"
-                                                    autocomplete="off">
-                                                <label class="btn btn-date-days m-2" for="btncheck1">Sa</label>
-
-                                                <input type="checkbox" class="btn-check" id="btncheck2"
-                                                    autocomplete="off">
-                                                <label class="btn btn-date-days m-2" for="btncheck2">Su</label>
-
-                                                <input type="checkbox" class="btn-check" id="btncheck3"
-                                                    autocomplete="off">
-                                                <label class="btn btn-date-days m-2" for="btncheck3">Mo</label>
-
-                                                <input type="checkbox" class="btn-check" id="btncheck4"
-                                                    autocomplete="off">
-                                                <label class="btn btn-date-days m-2" for="btncheck4">Tu</label>
-
-                                                <input type="checkbox" class="btn-check" id="btncheck5"
-                                                    autocomplete="off">
-                                                <label class="btn btn-date-days m-2" for="btncheck5">We</label>
-
-                                                <input type="checkbox" class="btn-check" id="btncheck6"
-                                                    autocomplete="off">
-                                                <label class="btn btn-date-days m-2" for="btncheck6">Th</label>
-
-                                                <input type="checkbox" class="btn-check" id="btncheck7"
-                                                    autocomplete="off" disabled>
-                                                <label class="btn btn-date-days m-2" for="btncheck7">Fr</label>
-
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="row bottom-bar height-1 justify-content-between">
-                                        <div class="col-4">
-                                            <p>Meal Type: Keto</p>
-                                        </div>
-                                        <div class="col-4 special">
-                                            <p>Total Price: 2500.00 SAR <span class="vat-text">Including VAT</span></p>
-                                        </div>
-                                        <div id="orange-button" class="col-4 orange">
-                                            <p>
-                                                <input id="Button1" type="button" class="continue-btn" value="Continue"
-                                                    onclick="switchVisible5();" />
-                                            </p>
+                                                  </div> -->
                                         </div>
                                     </div>
-                                </form>
+
+                                    <div class="row justify-content-center pt-4">
+                                        <p class="text-green-p justify-content-start ml-2 text-left">Duration of the
+                                            Course
+                                        </p>
+
+                                        <div class="btn-toolbar justify-content-start" role="group"
+                                            aria-label="Basic radio toggle button group">
+                                            <input type="radio" class="btn-check" name="abtnradio1" id="abtnradio1"
+                                                autocomplete="off">
+                                            <label class="btn btn-date m-2" for="abtnradio1">1 Week</label>
+
+                                            <input type="radio" class="btn-check" name="abtnradio1" id="abtnradio2"
+                                                autocomplete="off">
+                                            <label class="btn btn-date m-2" for="abtnradio2">2 Weeks</label>
+
+                                            <input type="radio" class="btn-check" name="abtnradio1" id="abtnradio3"
+                                                autocomplete="off" checked>
+                                            <label class="btn btn-date m-2" for="abtnradio3">4 Week</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="row justify-content-center pt-4 days">
+                                        <p class="text-green-p justify-content-start ml-2 text-left">Choose your
+                                            days
+                                            &nbsp;
+                                            <span> You can skip up to 1 day only!</span>
+                                        </p>
+
+                                        <div class="btn-group justify-content-start" role="group"
+                                            aria-label="Basic checkbox toggle button group">
+
+                                            <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                                            <label class="btn btn-date-days m-2" for="btncheck1">Sa</label>
+
+                                            <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                                            <label class="btn btn-date-days m-2" for="btncheck2">Su</label>
+
+                                            <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                                            <label class="btn btn-date-days m-2" for="btncheck3">Mo</label>
+
+                                            <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
+                                            <label class="btn btn-date-days m-2" for="btncheck4">Tu</label>
+
+                                            <input type="checkbox" class="btn-check" id="btncheck5" autocomplete="off">
+                                            <label class="btn btn-date-days m-2" for="btncheck5">We</label>
+
+                                            <input type="checkbox" class="btn-check" id="btncheck6" autocomplete="off">
+                                            <label class="btn btn-date-days m-2" for="btncheck6">Th</label>
+
+                                            <input type="checkbox" class="btn-check" id="btncheck7" autocomplete="off"
+                                                disabled>
+                                            <label class="btn btn-date-days m-2" for="btncheck7">Fr</label>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row bottom-bar height-1 justify-content-between">
+                                    <div class="col-4">
+                                        <p>Meal Type: Keto</p>
+                                    </div>
+                                    <div class="col-4 special">
+                                        <p>Total Price: 2500.00 SAR <span class="vat-text">Including VAT</span></p>
+                                    </div>
+                                    <div id="orange-button" class="col-4 orange">
+                                        <p>
+                                            <input id="Button1" type="button" class="continue-btn" value="Continue"
+                                                onclick="switchVisible5();" />
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
+
                         </div>
                     </div>
                 </section>
@@ -988,6 +994,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="row bottom-bar height-2 justify-content-between">
                             <div class="col-3">
                                 <p>Meal Type: Keto</p>
@@ -998,6 +1005,16 @@
                             <div class="col-3">
                                 <p>Starting From: 1,700.00 SAR</p>
                             </div>
+
+                            <!-- <div role="navigation"></div>
+                            </div>
+
+                            <script>
+                                window.addEventListener('DOMContentLoaded', () => {
+                                    let barnav = document.querySelector('div[role="navigation"]');
+                                    barnav.innerHTML = div;
+                                });
+                            </script> -->
                             <div id="orange-button" class="col-3 orange">
                                 <p>
                                     <input id="Button1" type="button" class="continue-btn" value="Continue"
@@ -1005,7 +1022,6 @@
                                 </p>
                             </div>
                         </div>
-                    </div>
                 </section>
 
 
@@ -1205,6 +1221,23 @@
 
     </section>
 
+    <!-- <div class="row bottom-bar height-2 justify-content-between">
+        <div class="col-3">
+            <p>Meal Type: Keto</p>
+        </div>
+        <div class="col-3">
+            <p>Total Calories: 1,200 cal</p>
+        </div>
+        <div class="col-3">
+            <p>Starting From: 1,700.00 SAR</p>
+        </div>
+        <div id="orange-button" class="col-3 orange">
+            <p>
+                <input id="Button1" type="button" class="continue-btn" value="Continue" />
+            </p>
+        </div>
+    </div> -->
+
     <!-- -------------------------    Main index page end   ------------------------- -->
 
     <footer class="d-flex justify-content-between align-items-center ftco-footer p-4 py-3">
@@ -1244,9 +1277,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-<script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
-        <script src="js/script.js"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="js/script.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"
+        integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js"></script>
 </body>
 
 </html>

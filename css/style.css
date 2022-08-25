@@ -1441,3 +1441,14 @@ input::-webkit-inner-spin-button {
 
 }
 
+.input-group-append {
+  cursor: pointer;
+}
+
+#datepicker1 {
+  display: none !important
+}
+
+.current{
+  background-color: blue;
+}
