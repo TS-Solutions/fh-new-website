@@ -56,7 +56,7 @@ body {
   align-items: center;
 }
 
-#orange-button {
+#swicth4 {
   position: relative;
 
 }
@@ -519,8 +519,8 @@ input {
 }
 
 .meal-selection {
-  margin-bottom: -7rem;
   align-items: flex-end;
+  max-height: 40vh !important;
 }
 
 .bottom-bar p {
@@ -1001,6 +1001,7 @@ footer p {
 
 .payment .switch {
   font: normal normal bold 13px/15px 'Roboto';
+  text-decoration: none;
   letter-spacing: 0.39px;
   color: #0D2763;
   padding-bottom: 1rem;
@@ -1008,6 +1009,7 @@ footer p {
 
 .payment .promo {
   font: normal normal bold 14px/17px 'Roboto';
+  text-decoration: none;
   letter-spacing: 0.42px;
   text-align: center;
   padding-top: 1rem;
@@ -1052,10 +1054,11 @@ footer p {
   color: #3B3A3A;
 }
 
-.right-side .heading span {
+.right-side .heading a {
   text-align: right;
   font-size: 13px;
   font-weight: 700;
+  text-decoration: none;
   letter-spacing: 0.39px;
   color: #0D2763;
   opacity: 0.8;
@@ -1307,7 +1310,7 @@ input::-webkit-inner-spin-button {
 }
 
 .selection .bottom-menu {
-  padding: 2rem 10rem;
+  padding: 1rem 10rem;
 }
 
 .img-pos {
@@ -1449,6 +1452,58 @@ input::-webkit-inner-spin-button {
   display: none !important
 }
 
-.current{
-  background-color: blue;
+.bottom-position {
+  position: absolute;
+  bottom: 10%;
+  left: 38%;
+  width: 50vw !important;
+}
+
+#bottombtn1 {
+  display: none;
+}
+
+#bottombtn2 {
+  display: none;
+}
+
+#bottombtn3 {
+  display: none;
+}
+
+#bottombtn4 {
+  display: none;
+}
+
+#bottombtn5 {
+  display: none;
+}
+
+#bottombtns {
+  display: none;
+}
+
+.ui-datepicker {
+  left: 65% !important;
+  position: relative !important;
+  top: -36vh !important;
+}
+
+#subscribe .ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+  border: 1px solid #50e9b9 !important;
+  background: #50e9b9 !important;
+  color: white !important;
+}
+
+ #subscribe .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+  border: 1px solid #549E87 !important;
+  background: #549E87 !important;
+  color: white !important;
+} 
+
+
+body {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }

@@ -13,13 +13,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
-        integrity="sha512-mSYUmp1HYZDFaVKK//63EcZq4iFWFjxSL+Z3T/aCt4IO9Cejm03q3NKKYN6pFQzY0SBOr8h+eCIAZHPXcpZaNw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" />
+
 </head>
 
 <body>
@@ -320,20 +318,6 @@
                                         </div>
 
                                     </div>
-                                    <div class="row bottom-bar height-3 justify-content-between">
-                                        <div class="col-4">
-                                            <p>Meal Type: Keto</p>
-                                        </div>
-                                        <div class="col-4">
-                                            <p>Starting From: 550 SAR</p>
-                                        </div>
-                                        <div id="orange-button" class="col-4 orange">
-                                            <p>
-                                                <input id="Button1" type="button" class="continue-btn" value="Continue"
-                                                    onclick="switchVisible2();" />
-                                            </p>
-                                        </div>
-                                    </div>
                                 </form>
                             </div>
                         </div>
@@ -385,174 +369,153 @@
                                 </div>
                             </div>
                             <div class="col-md-8 text-center heading-section selection stranger mb-4">
-                                <form action="">
-                                    <div class="row justify-content-center">
-                                        <h4>Select Your Meals</h4>
-                                        <div class="row justify-content-center meal-selection">
-                                            <div class="col-md-4 text-center meal-type">
-                                                <img src="./img/breakfastbox.png" alt="">
-                                                <h4 class="heading">Breakfast</h4>
-                                                <input type="text" name="quant[1]"
-                                                    class="form-control input-type input-number" value="1" min="1"
-                                                    max="10">
-                                                <p>Meal</p>
-                                                <div tabindex="1" id="bowlb" class="bowl-box">
-                                                </div>
-
-                                                <div class="toggle justify-content-start" role="group"
-                                                    aria-label="Basic radio toggle button group">
-                                                    <div class="wrapper">
-
-                                                        <input type="button" class="btn-check btn-working"
-                                                            name="dbtnradio1" id="dbtnradio1" autocomplete="off"
-                                                            data-type="minus" data-field="quant[1]" checked>
-                                                        <label class="plusminus minus" for="dbtnradio1">-</label>
-                                                        <hr>
-                                                        <input type="button" class="btn-check btn-working"
-                                                            name="dbtnradio1" id="dbtnradio2" autocomplete="off"
-                                                            data-type="plus" data-field="quant[1]">
-                                                        <label class="plusminus plus" for="dbtnradio2">+</label>
-
-                                                    </div>
-                                                </div>
-
+                                <div class="row justify-content-center">
+                                    <h4>Select Your Meals</h4>
+                                    <div class="row justify-content-center meal-selection">
+                                        <div class="col-md-4 text-center meal-type">
+                                            <img src="./img/breakfastbox.png" alt="">
+                                            <h4 class="heading">Breakfast</h4>
+                                            <input type="text" name="quant[1]"
+                                                class="form-control input-type input-number" value="1" min="1" max="10">
+                                            <p>Meal</p>
+                                            <div tabindex="1" id="bowlb" class="bowl-box">
                                             </div>
-                                            <div class="col-md-4 text-center meal-type">
-                                                <div>
-                                                    <div class="select-img">
-                                                        <img class="double-box" src="./img/lunchbox.png" alt="">
-                                                    </div>
-                                                    <img src="./img/lunchbox.png" alt="">
-                                                </div>
-                                                <h4 class="heading">Lunch</h4>
-                                                <input type="text" name="quant[2]"
-                                                    class="form-control input-type input-number" value="1" min="1"
-                                                    max="10">
-                                                <p>Meals</p>
-                                                <div tabindex="1" id="bowlb" class="bowl-box">
-                                                </div>
 
-                                                <div class="toggle justify-content-start" role="group"
-                                                    aria-label="Basic radio toggle button group">
-                                                    <div class="wrapper">
+                                            <div class="toggle justify-content-start" role="group"
+                                                aria-label="Basic radio toggle button group">
+                                                <div class="wrapper">
 
-                                                        <input type="button" class="btn-check btn-working"
-                                                            name="dbtnradio2" id="dbtnradio3" autocomplete="off"
-                                                            data-type="minus" data-field="quant[2]" checked>
-                                                        <label class="plusminus minus" for="dbtnradio3">-</label>
-                                                        <hr>
-                                                        <input type="button" class="btn-check btn-working"
-                                                            name="dbtnradio2" id="dbtnradio4" autocomplete="off"
-                                                            data-type="plus" data-field="quant[2]">
-                                                        <label class="plusminus plus" for="dbtnradio4">+</label>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4 text-center meal-type">
-                                                <img src="./img/dinnerbox.png" alt="">
-                                                <h4 class="heading">Dinner</h4>
-                                                <input type="text" name="quant[3]"
-                                                    class="form-control input-type input-number" value="1" min="1"
-                                                    max="10">
-                                                <p>Meals</p>
-                                                <div tabindex="1" id="bowlb" class="bowl-box">
-                                                </div>
-
-                                                <div class="toggle justify-content-start" role="group"
-                                                    aria-label="Basic radio toggle button group">
-                                                    <div class="wrapper">
-
-                                                        <input type="button" class="btn-check btn-working"
-                                                            name="dbtnradio3" id="dbtnradio5" autocomplete="off"
-                                                            data-type="minus" data-field="quant[3]" checked>
-                                                        <label class="plusminus minus" for="dbtnradio5">-</label>
-                                                        <hr>
-                                                        <input type="button" class="btn-check btn-working"
-                                                            name="dbtnradio3" id="dbtnradio6" autocomplete="off"
-                                                            data-type="plus" data-field="quant[3]">
-                                                        <label class="plusminus plus" for="dbtnradio6">+</label>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row justify-content-center menu">
-                                        <div class="d-flex align-items-center bottom-menu justify-content-between">
-                                            <div class="toggle2">
-                                                <div class="wrapper2">
-                                                    <input type="button" class="btn-check btn-working"
-                                                        name="dbtnradiob3" id="dbtnradio12" autocomplete="off"
-                                                        data-type="minus" data-field="quant[4]" checked>
-                                                    <label class="plusminus minus" for="dbtnradio12">-</label>
+                                                    <input type="button" class="btn-check btn-working" name="dbtnradio1"
+                                                        id="dbtnradio1" autocomplete="off" data-type="minus"
+                                                        data-field="quant[1]" checked>
+                                                    <label class="plusminus minus" for="dbtnradio1">-</label>
                                                     <hr>
-                                                    <input type="button" class="btn-check btn-working"
-                                                        name="dbtnradiob3" id="dbtnradio13" autocomplete="off"
-                                                        data-type="plus" data-field="quant[4]">
-                                                    <label class="plusminus plus" for="dbtnradio13">+</label>
+                                                    <input type="button" class="btn-check btn-working" name="dbtnradio1"
+                                                        id="dbtnradio2" autocomplete="off" data-type="plus"
+                                                        data-field="quant[1]">
+                                                    <label class="plusminus plus" for="dbtnradio2">+</label>
+
                                                 </div>
                                             </div>
-                                            <div class="img1-box">
-                                                <div class="img-pos">
-                                                    <img class="img1" src="./img/salad.png" alt="">
+
+                                        </div>
+                                        <div class="col-md-4 text-center meal-type">
+                                            <div>
+                                                <div class="select-img">
+                                                    <img class="double-box" src="./img/lunchbox.png" alt="">
                                                 </div>
-                                                <div class="circle-pos">
-                                                    <div class="circle"></div>
-                                                </div>
-                                                <div class="text-pos">
-                                                    <input type="text" name="quant[4]"
-                                                        class="form-control text input-number" value="1" min="1"
-                                                        max="10">
-                                                </div>
+                                                <img src="./img/lunchbox.png" alt="">
                                             </div>
-                                            <div class="img2-box">
-                                                <div class="img-pos">
-                                                    <img class="img2" src="./img/snack.png" alt="">
-                                                </div>
-                                                <div class="circle-pos2">
-                                                    <div class="circle"></div>
-                                                </div>
-                                                <div class="text-pos2">
-                                                    <input type="text" name="quant[5]"
-                                                        class="form-control text input-number" value="1" min="1"
-                                                        max="10">
-                                                </div>
+                                            <h4 class="heading">Lunch</h4>
+                                            <input type="text" name="quant[2]"
+                                                class="form-control input-type input-number" value="1" min="1" max="10">
+                                            <p>Meals</p>
+                                            <div tabindex="1" id="bowlb" class="bowl-box">
                                             </div>
-                                            <div class="toggle2">
-                                                <div class="wrapper2">
-                                                    <input type="button" class="btn-check btn-working"
-                                                        name="cbtnradioa3" id="cbtnradio15" autocomplete="off"
-                                                        data-type="minus" data-field="quant[5]" checked>
-                                                    <label class="plusminus minus" for="cbtnradio15">-</label>
+
+                                            <div class="toggle justify-content-start" role="group"
+                                                aria-label="Basic radio toggle button group">
+                                                <div class="wrapper">
+
+                                                    <input type="button" class="btn-check btn-working" name="dbtnradio2"
+                                                        id="dbtnradio3" autocomplete="off" data-type="minus"
+                                                        data-field="quant[2]" checked>
+                                                    <label class="plusminus minus" for="dbtnradio3">-</label>
                                                     <hr>
-                                                    <input type="button" class="btn-check btn-working"
-                                                        name="cbtnradioa3" id="cbtnradio16" autocomplete="off"
-                                                        data-type="plus" data-field="quant[5]">
-                                                    <label class="plusminus plus" for="cbtnradio16">+</label>
+                                                    <input type="button" class="btn-check btn-working" name="dbtnradio2"
+                                                        id="dbtnradio4" autocomplete="off" data-type="plus"
+                                                        data-field="quant[2]">
+                                                    <label class="plusminus plus" for="dbtnradio4">+</label>
+
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="bottom-text">
-                                            <span>Including</span>
-                                            <p>Salad + Snack</p>
+                                        <div class="col-md-4 text-center meal-type">
+                                            <img src="./img/dinnerbox.png" alt="">
+                                            <h4 class="heading">Dinner</h4>
+                                            <input type="text" name="quant[3]"
+                                                class="form-control input-type input-number" value="1" min="1" max="10">
+                                            <p>Meals</p>
+                                            <div tabindex="1" id="bowlb" class="bowl-box">
+                                            </div>
+
+                                            <div class="toggle justify-content-start" role="group"
+                                                aria-label="Basic radio toggle button group">
+                                                <div class="wrapper">
+
+                                                    <input type="button" class="btn-check btn-working" name="dbtnradio3"
+                                                        id="dbtnradio5" autocomplete="off" data-type="minus"
+                                                        data-field="quant[3]" checked>
+                                                    <label class="plusminus minus" for="dbtnradio5">-</label>
+                                                    <hr>
+                                                    <input type="button" class="btn-check btn-working" name="dbtnradio3"
+                                                        id="dbtnradio6" autocomplete="off" data-type="plus"
+                                                        data-field="quant[3]">
+                                                    <label class="plusminus plus" for="dbtnradio6">+</label>
+
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="row bottom-bar justify-content-between">
-                                        <div class="col-4">
-                                            <p>Meal Type: Keto</p>
+                                </div>
+                                <div class="row justify-content-center menu">
+                                    <div class="d-flex align-items-center bottom-menu justify-content-between">
+                                        <div class="toggle2">
+                                            <div class="wrapper2">
+                                                <input type="button" class="btn-check btn-working" name="dbtnradiob3"
+                                                    id="dbtnradio12" autocomplete="off" data-type="minus"
+                                                    data-field="quant[4]" checked>
+                                                <label class="plusminus minus" for="dbtnradio12">-</label>
+                                                <hr>
+                                                <input type="button" class="btn-check btn-working" name="dbtnradiob3"
+                                                    id="dbtnradio13" autocomplete="off" data-type="plus"
+                                                    data-field="quant[4]">
+                                                <label class="plusminus plus" for="dbtnradio13">+</label>
+                                            </div>
                                         </div>
-                                        <div class="col-4">
-                                            <p>Starting From: 550 SAR</p>
+                                        <div class="img1-box">
+                                            <div class="img-pos">
+                                                <img class="img1" src="./img/salad.png" alt="">
+                                            </div>
+                                            <div class="circle-pos">
+                                                <div class="circle"></div>
+                                            </div>
+                                            <div class="text-pos">
+                                                <input type="text" name="quant[4]"
+                                                    class="form-control text input-number" value="1" min="1" max="10">
+                                            </div>
                                         </div>
-                                        <div id="orange-button" class="col-4 orange">
-                                            <p>
-                                                <input id="Button1" type="button" class="continue-btn" value="Continue"
-                                                    onclick="switchVisible3();" />
-                                            </p>
+                                        <div class="img2-box">
+                                            <div class="img-pos">
+                                                <img class="img2" src="./img/snack.png" alt="">
+                                            </div>
+                                            <div class="circle-pos2">
+                                                <div class="circle"></div>
+                                            </div>
+                                            <div class="text-pos2">
+                                                <input type="text" name="quant[5]"
+                                                    class="form-control text input-number" value="1" min="1" max="10">
+                                            </div>
+                                        </div>
+                                        <div class="toggle2">
+                                            <div class="wrapper2">
+                                                <input type="button" class="btn-check btn-working" name="cbtnradioa3"
+                                                    id="cbtnradio15" autocomplete="off" data-type="minus"
+                                                    data-field="quant[5]" checked>
+                                                <label class="plusminus minus" for="cbtnradio15">-</label>
+                                                <hr>
+                                                <input type="button" class="btn-check btn-working" name="cbtnradioa3"
+                                                    id="cbtnradio16" autocomplete="off" data-type="plus"
+                                                    data-field="quant[5]">
+                                                <label class="plusminus plus" for="cbtnradio16">+</label>
+                                            </div>
                                         </div>
                                     </div>
-                                </form>
+                                    <div class="bottom-text">
+                                        <span>Including</span>
+                                        <p>Salad + Snack</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -688,21 +651,6 @@
                                                 However, it is not compulsory.</p>
                                         </div>
                                     </div>
-                                    <div class="row bottom-bar justify-content-between">
-                                        <div class="col-4">
-                                            <p>Meal Type: Non-Veg</p>
-                                        </div>
-                                        <div class="col-4">
-                                            <p>Starting From: 550 SAR</p>
-                                        </div>
-
-                                        <div id="orange-button" class="col-4 orange">
-                                            <p>
-                                                <input id="Button1" type="button" class="continue-btn" value="Continue"
-                                                    onclick="switchVisible4();" />
-                                            </p>
-                                        </div>
-                                    </div>
                                 </form>
                             </div>
                         </div>
@@ -767,25 +715,11 @@
                                                 autocomplete="off">
                                             <label class="btn btn-date m-2" for="startradio3">May 3rd</label>
 
-
                                             <input type="text" id="datepicker1" data-date-format="dd/mm/yyyy" />
-                                            <input type="radio" class="btn-check" name="startdate" id="startradio4"
-                                                autocomplete="off" value="">
+                                            <input type="radio" id="startradio4" class="btn-check" name="startdate"
+                                                value="">
                                             <label class="btn btn-date m-2" for="startradio4">Choose Date</label>
 
-
-                                            <!-- <input type="text" id="calendarradio" />
-                                                    <input type="radio" id="btnradio4" name="radios" value="">
-                                                     <label for="btnradio4">Other</label> -->
-
-                                            <!-- <div class="date" id="datepicker1">
-                                                    <input type="text" class="btn btn-date" id="date"/>
-                                                    <span class="input-group-append">
-                                                      <span class="input-group-text bg-light d-block">
-                                                        <i class="fa fa-calendar"></i>
-                                                      </span>
-                                                    </span>
-                                                  </div> -->
                                         </div>
                                     </div>
 
@@ -847,20 +781,6 @@
 
                                 </div>
 
-                                <div class="row bottom-bar height-1 justify-content-between">
-                                    <div class="col-4">
-                                        <p>Meal Type: Keto</p>
-                                    </div>
-                                    <div class="col-4 special">
-                                        <p>Total Price: 2500.00 SAR <span class="vat-text">Including VAT</span></p>
-                                    </div>
-                                    <div id="orange-button" class="col-4 orange">
-                                        <p>
-                                            <input id="Button1" type="button" class="continue-btn" value="Continue"
-                                                onclick="switchVisible5();" />
-                                        </p>
-                                    </div>
-                                </div>
                             </div>
 
                         </div>
@@ -994,34 +914,6 @@
                                 </div>
                             </div>
                         </div>
-
-                        <div class="row bottom-bar height-2 justify-content-between">
-                            <div class="col-3">
-                                <p>Meal Type: Keto</p>
-                            </div>
-                            <div class="col-3">
-                                <p>Total Calories: 1,200 cal</p>
-                            </div>
-                            <div class="col-3">
-                                <p>Starting From: 1,700.00 SAR</p>
-                            </div>
-
-                            <!-- <div role="navigation"></div>
-                            </div>
-
-                            <script>
-                                window.addEventListener('DOMContentLoaded', () => {
-                                    let barnav = document.querySelector('div[role="navigation"]');
-                                    barnav.innerHTML = div;
-                                });
-                            </script> -->
-                            <div id="orange-button" class="col-3 orange">
-                                <p>
-                                    <input id="Button1" type="button" class="continue-btn" value="Continue"
-                                        onclick="switchVisible6();" />
-                                </p>
-                            </div>
-                        </div>
                 </section>
 
 
@@ -1064,11 +956,11 @@
                                                         Saudi
                                                         Arabia</span></p>
                                             </div>
-                                            <p class="switch">Switch to free pickup</p>
+                                            <a class="switch" href="#">Switch to free pickup</a>
                                             <div class="row justify-content-center">
                                                 <a href="index.html" type="button"
                                                     class="btn btn-next btn-lg">Subscribe</a>
-                                                <p class="promo">Do you have promo code?</p>
+                                                <a class="promo" href="#">Do you have promo code?</a>
                                             </div>
 
                                         </div>
@@ -1088,7 +980,7 @@
                                                     <h5>Qty</h5>
                                                 </div>
                                                 <div class="col-md-2">
-                                                    <span class="float-right">Edit</span>
+                                                    <a class="float-right" href="#"> Edit</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1173,7 +1065,7 @@
                                             <div class="row">
                                                 <div class="d-flex justify-content-between">
                                                     <p class="field-inline-block">Saturday to Thursday (6 Days)</p>
-                                                    <span class="field-inline-block">Edit</span>
+                                                    <a class="field-inline-block float-right" href="#"> Edit</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1183,7 +1075,7 @@
                                             <div class="row">
                                                 <div class="d-flex justify-content-between">
                                                     <p class="field-inline-block">4 weeks</p>
-                                                    <span class="field-inline-block">Edit</span>
+                                                    <a class="field-inline-block float-right" href="#"> Edit</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1193,7 +1085,7 @@
                                             <div class="row">
                                                 <div class="d-flex justify-content-between">
                                                     <p class="field-inline-block">18-05-2022</p>
-                                                    <span class="field-inline-block">Edit</span>
+                                                    <a class="field-inline-block float-right" href="#"> Edit</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1204,7 +1096,7 @@
                                                 <div class="d-flex justify-content-between">
                                                     <p class="field-inline-block">No Chicken<br>No Shrimp<br><br>I’m
                                                         allergic to Tomatoes.</p>
-                                                    <span class="field-inline-block">Edit</span>
+                                                    <a class="field-inline-block float-right" href="#"> Edit</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1216,27 +1108,64 @@
                     </div>
                 </section>
 
+                <div id="bottombtns" class="bottom-position">
+                    <div id="colswitch" class="row bottom-bar height-3 justify-content-between">
+
+                        <div id="switch1" class="col-4">
+                            <p>Meal Type: Keto</p>
+                        </div>
+
+                        <div id="switch3" class="col-4">
+                            <p>Starting From: 550 SAR</p>
+                        </div>
+
+                        <div id="switch4" class="col-4 orange">
+
+                            <div id="bottombtn1">
+                                <p>
+                                    <input id="Button1" type="button" class="continue-btn" value="Continue"
+                                        onclick="switchVisible2();" />
+                                </p>
+                            </div>
+
+                            <div id="bottombtn2">
+                                <p>
+                                    <input id="Button1" type="button" class="continue-btn" value="Continue"
+                                        onclick="switchVisible3();" />
+                                </p>
+                            </div>
+
+                            <div id="bottombtn3">
+                                <p>
+                                    <input id="Button1" type="button" class="continue-btn" value="Continue"
+                                        onclick="switchVisible4();" />
+                                </p>
+                            </div>
+
+                            <div id="bottombtn4">
+                                <p>
+                                    <input id="Button1" type="button" class="continue-btn" value="Continue"
+                                        onclick="switchVisible5();" />
+                                </p>
+                            </div>
+
+                            <div id="bottombtn5">
+                                <p>
+                                    <input id="Button1" type="button" class="continue-btn" value="Continue"
+                                        onclick="switchVisible6();" />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
             </div>
         </div>
 
     </section>
 
-    <!-- <div class="row bottom-bar height-2 justify-content-between">
-        <div class="col-3">
-            <p>Meal Type: Keto</p>
-        </div>
-        <div class="col-3">
-            <p>Total Calories: 1,200 cal</p>
-        </div>
-        <div class="col-3">
-            <p>Starting From: 1,700.00 SAR</p>
-        </div>
-        <div id="orange-button" class="col-3 orange">
-            <p>
-                <input id="Button1" type="button" class="continue-btn" value="Continue" />
-            </p>
-        </div>
-    </div> -->
 
     <!-- -------------------------    Main index page end   ------------------------- -->
 
@@ -1278,11 +1207,14 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-    <script src="js/script.js"></script>
-    <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"
-        integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ=="
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"
+        integrity="sha512-cViKBZswH231Ui53apFnPzem4pvG8mlCDrSyZskDE9OK2gyUd/L08e1AC0wjJodXYZ1wmXEuNimN1d3MWG7jaQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.9.2/jquery.ui.datepicker.min.js"
+        integrity="sha512-s4nJt9M6CoYZQSWgFdWunitdPcKXfvsAAHyRZ/c/P3pkeSvHpRcEMCld0SerDnUfu0wSrEBtZWutoqWwfz9BTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js"></script>
 </body>
 

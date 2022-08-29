@@ -82,11 +82,12 @@ function switchVisible() {
 
         if (document.getElementById('Div1').style.display == 'none') {
             document.getElementById('Div1').style.display = 'block';
-            document.getElementById('Div1').style.addClass = 'active-function';
             document.getElementById('Div2').style.display = 'none';
+            document.getElementById('bottombtns').style.display = 'none';
         } else {
             document.getElementById('Div1').style.display = 'none';
             document.getElementById('Div2').style.display = 'block';
+            document.getElementById('bottombtns').style.display = 'none';
         }
     }
 }
@@ -97,9 +98,13 @@ function switchVisible1() {
         if (document.getElementById('Div2').style.display == 'none') {
             document.getElementById('Div2').style.display = 'block';
             document.getElementById('Div3').style.display = 'none';
+            document.getElementById('bottombtn1').style.display = 'none';
+            document.getElementById('bottombtns').style.display = 'block';
         } else {
             document.getElementById('Div2').style.display = 'none';
             document.getElementById('Div3').style.display = 'block';
+            document.getElementById('bottombtn1').style.display = 'block';
+            document.getElementById('bottombtns').style.display = 'block';
         }
     }
 }
@@ -109,10 +114,17 @@ function switchVisible2() {
 
         if (document.getElementById('Div3').style.display == 'none') {
             document.getElementById('Div3').style.display = 'block';
+            document.getElementById('bottombtn1').style.display = 'none';
+            document.getElementById('bottombtn1').style.display = 'block';
             document.getElementById('Div4').style.display = 'none';
+            document.getElementById('bottombtn2').style.display = 'none';
+            document.getElementById('bottombtns').style.display = 'block';
         } else {
             document.getElementById('Div3').style.display = 'none';
+            document.getElementById('bottombtn1').style.display = 'none';
             document.getElementById('Div4').style.display = 'block';
+            document.getElementById('bottombtn2').style.display = 'block';
+            document.getElementById('bottombtns').style.display = 'block';
         }
     }
 }
@@ -122,10 +134,16 @@ function switchVisible3() {
 
         if (document.getElementById('Div4').style.display == 'none') {
             document.getElementById('Div4').style.display = 'block';
+            document.getElementById('bottombtn2').style.display = 'none';
             document.getElementById('Div5').style.display = 'none';
+            document.getElementById('bottombtn3').style.display = 'none';
+            document.getElementById('bottombtns').style.display = 'block';
         } else {
             document.getElementById('Div4').style.display = 'none';
+            document.getElementById('bottombtn2').style.display = 'none';
             document.getElementById('Div5').style.display = 'block';
+            document.getElementById('bottombtn3').style.display = 'block';
+            document.getElementById('bottombtns').style.display = 'block';
         }
     }
 }
@@ -135,10 +153,16 @@ function switchVisible4() {
 
         if (document.getElementById('Div5').style.display == 'none') {
             document.getElementById('Div5').style.display = 'block';
+            document.getElementById('bottombtn3').style.display = 'block';
             document.getElementById('Div6').style.display = 'none';
+            document.getElementById('bottombtn4').style.display = 'none';
+            document.getElementById('bottombtns').style.display = 'block';
         } else {
             document.getElementById('Div5').style.display = 'none';
+            document.getElementById('bottombtn3').style.display = 'none';
             document.getElementById('Div6').style.display = 'block';
+            document.getElementById('bottombtn4').style.display = 'block';
+            document.getElementById('bottombtns').style.display = 'block';
         }
     }
 }
@@ -148,10 +172,16 @@ function switchVisible5() {
 
         if (document.getElementById('Div6').style.display == 'none') {
             document.getElementById('Div6').style.display = 'block';
+            document.getElementById('bottombtn4').style.display = 'block';
             document.getElementById('Div7').style.display = 'none';
+            document.getElementById('bottombtn5').style.display = 'none';
+            document.getElementById('bottombtns').style.display = 'block';
         } else {
             document.getElementById('Div6').style.display = 'none';
+            document.getElementById('bottombtn4').style.display = 'none';
             document.getElementById('Div7').style.display = 'block';
+            document.getElementById('bottombtn5').style.display = 'block';
+            document.getElementById('bottombtns').style.display = 'block';
         }
     }
 }
@@ -161,10 +191,14 @@ function switchVisible6() {
 
         if (document.getElementById('Div7').style.display == 'none') {
             document.getElementById('Div7').style.display = 'block';
+            document.getElementById('bottombtn5').style.display = 'block';
             document.getElementById('Div8').style.display = 'none';
+            document.getElementById('bottombtns').style.display = 'none';
         } else {
             document.getElementById('Div7').style.display = 'none';
+            document.getElementById('bottombtn5').style.display = 'none';
             document.getElementById('Div8').style.display = 'block';
+            document.getElementById('bottombtns').style.display = 'none';
         }
     }
 }
@@ -213,6 +247,10 @@ function switchVisible9() {
 $(document).ready(function () {
 
     $("#datepicker1").datepicker({
+      autoclose: true,
+      dateFormat: 'dd/mm/yy',
+      todayHighlight: true,
+
         onSelect: function () {
             $('label[for="startradio4"]').text($(this).val());
             console.log("It's not working");
@@ -226,31 +264,59 @@ $(document).ready(function () {
 
 });
 
-$(document).scroll(function() {
-    var cutoff = $(window).scrollTop();
-    
-    $('section').each(function(){
-        if($(this).offset().top + $(this).height() > cutoff){
-            $('section').removeClass('active-function');
-            $(this).addClass('active-function');
-            console.log('chalgaya');
-            return false; // stops the iteration after the first one on screen
-        }
-    });
-});
+// $(document).scroll(function () {
+//     var cutoff = $(window).scrollTop();
 
-$("document").ready(function(){
-    $('#Buttonpwr').click(function(){
-        var files = new Array();
-    
-        //xzyId is table id.
-        $('section').each(function() {
-          if ($(this).is('active-function')) {
-          alert(this.value);
-          console.log('chalgaya');
-          window.open(this.value);
-          }
-        });
-     });
-    
-    })
+//     $('section').each(function () {
+//         if ($(this).offset().top + $(this).height() > cutoff) {
+//             $('section').removeClass('active-function');
+//             $(this).addClass('active-function');
+//             console.log('chalgaya');
+//             return false;
+//         }
+//     });
+// });
+
+// $("document").ready(function () {
+//     $('#Buttonpwr').click(function () {
+//         var files = new Array();
+
+//         //xzyId is table id.
+//         $('section').each(function () {
+//             if ($(this).is('active-function')) {
+//                 alert(this.value);
+//                 console.log('chalgaya');
+//                 window.open(this.value);
+//             }
+//         });
+//     });
+
+// });
+
+
+const step1 = document.querySelector("#Div7")  
+if (step1.style.display === "block") {
+
+console.log("True");
+var div1 = document.getElementById('colswitch');
+var content = document.createElement("div");
+div1.appendChild(content);
+content.setAttribute("id", "switch2")
+content.classList.add("col-3")
+var Ptag = document.createElement('p');
+content.appendChild(Ptag);
+
+
+const body = document.body
+const div = document.querySelector("div")
+const swicth1 = document.querySelector("#switch1")
+swicth1.classList.replace("col-4", "col-3")
+const swicth3 = document.querySelector("#switch3")
+swicth3.classList.replace("col-4", "col-3")
+const swicth4 = document.querySelector("#switch4")
+swicth4.classList.replace("col-4", "col-3")
+
+}
+else {
+    console.log('false')
+}
