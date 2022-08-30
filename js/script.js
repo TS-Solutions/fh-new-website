@@ -97,12 +97,12 @@ function switchVisible1() {
 
         if (document.getElementById('Div2').style.display == 'none') {
             document.getElementById('Div2').style.display = 'block';
-            document.getElementById('Div3').style.display = 'none';
+            document.getElementById('mealtype').style.display = 'none';
             document.getElementById('bottombtn1').style.display = 'none';
             document.getElementById('bottombtns').style.display = 'block';
         } else {
             document.getElementById('Div2').style.display = 'none';
-            document.getElementById('Div3').style.display = 'block';
+            document.getElementById('mealtype').style.display = 'block';
             document.getElementById('bottombtn1').style.display = 'block';
             document.getElementById('bottombtns').style.display = 'block';
         }
@@ -110,19 +110,25 @@ function switchVisible1() {
 }
 
 function switchVisible2() {
-    if (document.getElementById('Div3')) {
+    if (document.getElementById('mealtype')) {
 
-        if (document.getElementById('Div3').style.display == 'none') {
-            document.getElementById('Div3').style.display = 'block';
-            document.getElementById('bottombtn1').style.display = 'none';
+        if (document.getElementById('mealtype').style.display == 'none') {
+            document.getElementById('mealtype').style.display = 'block';
             document.getElementById('bottombtn1').style.display = 'block';
-            document.getElementById('Div4').style.display = 'none';
+            document.getElementById('selectmeal1').style.display = 'none';
+            document.getElementById('selectmeal2').style.display = 'none';
+            document.getElementById('startdate').style.display = 'none';
+            document.getElementById('deliveryopt').style.display = 'none';
             document.getElementById('bottombtn2').style.display = 'none';
+            document.getElementById('bottombtn3').style.display = 'none';
+            document.getElementById('bottombtn4').style.display = 'none';
+            document.getElementById('bottombtn5').style.display = 'none';
             document.getElementById('bottombtns').style.display = 'block';
         } else {
-            document.getElementById('Div3').style.display = 'none';
+            document.getElementById('mealtype').style.display = 'none';
             document.getElementById('bottombtn1').style.display = 'none';
-            document.getElementById('Div4').style.display = 'block';
+            document.getElementById('selectmeal1').style.display = 'block';
+            document.getElementById('selectmeal2').style.display = 'none';
             document.getElementById('bottombtn2').style.display = 'block';
             document.getElementById('bottombtns').style.display = 'block';
         }
@@ -130,18 +136,25 @@ function switchVisible2() {
 }
 
 function switchVisible3() {
-    if (document.getElementById('Div4')) {
+    if (document.getElementById('selectmeal1')) {
 
-        if (document.getElementById('Div4').style.display == 'none') {
-            document.getElementById('Div4').style.display = 'block';
-            document.getElementById('bottombtn2').style.display = 'none';
-            document.getElementById('Div5').style.display = 'none';
+        if (document.getElementById('selectmeal1').style.display == 'none') {
+            document.getElementById('selectmeal1').style.display = 'block';
+            document.getElementById('bottombtn2').style.display = 'block';
+            document.getElementById('selectmeal2').style.display = 'none';
+            document.getElementById('startdate').style.display = 'none';
+            document.getElementById('deliveryopt').style.display = 'none';
+            document.getElementById('payment').style.display = 'none';
+            document.getElementById('bottombtn1').style.display = 'none';
             document.getElementById('bottombtn3').style.display = 'none';
+            document.getElementById('bottombtn4').style.display = 'none';
+            document.getElementById('bottombtn5').style.display = 'none';
             document.getElementById('bottombtns').style.display = 'block';
         } else {
-            document.getElementById('Div4').style.display = 'none';
+            document.getElementById('selectmeal1').style.display = 'none';
             document.getElementById('bottombtn2').style.display = 'none';
-            document.getElementById('Div5').style.display = 'block';
+            document.getElementById('selectmeal2').style.display = 'block';
+            document.getElementById('startdate').style.display = 'none';
             document.getElementById('bottombtn3').style.display = 'block';
             document.getElementById('bottombtns').style.display = 'block';
         }
@@ -149,18 +162,26 @@ function switchVisible3() {
 }
 
 function switchVisible4() {
-    if (document.getElementById('Div5')) {
+    if (document.getElementById('selectmeal2')) {
 
-        if (document.getElementById('Div5').style.display == 'none') {
-            document.getElementById('Div5').style.display = 'block';
+        if (document.getElementById('selectmeal2').style.display == 'none') {
+            document.getElementById('selectmeal2').style.display = 'block';
             document.getElementById('bottombtn3').style.display = 'block';
-            document.getElementById('Div6').style.display = 'none';
+            document.getElementById('startdate').style.display = 'none';
+            document.getElementById('mealtype').style.display = 'none';
+            document.getElementById('selectmeal1').style.display = 'none';
+            document.getElementById('deliveryopt').style.display = 'none';
+            document.getElementById('payment').style.display = 'none';
+            document.getElementById('bottombtn1').style.display = 'none';
+            document.getElementById('bottombtn2').style.display = 'none';
             document.getElementById('bottombtn4').style.display = 'none';
+            document.getElementById('bottombtn5').style.display = 'none';
             document.getElementById('bottombtns').style.display = 'block';
         } else {
-            document.getElementById('Div5').style.display = 'none';
+            document.getElementById('selectmeal2').style.display = 'none';
             document.getElementById('bottombtn3').style.display = 'none';
-            document.getElementById('Div6').style.display = 'block';
+            document.getElementById('startdate').style.display = 'block';
+            document.getElementById('deliveryopt').style.display = 'none';
             document.getElementById('bottombtn4').style.display = 'block';
             document.getElementById('bottombtns').style.display = 'block';
         }
@@ -168,18 +189,29 @@ function switchVisible4() {
 }
 
 function switchVisible5() {
-    if (document.getElementById('Div6')) {
+    if (document.getElementById('startdate')) {
 
-        if (document.getElementById('Div6').style.display == 'none') {
-            document.getElementById('Div6').style.display = 'block';
+        if (document.getElementById('startdate').style.display == 'none') {
+            document.getElementById('startdate').style.display = 'block';
             document.getElementById('bottombtn4').style.display = 'block';
-            document.getElementById('Div7').style.display = 'none';
+            document.getElementById('mealtype').style.display = 'none';
+            document.getElementById('selectmeal1').style.display = 'none';
+            document.getElementById('selectmeal2').style.display = 'none';
+            document.getElementById('deliveryopt').style.display = 'none';
+            document.getElementById('payment').style.display = 'none';
+            document.getElementById('bottombtn1').style.display = 'none';
+            document.getElementById('bottombtn2').style.display = 'none';
+            document.getElementById('bottombtn3').style.display = 'none';
             document.getElementById('bottombtn5').style.display = 'none';
             document.getElementById('bottombtns').style.display = 'block';
         } else {
-            document.getElementById('Div6').style.display = 'none';
+            document.getElementById('startdate').style.display = 'none';
             document.getElementById('bottombtn4').style.display = 'none';
-            document.getElementById('Div7').style.display = 'block';
+            document.getElementById('deliveryopt').style.display = 'block';
+            document.getElementById('mealtype').style.display = 'none';
+            document.getElementById('selectmeal1').style.display = 'none';
+            document.getElementById('selectmeal2').style.display = 'none';
+            document.getElementById('payment').style.display = 'none';
             document.getElementById('bottombtn5').style.display = 'block';
             document.getElementById('bottombtns').style.display = 'block';
         }
@@ -187,69 +219,83 @@ function switchVisible5() {
 }
 
 function switchVisible6() {
-    if (document.getElementById('Div7')) {
+    if (document.getElementById('deliveryopt')) {
 
-        if (document.getElementById('Div7').style.display == 'none') {
-            document.getElementById('Div7').style.display = 'block';
+        if (document.getElementById('deliveryopt').style.display == 'none') {
+            document.getElementById('deliveryopt').style.display = 'block';
             document.getElementById('bottombtn5').style.display = 'block';
-            document.getElementById('Div8').style.display = 'none';
-            document.getElementById('bottombtns').style.display = 'none';
+            document.getElementById('mealtype').style.display = 'none';
+            document.getElementById('selectmeal1').style.display = 'none';
+            document.getElementById('selectmeal2').style.display = 'none';
+            document.getElementById('startdate').style.display = 'none';
+            document.getElementById('payment').style.display = 'none';
+            document.getElementById('bottombtn1').style.display = 'none';
+            document.getElementById('bottombtn2').style.display = 'none';
+            document.getElementById('bottombtn3').style.display = 'none';
+            document.getElementById('bottombtn4').style.display = 'none';
+            document.getElementById('bottombtns').style.display = 'block';
         } else {
-            document.getElementById('Div7').style.display = 'none';
+            document.getElementById('deliveryopt').style.display = 'none';
             document.getElementById('bottombtn5').style.display = 'none';
-            document.getElementById('Div8').style.display = 'block';
+            document.getElementById('payment').style.display = 'block';
+            document.getElementById('mealtype').style.display = 'none';
+            document.getElementById('selectmeal1').style.display = 'none';
+            document.getElementById('selectmeal2').style.display = 'none';
+            document.getElementById('startdate').style.display = 'none';
             document.getElementById('bottombtns').style.display = 'none';
         }
     }
 }
 
 function switchVisible7() {
-    if (document.getElementById('Div8')) {
+    if (document.getElementById('payment')) {
 
-        if (document.getElementById('Div8').style.display == 'none') {
-            document.getElementById('Div8').style.display = 'block';
+        if (document.getElementById('payment').style.display == 'none') {
+            document.getElementById('payment').style.display = 'block';
             document.getElementById('Div9').style.display = 'none';
+            document.getElementById('startdate').style.display = 'none';
         } else {
-            document.getElementById('Div8').style.display = 'none';
+            document.getElementById('payment').style.display = 'none';
+            document.getElementById('startdate').style.display = 'none';
             document.getElementById('Div9').style.display = 'block';
         }
     }
 }
 
-function switchVisible8() {
-    if (document.getElementById('Div9')) {
+// function switchVisible8() {
+//     if (document.getElementById('Div9')) {
 
-        if (document.getElementById('Div9').style.display == 'none') {
-            document.getElementById('Div9').style.display = 'block';
-            document.getElementById('Div10').style.display = 'none';
-        } else {
-            document.getElementById('Div9').style.display = 'none';
-            document.getElementById('Div10').style.display = 'block';
-        }
-    }
-}
+//         if (document.getElementById('Div9').style.display == 'none') {
+//             document.getElementById('Div9').style.display = 'block';
+//             document.getElementById('Div10').style.display = 'none';
+//         } else {
+//             document.getElementById('Div9').style.display = 'none';
+//             document.getElementById('Div10').style.display = 'block';
+//         }
+//     }
+// }
 
-function switchVisible9() {
-    if (document.getElementById('Div10')) {
+// function switchVisible9() {
+//     if (document.getElementById('Div10')) {
 
-        if (document.getElementById('Div10').style.display == 'none') {
-            document.getElementById('Div10').style.display = 'block';
-            document.getElementById('Div11').style.display = 'none';
-        } else {
-            document.getElementById('Div10').style.display = 'none';
-            document.getElementById('Div11').style.display = 'block';
-        }
-    }
-}
+//         if (document.getElementById('Div10').style.display == 'none') {
+//             document.getElementById('Div10').style.display = 'block';
+//             document.getElementById('Div11').style.display = 'none';
+//         } else {
+//             document.getElementById('Div10').style.display = 'none';
+//             document.getElementById('Div11').style.display = 'block';
+//         }
+//     }
+// }
 
 
 
 $(document).ready(function () {
 
     $("#datepicker1").datepicker({
-      autoclose: true,
-      dateFormat: 'dd/mm/yy',
-      todayHighlight: true,
+        autoclose: true,
+        dateFormat: 'dd/mm/yy',
+        todayHighlight: true,
 
         onSelect: function () {
             $('label[for="startradio4"]').text($(this).val());
@@ -294,29 +340,28 @@ $(document).ready(function () {
 // });
 
 
-const step1 = document.querySelector("#Div7")  
+const step1 = document.querySelector("#deliveryopt")
 if (step1.style.display === "block") {
 
-console.log("True");
-var div1 = document.getElementById('colswitch');
-var content = document.createElement("div");
-div1.appendChild(content);
-content.setAttribute("id", "switch2")
-content.classList.add("col-3")
-var Ptag = document.createElement('p');
-content.appendChild(Ptag);
+    console.log("True");
+    var div1 = document.getElementById('colswitch');
+    var content = document.createElement("div");
+    div1.appendChild(content);
+    content.setAttribute("id", "switch2")
+    content.classList.add("col-3")
+    var Ptag = document.createElement('p');
+    content.appendChild(Ptag);
 
 
-const body = document.body
-const div = document.querySelector("div")
-const swicth1 = document.querySelector("#switch1")
-swicth1.classList.replace("col-4", "col-3")
-const swicth3 = document.querySelector("#switch3")
-swicth3.classList.replace("col-4", "col-3")
-const swicth4 = document.querySelector("#switch4")
-swicth4.classList.replace("col-4", "col-3")
+    const body = document.body
+    const div = document.querySelector("div")
+    const swicth1 = document.querySelector("#switch1")
+    swicth1.classList.replace("col-4", "col-3")
+    const swicth3 = document.querySelector("#switch3")
+    swicth3.classList.replace("col-4", "col-3")
+    const swicth4 = document.querySelector("#switch4")
+    swicth4.classList.replace("col-4", "col-3")
 
-}
-else {
+} else {
     console.log('false')
 }

@@ -229,7 +229,7 @@
                 </section>
 
                 <section id="subscribe" class="">
-                    <div id="Div3" class="container section">
+                    <div id="mealtype" class="container section">
                         <div class="row justify-content-center">
                             <div class="col-md-4 heading-section meal">
                                 <div class="row justify-content-start">
@@ -326,13 +326,13 @@
 
 
                 <section id="subscribe" class="">
-                    <div id="Div4" class="container section">
+                    <div id="selectmeal1" class="container section">
                         <div class="row justify-content-center">
                             <div class="col-md-4 heading-section meal">
                                 <div class="row justify-content-start">
                                     <ol>
                                         <div class="completed">
-                                            <li><a href="#">
+                                            <li><a href="#" onclick="switchVisible2();">
                                                     <h3>MEAL TYPE</h3>
                                                 </a></li>
                                         </div>
@@ -524,13 +524,13 @@
 
 
                 <section id="subscribe" class="">
-                    <div id="Div5" class="container section">
+                    <div id="selectmeal2" class="container section">
                         <div class="row justify-content-center">
                             <div class="col-md-4 heading-section meal">
                                 <div class="row justify-content-start">
                                     <ol>
                                         <div class="completed">
-                                            <li><a href="#">
+                                            <li><a href="#" onclick="switchVisible2();">
                                                     <h3>MEAL TYPE</h3>
                                                 </a></li>
                                         </div>
@@ -659,18 +659,18 @@
 
 
                 <section id="subscribe" class="">
-                    <div id="Div6" class="container section">
+                    <div id="startdate" class="container section">
                         <div class="row justify-content-center">
 
                             <div class="col-md-4 heading-section meal">
                                 <div class="row justify-content-start">
                                     <ol>
-                                        <div class="completed">
+                                        <div class="completed" onclick="switchVisible2();">
                                             <li><a href="#">
                                                     <h3>MEAL TYPE</h3>
                                                 </a></li>
                                         </div>
-                                        <div class="completed">
+                                        <div class="completed" onclick="switchVisible3();">
                                             <li><a href="#">
                                                     <h3>SELECT MEALS</h3>
                                                 </a></li>
@@ -754,22 +754,28 @@
                                         <div class="btn-group justify-content-start" role="group"
                                             aria-label="Basic checkbox toggle button group">
 
-                                            <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                                            <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off"
+                                                checked>
                                             <label class="btn btn-date-days m-2" for="btncheck1">Sa</label>
 
-                                            <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                                            <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off"
+                                                checked>
                                             <label class="btn btn-date-days m-2" for="btncheck2">Su</label>
 
-                                            <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                                            <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off"
+                                                checked>
                                             <label class="btn btn-date-days m-2" for="btncheck3">Mo</label>
 
-                                            <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
+                                            <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off"
+                                                checked>
                                             <label class="btn btn-date-days m-2" for="btncheck4">Tu</label>
 
-                                            <input type="checkbox" class="btn-check" id="btncheck5" autocomplete="off">
+                                            <input type="checkbox" class="btn-check" id="btncheck5" autocomplete="off"
+                                                checked>
                                             <label class="btn btn-date-days m-2" for="btncheck5">We</label>
 
-                                            <input type="checkbox" class="btn-check" id="btncheck6" autocomplete="off">
+                                            <input type="checkbox" class="btn-check" id="btncheck6" autocomplete="off"
+                                                checked>
                                             <label class="btn btn-date-days m-2" for="btncheck6">Th</label>
 
                                             <input type="checkbox" class="btn-check" id="btncheck7" autocomplete="off"
@@ -790,23 +796,23 @@
 
 
                 <section id="subscribe" class="deliver">
-                    <div id="Div7" class="container section">
+                    <div id="deliveryopt" class="container section">
                         <div class="row justify-content-center">
                             <div class="col-md-4 heading-section meal">
                                 <div class="row justify-content-start">
                                     <ol>
                                         <div class="completed">
-                                            <li><a href="#">
+                                            <li><a href="#" onclick="switchVisible2();">
                                                     <h3>MEAL TYPE</h3>
                                                 </a></li>
                                         </div>
                                         <div class="completed">
-                                            <li><a href="#">
+                                            <li><a href="#" onclick="switchVisible3();">
                                                     <h3>SELECT MEALS</h3>
                                                 </a></li>
                                         </div>
                                         <div class="completed">
-                                            <li><a href="#">
+                                            <li><a href="#" onclick="switchVisible5();">
                                                     <h3>STARTING DATE</h3>
                                                 </a></li>
                                         </div>
@@ -919,7 +925,7 @@
 
 
                 <section id="subscribe" class="theme-color1">
-                    <div id="Div8" class="container section">
+                    <div id="payment" class="container section">
                         <div class="row justify-content-center m-10">
                             <h1 class="mb-4">Payment</h1>
                             <div class="container white payment">
@@ -956,7 +962,8 @@
                                                         Saudi
                                                         Arabia</span></p>
                                             </div>
-                                            <a class="switch" href="#">Switch to free pickup</a>
+                                            <a class="switch" href="#" onclick="switchVisible6();">Switch to free
+                                                pickup</a>
                                             <div class="row justify-content-center">
                                                 <a href="index.html" type="button"
                                                     class="btn btn-next btn-lg">Subscribe</a>
@@ -980,7 +987,8 @@
                                                     <h5>Qty</h5>
                                                 </div>
                                                 <div class="col-md-2">
-                                                    <a class="float-right" href="#"> Edit</a>
+                                                    <a class="float-right" href="#" onclick="switchVisible3();">
+                                                        Edit</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1065,7 +1073,8 @@
                                             <div class="row">
                                                 <div class="d-flex justify-content-between">
                                                     <p class="field-inline-block">Saturday to Thursday (6 Days)</p>
-                                                    <a class="field-inline-block float-right" href="#"> Edit</a>
+                                                    <a class="field-inline-block float-right" href="#"
+                                                        onclick="switchVisible5();"> Edit</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1075,7 +1084,8 @@
                                             <div class="row">
                                                 <div class="d-flex justify-content-between">
                                                     <p class="field-inline-block">4 weeks</p>
-                                                    <a class="field-inline-block float-right" href="#"> Edit</a>
+                                                    <a class="field-inline-block float-right" href="#"
+                                                        onclick="switchVisible5();"> Edit</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1085,7 +1095,8 @@
                                             <div class="row">
                                                 <div class="d-flex justify-content-between">
                                                     <p class="field-inline-block">18-05-2022</p>
-                                                    <a class="field-inline-block float-right" href="#"> Edit</a>
+                                                    <a class="field-inline-block float-right" href="#"
+                                                        onclick="switchVisible5();"> Edit</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1096,7 +1107,8 @@
                                                 <div class="d-flex justify-content-between">
                                                     <p class="field-inline-block">No Chicken<br>No Shrimp<br><br>I’m
                                                         allergic to Tomatoes.</p>
-                                                    <a class="field-inline-block float-right" href="#"> Edit</a>
+                                                    <a class="field-inline-block float-right" href="#"
+                                                        onclick="switchVisible4();"> Edit</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1206,7 +1218,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"
         integrity="sha512-cViKBZswH231Ui53apFnPzem4pvG8mlCDrSyZskDE9OK2gyUd/L08e1AC0wjJodXYZ1wmXEuNimN1d3MWG7jaQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
