@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/css/bootstrap-select.min.css">
+
 
 </head>
 
@@ -99,12 +100,10 @@
                         <div class="col-lg-10 col-lg-3 d-flex mb-sm-4 justify-content-center ftco-animate">
                             <div class="staff">
                                 <div class="info text-center">
-                                    <form id="">
-                                        <div class="form-group input-material mb-5 pb-5">
-                                            <input type="text" class="form-control" id="name-field"
-                                                placeholder="Tell us your name" required>
-                                        </div>
-                                    </form>
+                                    <div class="form-group input-material mb-5 pb-5">
+                                        <input type="text" name="customer_name" class="form-control" id="customer_name"
+                                            placeholder="Tell us your name" required>
+                                    </div>
                                     <input id="Button1" type="button" class="btn btn-next btn-lg" value="Continue"
                                         onclick="switchVisible();" />
                                 </div>
@@ -129,97 +128,124 @@
                                     <div class="body-content">
                                         <div class="body-main staff text-left" role="group"
                                             aria-label="Basic radio toggle button group">
-                                            <form action="" method="post">
-                                                <h2>I'M A
-                                                    <input type="radio" class="btn-check" name="btnradio1"
-                                                        id="btnradio1" autocomplete="off" checked>
-                                                    <label class="btn btn-text m-2" for="btnradio1">HANDSOME MAN</label>
-                                                    /
-                                                    <input type="radio" class="btn-check" name="btnradio1"
-                                                        id="btnradio2" autocomplete="off">
-                                                    <label class="btn btn-text m-2" for="btnradio2">PRETTY LADY</label>,
-
+                                            <h2>I'M A
+                                                <input type="radio" class="btn-check gender_radio" name="gender_radio"
+                                                    id="male_gender_radio" autocomplete="off" value="Male" checked>
+                                                <label class="btn btn-text m-2" for="male_gender_radio">HANDSOME
+                                                    MAN</label>
+                                                /
+                                                <input type="radio" class="btn-check gender_radio" name="gender_radio"
+                                                    id="female_gender_radio" autocomplete="off" value="Female">
+                                                <label class="btn btn-text m-2" for="female_gender_radio">PRETTY
+                                                    LADY</label>
+                                                <span id="dob_area"> ,
                                                     BORN IN <fieldset class="field-inline-block">
                                                         <div class="field-inline-block">
-                                                            <input placeholder="DD"
+                                                            <input name="dob_day" id="dob_day" placeholder="DD"
+                                                                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                                                                type="number" pattern="[0-9]*" maxlength="2" size="2"
+                                                                min="1" max="31" class="date-field" />
+                                                        </div>
+                                                        <div class="field-inline-block">
+                                                            <input name="dob_month" id="dob_month" placeholder="MM"
                                                                 oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
                                                                 type="number" pattern="[0-9]*" maxlength="2" size="2"
                                                                 class="date-field" />
                                                         </div>
                                                         <div class="field-inline-block">
-                                                            <input placeholder="MM"
-                                                                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-                                                                type="number" pattern="[0-9]*" maxlength="2" size="2"
-                                                                class="date-field" />
-                                                        </div>
-                                                        <div class="field-inline-block">
-                                                            <input placeholder="YYYY"
+                                                            <input name="dob_year" id="dob_year" placeholder="YYYY"
                                                                 oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
                                                                 type="number" pattern="[0-9]*" maxlength="4" size="4"
                                                                 class="date-field-year" />
                                                         </div>
                                                     </fieldset>
-                                                </h2>
+                                                </span>
+                                            </h2>
 
-                                                <div class="row">
-                                                    <div class="col-lg-12 text-left heading-section stranger">
-                                                        <h2 class="field-inline-block">MY WEIGHT IS <fieldset
-                                                                class="field-inline-block">
-                                                                <div class="field-inline-block">
-                                                                    <input placeholder="00"
-                                                                        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-                                                                        type="number" pattern="[0-9]*" maxlength="2"
-                                                                        size="2" class="date-field" />
-                                                                </div> KG, AND HEIGHT IS
-                                                                <div class="field-inline-block">
-                                                                    <input placeholder="000"
-                                                                        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-                                                                        type="number" pattern="[0-9]*" maxlength="3"
-                                                                        size="3" class="weight-field" />
-                                                                </div> CM
-                                                            </fieldset>
-                                                        </h2>
-                                                    </div>
+                                            <div class="row" id="weight_height_area">
+                                                <div class="col-lg-12 text-left heading-section stranger">
+                                                    <h2 class="field-inline-block">MY WEIGHT IS
+                                                        <fieldset class="field-inline-block">
+                                                            <div class="field-inline-block">
+                                                                <input name="customer_weight" id="customer_weight"
+                                                                    placeholder="00"
+                                                                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                                                                    type="number" pattern="[0-9]*" maxlength="2"
+                                                                    size="2" class="date-field" />
+                                                            </div> KG, AND HEIGHT IS
+                                                            <div class="field-inline-block">
+                                                                <input name="customer_height" id="customer_height"
+                                                                    placeholder="000"
+                                                                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                                                                    type="number" pattern="[0-9]*" maxlength="3"
+                                                                    size="3" class="weight-field" />
+                                                            </div> CM
+                                                        </fieldset>
+                                                    </h2>
                                                 </div>
-                                                <div class="row">
-                                                    <div class="col-lg-12 text-center heading-section stranger">
-                                                        <h2>I LOVE TO
-                                                            <input type="radio" class="btn-check" name="btngrp1"
-                                                                id="btnradio4" autocomplete="off" checked>
-                                                            <label class="btn btn-text m-2" for="btnradio4">MAINTAIN MY
-                                                                WEIGHT</label>,
-                                                            <input type="radio" class="btn-check" name="btngrp1"
-                                                                id="btnradio5" autocomplete="off">
-                                                            <label class="btn btn-text m-2" for="btnradio5">LOSE
-                                                                WEIGHT</label>,
-                                                            <input type="radio" class="btn-check" name="btngrp1"
-                                                                id="btnradio6" autocomplete="off">
-                                                            <label class="btn btn-text m-2" for="btnradio6">GAIN
-                                                                MUSCLES</label>
-                                                        </h2>
-                                                    </div>
+                                            </div>
+
+                                            <div class="row" id="goal_area">
+                                                <div class="col-lg-12 text-center heading-section stranger">
+                                                    <h2>MY FITNESS GOAL IS
+                                                        <input type="radio" class="btn-check customer_goal"
+                                                            name="customer_goal" id="lean_bulk" autocomplete="off"
+                                                            value="1" checked>
+                                                        <label class="btn btn-text m-2" for="lean_bulk">LEAN
+                                                            BULK</label>,
+                                                        <input type="radio" class="btn-check customer_goal"
+                                                            name="customer_goal" id="dirty_bulk" autocomplete="off"
+                                                            value="2">
+                                                        <label class="btn btn-text m-2" for="dirty_bulk">DIRTY
+                                                            BULK</label>,
+                                                        <input type="radio" class="btn-check customer_goal"
+                                                            name="customer_goal" id="maintain_weight" autocomplete="off"
+                                                            value="3">
+                                                        <label class="btn btn-text m-2"
+                                                            for="maintain_weight">MAINTAIN</label>,
+                                                        <input type="radio" class="btn-check customer_goal"
+                                                            name="customer_goal" id="cut_weight" autocomplete="off"
+                                                            value="4">
+                                                        <label class="btn btn-text m-2" for="cut_weight">CUT</label>
+                                                    </h2>
                                                 </div>
-                                                <div class="row">
-                                                    <div class="col-lg-12 text-center heading-section stranger">
-                                                        <h2>I EXERCISE
-                                                            <input type="radio" class="btn-check" name="btngrp2"
-                                                                id="btnradio7" autocomplete="off" checked>
-                                                            <label class="btn btn-text m-2" for="btnradio7">0-1</label>,
-                                                            <input type="radio" class="btn-check" name="btngrp2"
-                                                                id="btnradio8" autocomplete="off">
-                                                            <label class="btn btn-text m-2" for="btnradio8">1-2</label>,
-                                                            <input type="radio" class="btn-check" name="btngrp2"
-                                                                id="btnradio9" autocomplete="off">
-                                                            <label class="btn btn-text m-2" for="btnradio9">2+ </label>A
-                                                            WEEK.
-                                                        </h2>
-                                                    </div>
+                                            </div>
+
+                                            <div class="row" id="exercise_area">
+                                                <div class="col-lg-12 text-center heading-section stranger">
+                                                    <h2>MY ACTIVITY LEVEL
+                                                        <input type="radio" class="btn-check exercise_frequency"
+                                                            name="exercise_frequency" id="sendentary" autocomplete="off"
+                                                            checked>
+                                                        <label class="btn btn-text m-2"
+                                                            for="sendentary">SENDENTARY</label>,
+                                                        <input type="radio" class="btn-check exercise_frequency"
+                                                            name="exercise_frequency" id="lightly_active"
+                                                            autocomplete="off">
+                                                        <label class="btn btn-text m-2" for="lightly_active">LIGHTLY
+                                                            ACTIVE</label>,
+                                                        <input type="radio" class="btn-check exercise_frequency"
+                                                            name="exercise_frequency" id="moderately_active"
+                                                            autocomplete="off">
+                                                        <label class="btn btn-text m-2"
+                                                            for="moderately_active">MODERATELY ACTIVE</label>,
+                                                        <input type="radio" class="btn-check exercise_frequency"
+                                                            name="exercise_frequency" id="very_active"
+                                                            autocomplete="off">
+                                                        <label class="btn btn-text m-2" for="very_active">VERY
+                                                            ACTIVE</label>,
+                                                        <input type="radio" class="btn-check exercise_frequency"
+                                                            name="exercise_frequency" id="extremely_active"
+                                                            autocomplete="off">
+                                                        <label class="btn btn-text m-2" for="extremely_active">EXTREMELY
+                                                            ACTIVE</label>
+                                                    </h2>
                                                 </div>
-                                                <div class="row justify-content-center btn-or pt-4 pb-4">
-                                                    <input id="Button1" type="button" class="btn btn-next btn-lg"
-                                                        value="Continue" onclick="switchVisible1();" />
-                                                </div>
-                                            </form>
+                                            </div>
+                                            <div class="row justify-content-center btn-or pt-4 pb-4" id="continue_area">
+                                                <input id="Button1" type="button" class="btn btn-next btn-lg"
+                                                    value="Continue" onclick="switchVisible1();" />
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -277,10 +303,11 @@
                                         aria-label="Basic radio toggle button group">
                                         <h4 class="pb-4">Choose Your Meal Type</h4>
 
-                                        <div class="col-md-4 text-center meal-type">
-                                            <input class="div-box" type="radio" name="divboxradio" id="divradio1"
-                                                checked>
-                                            <label class="label-box" id="bowla" for="divradio1">
+                                        <div class="col-md-4 text-center meal-type meal_selection" data-mealtype="Keto">
+                                            <input class="div-box" type="radio" name="meal_selection_radio"
+                                                id="divradio1" value="Keto" checked>
+                                            <label class="label-box" id="bowla" for="divradio1" class="meal_selection"
+                                                data-mealtype="Keto">
                                                 <div class="bowl-img">
                                                     <img src="./img/bowl-a.png" alt="">
                                                     <h4 class="heading pt-4">Keto</h4>
@@ -292,7 +319,8 @@
                                         </div>
 
                                         <div class="col-md-4 text-center meal-type">
-                                            <input class="div-box" type="radio" name="divboxradio" id="divradio2">
+                                            <input class="div-box" type="radio" name="meal_selection_radio"
+                                                id="divradio2">
                                             <label class="label-box" id="bowla" for="divradio2">
                                                 <div class="bowl-img">
                                                     <img src="./img/bowl-b.png" alt="">
@@ -305,7 +333,8 @@
                                         </div>
 
                                         <div class="col-md-4 text-center meal-type">
-                                            <input class="div-box" type="radio" name="divboxradio" id="divradio3">
+                                            <input class="div-box" type="radio" name="meal_selection_radio"
+                                                id="divradio3">
                                             <label class="label-box" id="bowla" for="divradio3">
                                                 <div class="bowl-img">
                                                     <img src="./img/bowl-c.png" alt="">
@@ -373,10 +402,15 @@
                                     <h4>Select Your Meals</h4>
                                     <div class="row justify-content-center meal-selection">
                                         <div class="col-md-4 text-center meal-type">
-                                            <img src="./img/breakfastbox.png" alt="">
+                                            <div>
+                                                <div class="select-img">
+                                                    <img class="double-box1" src="./img/breakfastbox.png" alt="">
+                                                </div>
+                                                <img class="single-box1" src="./img/breakfastbox.png" alt="">
+                                            </div>
                                             <h4 class="heading">Breakfast</h4>
-                                            <input type="text" name="quant[1]"
-                                                class="form-control input-type input-number" value="1" min="1" max="10">
+                                            <input type="number" name="quant[1]"
+                                                class="form-control input-type input-number" value="0" min="0" max="2">
                                             <p>Meal</p>
                                             <div tabindex="1" id="bowlb" class="bowl-box">
                                             </div>
@@ -402,13 +436,13 @@
                                         <div class="col-md-4 text-center meal-type">
                                             <div>
                                                 <div class="select-img">
-                                                    <img class="double-box" src="./img/lunchbox.png" alt="">
+                                                    <img class="double-box2" src="./img/lunchbox.png" alt="">
                                                 </div>
-                                                <img src="./img/lunchbox.png" alt="">
+                                                <img class="single-box2" src="./img/lunchbox.png" alt="">
                                             </div>
                                             <h4 class="heading">Lunch</h4>
-                                            <input type="text" name="quant[2]"
-                                                class="form-control input-type input-number" value="1" min="1" max="10">
+                                            <input type="number" name="quant[2]"
+                                                class="form-control input-type input-number" value="0" min="0" max="2">
                                             <p>Meals</p>
                                             <div tabindex="1" id="bowlb" class="bowl-box">
                                             </div>
@@ -431,10 +465,15 @@
                                             </div>
                                         </div>
                                         <div class="col-md-4 text-center meal-type">
-                                            <img src="./img/dinnerbox.png" alt="">
+                                            <div>
+                                                <div class="select-img">
+                                                    <img class="double-box3" src="./img/dinnerbox.png" alt="">
+                                                </div>
+                                                <img class="single-box3 pad5" src="./img/dinnerbox.png" alt="">
+                                            </div>
                                             <h4 class="heading">Dinner</h4>
-                                            <input type="text" name="quant[3]"
-                                                class="form-control input-type input-number" value="1" min="1" max="10">
+                                            <input type="number" name="quant[3]"
+                                                class="form-control input-type input-number" value="0" min="0" max="2">
                                             <p>Meals</p>
                                             <div tabindex="1" id="bowlb" class="bowl-box">
                                             </div>
@@ -481,8 +520,8 @@
                                                 <div class="circle"></div>
                                             </div>
                                             <div class="text-pos">
-                                                <input type="text" name="quant[4]"
-                                                    class="form-control text input-number" value="1" min="1" max="10">
+                                                <input type="number" name="quant[4]"
+                                                    class="form-control text input-number" value="1" min="1" max="2">
                                             </div>
                                         </div>
                                         <div class="img2-box">
@@ -493,8 +532,8 @@
                                                 <div class="circle"></div>
                                             </div>
                                             <div class="text-pos2">
-                                                <input type="text" name="quant[5]"
-                                                    class="form-control text input-number" value="1" min="1" max="10">
+                                                <input type="number" name="quant[5]"
+                                                    class="form-control text input-number" value="1" min="1" max="2">
                                             </div>
                                         </div>
                                         <div class="toggle2">
@@ -565,11 +604,13 @@
                                         <div class="row justify-content-center">
 
 
-                                            <div tabindex="1" id="mealbox2" class="col-md-4 text-center meal-box">
+                                            <div tabindex="1" id="mealbox2" class="col-md-4 text-center meal-box"
+                                                data-img="./icons/eggs-hover.png">
                                                 <input type="checkbox" name="rGroup" value="2" id="r1" />
-                                                <label class="whatever" for="r1">
+                                                <label class="whatever" for="r1" onclick="greenegg();">
                                                     <div class="img-box">
-                                                        <img src="./icons/eggs.svg" alt="">
+                                                        <img id="green-egg" src="./icons/green egg.png">
+                                                        <img id="hover-egg" src="./icons/eggs-hover.png">
                                                     </div>
                                                     <div class="box-text">
                                                         <p>Eggs</p>
@@ -579,9 +620,10 @@
 
                                             <div tabindex="1" id="mealbox2" class="col-md-4 text-center meal-box">
                                                 <input type="checkbox" name="rGroup" value="2" id="r2" />
-                                                <label class="whatever" for="r2">
+                                                <label class="whatever" for="r2" onclick="greenfish();">
                                                     <div class="img-box">
-                                                        <img src="./icons/fish.svg" alt="">
+                                                        <img id="green-fish" src="./icons/green fish.png">
+                                                        <img id="hover-fish" src="./icons/fish-hover.png">
                                                     </div>
                                                     <div class="box-text">
                                                         <p>Fish</p>
@@ -591,9 +633,10 @@
 
                                             <div tabindex="1" id="mealbox2" class="col-md-4 text-center meal-box">
                                                 <input type="checkbox" name="rGroup" value="2" id="r3" />
-                                                <label class="whatever" for="r3">
+                                                <label class="whatever" for="r3" onclick="greenshrimp();">
                                                     <div class="img-box">
-                                                        <img src="./icons/shrimp.svg" alt="">
+                                                        <img id="green-shrimp" src="./icons/green shrimp.png">
+                                                        <img id="hover-shrimp" src="./icons/shrimp-hover.png">
                                                     </div>
                                                     <div class="box-text">
                                                         <p>Shrimps</p>
@@ -605,9 +648,10 @@
                                         <div class="row justify-content-center">
                                             <div tabindex="1" id="mealbox2" class="col-md-4 text-center meal-box">
                                                 <input type="checkbox" name="rGroup" value="2" id="r4" />
-                                                <label class="whatever" for="r4">
+                                                <label class="whatever" for="r4" onclick="greenmeat();">
                                                     <div class="img-box">
-                                                        <img src="./icons/meat.svg" alt="">
+                                                        <img id="green-meat" src="./icons/green meet.png">
+                                                        <img id="hover-meat" src="./icons/red meat-hover.png">
                                                     </div>
                                                     <div class="box-text">
                                                         <p>Red Meat</p>
@@ -617,9 +661,10 @@
 
                                             <div tabindex="1" id="mealbox2" class="col-md-4 text-center meal-box">
                                                 <input type="checkbox" name="rGroup" value="2" id="r5" />
-                                                <label class="whatever" for="r5">
+                                                <label class="whatever" for="r5" onclick="greenchicken();">
                                                     <div class="img-box">
-                                                        <img src="./icons/chicken.svg" alt="">
+                                                        <img id="green-chicken" src="./icons/green chicken.png">
+                                                        <img id="hover-chicken" src="./icons/chicken-hover.png">
                                                     </div>
                                                     <div class="box-text">
                                                         <p>Chicken</p>
@@ -629,9 +674,10 @@
 
                                             <div tabindex="1" id="mealbox2" class="col-md-4 text-center meal-box">
                                                 <input type="checkbox" name="rGroup" value="2" id="r6" />
-                                                <label class="whatever" for="r6">
+                                                <label class="whatever" for="r6" onclick="greennut();">
                                                     <div class="img-box">
-                                                        <img src="./icons/nuts.svg" alt="">
+                                                        <img id="green-nut" src="./icons/green nut.png">
+                                                        <img id="hover-nut" src="./icons/nuts-hover.png">
                                                     </div>
                                                     <div class="box-text">
                                                         <p>Nuts</p>
@@ -751,38 +797,39 @@
                                             <span> You can skip up to 1 day only!</span>
                                         </p>
 
-                                        <div class="btn-group justify-content-start" role="group"
+                                        <div class="btn-group days-buttons justify-content-start" role="group"
                                             aria-label="Basic checkbox toggle button group">
 
-                                            <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off"
-                                                checked>
-                                            <label class="btn btn-date-days m-2" for="btncheck1">Sa</label>
+                                            <input type="radio" name="days-radio" class="btn-check"
+                                                id="checkbox-group-1-A" autocomplete="off">
+                                            <label class="btn btn-date-days m-2" for="checkbox-group-1-A">Sa</label>
 
-                                            <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off"
-                                                checked>
-                                            <label class="btn btn-date-days m-2" for="btncheck2">Su</label>
+                                            <input type="radio" name="days-radio" class="btn-check"
+                                                id="checkbox-group-1-B" autocomplete="off">
+                                            <label class="btn btn-date-days m-2" for="checkbox-group-1-B">Su</label>
 
-                                            <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off"
-                                                checked>
-                                            <label class="btn btn-date-days m-2" for="btncheck3">Mo</label>
+                                            <input type="radio" name="days-radio" class="btn-check"
+                                                id="checkbox-group-1-C" autocomplete="off">
+                                            <label class="btn btn-date-days m-2" for="checkbox-group-1-C">Mo</label>
 
-                                            <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off"
-                                                checked>
-                                            <label class="btn btn-date-days m-2" for="btncheck4">Tu</label>
+                                            <input type="radio" name="days-radio" class="btn-check"
+                                                id="checkbox-group-1-D" autocomplete="off">
+                                            <label class="btn btn-date-days m-2" for="checkbox-group-1-D">Tu</label>
 
-                                            <input type="checkbox" class="btn-check" id="btncheck5" autocomplete="off"
-                                                checked>
-                                            <label class="btn btn-date-days m-2" for="btncheck5">We</label>
+                                            <input type="radio" name="days-radio" class="btn-check"
+                                                id="checkbox-group-1-E" autocomplete="off">
+                                            <label class="btn btn-date-days m-2" for="checkbox-group-1-E">We</label>
 
-                                            <input type="checkbox" class="btn-check" id="btncheck6" autocomplete="off"
-                                                checked>
-                                            <label class="btn btn-date-days m-2" for="btncheck6">Th</label>
+                                            <input type="radio" name="days-radio" class="btn-check"
+                                                id="checkbox-group-1-F" autocomplete="off">
+                                            <label class="btn btn-date-days m-2" for="checkbox-group-1-F">Th</label>
 
-                                            <input type="checkbox" class="btn-check" id="btncheck7" autocomplete="off"
-                                                disabled>
-                                            <label class="btn btn-date-days m-2" for="btncheck7">Fr</label>
+                                            <input type="radio" name="friday" class="btn-check" id="btncheck7"
+                                                autocomplete="off" disabled>
+                                            <label class="btn disabled btn-date-days m-2" for="btncheck7">Fr</label>
 
                                         </div>
+
                                     </div>
 
                                 </div>
@@ -834,20 +881,101 @@
                                     <h4 class="mb-4">How You’d Like To Get Your Meals?</h4>
                                     <div class="row justify-content-center mb-3">
                                         <div class="btn-toolbar justify-content-center">
-                                            <div class="nav" id="myTab">
-                                                <a href="#deliver" type="button" class="btn btn-date m-2"
-                                                    data-bs-toggle="tab">Delivery</a>
-                                                <a href="#pickup" type="button" class="btn btn-date m-2"
-                                                    data-bs-toggle="tab">Pick
-                                                    up</a>
+                                            <div>
+
+                                                <input type="radio" value="2" onchange="show(this.value)"
+                                                    class="btn-check" name="deliverybtn" id="deliverybtn1"
+                                                    autocomplete="off" checked>
+                                                <label class="btn btn-date m-2" for="deliverybtn1">Delivery</label>
+
+                                                <input type="radio" value="3" onchange="show2()" class="btn-check"
+                                                    name="deliverybtn" id="deliverybtn2" autocomplete="off">
+                                                <label class="btn btn-date m-2" for="deliverybtn2">Pick
+                                                    up</label>
+
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row justify-content-center">
-                                        <div class="tab-content">
-                                            <div class="tab-pane fade show active" id="pickup">
 
-                                                <div class="dropdown m-2">
+                                        <div class="desc" id="deliverytab2">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3573.6169453744956!2d50.05479387640742!3d26.40356040080754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49fd1e8dc9b8a9%3A0xab408c7c017d0461!2sDanube!5e0!3m2!1sen!2s!4v1660164221784!5m2!1sen!2s"
+                                                width="100%" height="270" style="border:0; border-radius: 25px;"
+                                                allowfullscreen="" loading="lazy"
+                                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                                            <div class="note-form mt-3">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" id="input-text"
+                                                        placeholder="Enter your address">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="desc" id="deliverytab3">
+
+                                            <div class="dropdown m-2">
+                                                <div class="select-side">
+                                                    <i class="fa-solid fa-angle-down"></i>
+                                                </div>
+                                                <select class="btn btn-dropdown" id="dropdownMenuButton1"
+                                                    data-bs-toggle="dropdown" aria-expanded="false"
+                                                    title="Eastern Region">
+                                                    <div class="dropdown-menu">
+                                                        <option hidden class="dropdown-item" value="">Eastern Region
+                                                        </option>
+                                                        <option class="dropdown-item" value="1">One</option>
+                                                        <option class="dropdown-item" value="2">Two</option>
+                                                        <option class="dropdown-item" value="2">Three</option>
+                                                    </div>
+                                                </select>
+                                            </div>
+
+
+                                            <div class="dropdown m-2">
+                                                <div class="select-side">
+                                                    <i class="fa-solid fa-angle-down"></i>
+                                                </div>
+                                                <select class="btn btn-dropdown" id="dropdownMenuButton1"
+                                                    data-bs-toggle="dropdown" aria-expanded="false"
+                                                    title="Eastern Region">
+                                                    <div class="dropdown-menu">
+                                                        <option hidden class="dropdown-item" value="">Select City
+                                                        </option>
+
+                                                        <optgroup class="header" label="Select City">
+                                                        </optgroup>
+                                                        <option class="dropdown-item" value="1">One</option>
+                                                        <option class="dropdown-item" value="2">Two</option>
+                                                        <option class="dropdown-item" value="2">Three</option>
+                                                    </div>
+                                                </select>
+                                            </div>
+
+
+                                            <div class="dropdown m-2">
+                                                <div class="select-side">
+                                                    <i class="fa-solid fa-angle-down"></i>
+                                                </div>
+                                                <select class="btn btn-dropdown" id="dropdownMenuButton1"
+                                                    data-bs-toggle="dropdown" aria-expanded="false"
+                                                    title="Eastern Region">
+                                                    <div class="dropdown-menu">
+                                                        <option hidden class="dropdown-item" value="">Select Branch
+                                                        </option>
+
+                                                        <optgroup class="header" label="Select your preferred pickup
+                                                            branch">
+                                                        </optgroup>
+                                                        <option class="dropdown-item" value="1">One</option>
+                                                        <option class="dropdown-item" value="2">Two</option>
+                                                        <option class="dropdown-item" value="2">Three</option>
+                                                    </div>
+                                                </select>
+                                            </div>
+
+                                            <!-- <div class="dropdown m-2">
+
                                                     <button class="btn btn-dropdown" type="button"
                                                         id="dropdownMenuButton1" data-bs-toggle="dropdown"
                                                         aria-expanded="false">
@@ -899,22 +1027,8 @@
                                                                 Commissary</a>
                                                         </li>
                                                     </ul>
-                                                </div>
-                                            </div>
-                                            <div class="tab-pane fade" id="deliver">
-                                                <iframe
-                                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3573.6169453744956!2d50.05479387640742!3d26.40356040080754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49fd1e8dc9b8a9%3A0xab408c7c017d0461!2sDanube!5e0!3m2!1sen!2s!4v1660164221784!5m2!1sen!2s"
-                                                    width="100%" height="270" style="border:0; border-radius: 25px;"
-                                                    allowfullscreen="" loading="lazy"
-                                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                                </div> -->
 
-                                                <div class="note-form mt-3">
-                                                    <div class="form-group">
-                                                        <input type="text" class="form-control" id="input-text"
-                                                            placeholder="Enter your address">
-                                                    </div>
-                                                </div>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -1222,11 +1336,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"
         integrity="sha512-cViKBZswH231Ui53apFnPzem4pvG8mlCDrSyZskDE9OK2gyUd/L08e1AC0wjJodXYZ1wmXEuNimN1d3MWG7jaQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.9.2/jquery.ui.datepicker.min.js"
-        integrity="sha512-s4nJt9M6CoYZQSWgFdWunitdPcKXfvsAAHyRZ/c/P3pkeSvHpRcEMCld0SerDnUfu0wSrEBtZWutoqWwfz9BTw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
     <script src="js/script.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js"></script>
 </body>
 
