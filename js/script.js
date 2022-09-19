@@ -459,3 +459,8 @@ $('.eggs').click(function () {
 // } else {
 //     console.log('false')
 // }
+
+let d = new Date(),
+  t = d.toDateString().split(" ");
+
+console.log(t[2] + " " + t[1] + " " + t[3]);

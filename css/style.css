@@ -535,9 +535,11 @@ input {
   font-size: 14px;
   margin: 0;
 }
-.pad5{
+
+.pad5 {
   padding-top: 6.8rem;
 }
+
 .bottom-bar .orange {
   border-radius: 0 19px 19px 0;
 }
@@ -628,28 +630,28 @@ input {
   top: 0rem;
 }
 
-.img-opacity{
+.img-opacity {
   opacity: 0.5 !important;
 }
 
-.img-opacityzero{
+.img-opacityzero {
   opacity: 0;
 }
 
-.img-opacityfull{
+.img-opacityfull {
   opacity: 1 !important;
 }
 
 .meal-type .single-box1 {
-opacity: 0.5;
+  opacity: 0.5;
 }
 
 .meal-type .single-box2 {
-opacity: 0.5;
+  opacity: 0.5;
 }
 
 .meal-type .single-box3 {
-opacity: 0.5;
+  opacity: 0.5;
 }
 
 .meal-type .double-box1 {
@@ -1676,9 +1678,10 @@ body {
   display: none;
 }
 
-.div-box{
+.div-box {
   opacity: 0;
 }
+
 .days-buttons .disabled {
   background-color: #F9F0DD !important;
   color: #549E87 !important;
@@ -1822,4 +1825,108 @@ body {
   position: relative;
   color: #396765;
   font-size: 20px;
+}
+
+
+
+/* +++++++++++++ Homepage css +++++++++++++ */
+
+#menu_page .menu-bowl {
+  top: -2rem;
+  position: absolute;
+  left: -20rem;
+  width: 65vw;
+  height: auto;
+}
+
+.greetings-message {
+  text-align: left;
+}
+
+.time-of-day {
+  color: #FFE294;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.today-date {
+  font-weight: normal !important;
+}
+
+.welcome-btns{
+  justify-content: center;
+  align-items: flex-end !important;
+  align-content: flex-end;
+}
+
+.day-menu {
+  font-size: 12rem;
+  line-height: 10rem;
+  letter-spacing: 0rem;
+  font-weight: 500;
+  color: #F9F0DD;
+  opacity: 1;
+}
+
+#menu_page .btn-subscribe {
+  background: #ECA363 0% 0% no-repeat padding-box;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 75%;
+  color: #FFFFFF;
+}
+
+.menu-link {
+  text-align: center;
+  padding-top: 0.75rem;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.42px;
+  color: #F9F0DD;
+  text-decoration: none;
+
+}
+
+.todays-menu{
+  overflow: hidden;
+}
+
+.meal-border {
+  text-align: left;
+  text-decoration: none;
+}
+
+.meal-type {
+  font-size: 1.3rem;
+  text-decoration: none;
+  line-height: 1rem;
+  font-weight: 600;
+  color: #FFE294;
+  margin: 0;
+}
+
+.meal-name {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #F9F0DD;
+}
+
+.border-meal {
+  border-left: 0.15rem solid;
+  border-color: #FFE294;
+  padding-left: 0.75rem;
+  text-decoration: none;
+  margin-top: 1rem;
+  opacity: 0.5;
+  
+  /* padding: 1rem 0 1rem 0.75rem; */
+}
+
+.todays-menu .selected{
+  opacity: 1;
+}
+
+.border-meal a{
+  text-decoration: none;
 }
