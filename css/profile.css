@@ -127,3 +127,31 @@ letter-spacing: 0px;
 color: #0D2763;
 text-decoration: none;
 }
+
+.subscription-total{
+    text-align: center;
+font: normal normal 700 82px/96px 'Barlow Condensed';
+letter-spacing: 2.46px;
+color: #EE755B;
+text-transform: uppercase;
+margin: 0;
+}
+
+.dark-gray-box p{
+    text-align: left;
+font: normal normal medium 14px/39px Roboto;
+letter-spacing: 0px;
+color: #6C6C6C;
+}
+
+.dark-gray-box span{
+    font: normal normal 900 21px/51px Roboto;
+letter-spacing: 0px;
+color: #1C1C1C;
+}
+
+.dark-gray-box .delivery{
+    font: normal normal bold 16px/39px Roboto;
+letter-spacing: 0px;
+color: #5C5C5C;
+}
