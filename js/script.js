@@ -460,7 +460,15 @@ $('.eggs').click(function () {
 //     console.log('false')
 // }
 
-let d = new Date(),
-  t = d.toDateString().split(" ");
+// let d = new Date(),
+//   t = d.toDateString().split(" ");
 
-console.log(t[2] + " " + t[1] + " " + t[3]);
+// console.log(t[2] + " " + t[1] + " " + t[3]);
+
+// $(document).ready( function () {
+//     SomeFunction();
+//   });
+
+
+  
+$('.circlechart').circlechart();

@@ -1,0 +1,129 @@
+.section {
+    margin: 2rem 5rem;
+}
+
+.red-box {
+    width: 20vw;
+    height: 65vh;
+    padding: 3rem 2rem 3rem 2rem;
+    background: transparent linear-gradient(164deg, #EE755B 0%, #F05B3B 100%) 0% 0% no-repeat padding-box;
+    border-radius: 30px;
+}
+
+.profile-avatar {
+    width: 3rem;
+    height: 3rem;
+}
+
+.hello-name {
+    text-align: left;
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 0.74px;
+    color: #F9F0DD;
+    text-transform: uppercase;
+    padding: 1rem 0;
+}
+
+.card-box {
+    height: 32vh;
+    width: 100%;
+    background-color: #F7F7F7;
+    margin: 1rem 0.5rem;
+    border-radius: 35px;
+    padding: 2rem;
+    text-align: center;
+}
+
+.large-card-title {
+    text-align: left;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+.small-card-title {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+.box-position {
+    display: flex;
+    justify-content: center;
+}
+
+.circle-progress-value {
+    stroke-width: 6px;
+    stroke: hsl(39, 100%, 50%);
+}
+
+.circle-progress-circle {
+    stroke-width: 6px;
+    stroke: hsl(39, 100%, 85%);
+}
+
+.circle-progress-text {
+    fill: hsl(39, 100%, 50%);
+}
+
+.card-box .progress {
+    display: flex;
+    height: auto;
+    overflow: hidden;
+    font-size: .75rem;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.earn-text {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 0px;
+    color: #EE755B;
+}
+
+.card-box p {
+    font-size: 0.9rem;
+    font-weight: normal;
+    letter-spacing: 0px;
+    color: #6C6C6C;
+}
+
+.dark-gray-box{
+    width: 144px;
+height: 144px;
+background: #EFEFEF 0% 0% no-repeat padding-box;
+border-radius: 15px;
+padding: 1rem;
+}
+
+.dark-gray-box h5{
+    text-align: left;
+font: normal normal bold 16px/39px Roboto;
+letter-spacing: 0px;
+color: #5C5C5C;
+}
+.btn-theme-red{
+    width: 10rem;
+background: #EE755B 0% 0% no-repeat padding-box;
+border-radius: 17px;
+text-align: center;
+font: normal normal bold 14px/39px Roboto;
+letter-spacing: 0px;
+color: #FFFFFF;
+text-decoration: none;
+padding: 0.5rem 1.5rem;
+}
+
+.card-box .text-link{
+    text-align: center;
+font: normal normal bold 14px/39px Roboto;
+letter-spacing: 0px;
+color: #0D2763;
+text-decoration: none;
+}
